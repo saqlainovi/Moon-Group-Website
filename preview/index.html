@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moon Group | Leading Builder & Real Estate Developer in Bangladesh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            moon: { gold: '#C9A962', 'gold-light': '#E8D5A3', navy: '#0A1628', 'navy-light': '#152238', slate: '#1E2D45', cream: '#F5F0E8' }
+          },
+          fontFamily: { display: ['Playfair Display', 'Georgia', 'serif'], body: ['DM Sans', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #0A1628; color: #F5F0E8; overflow-x: hidden; font-family: 'DM Sans', sans-serif; }
+    ::selection { background: #C9A962; color: #0A1628; }
+    .text-gradient-gold { background: linear-gradient(90deg, #E8D5A3, #C9A962, #E8D5A3); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .image-overlay { position: absolute; inset: 0; background: linear-gradient(to top, #0A1628, rgba(10,22,40,.4), transparent); }
+    .glass-nav { backdrop-filter: blur(20px); background: rgba(10,22,40,.85); border-bottom: 1px solid rgba(255,255,255,.05); }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #0A1628; }
+    ::-webkit-scrollbar-thumb { background: #C9A962; border-radius: 3px; }
+    #three-canvas { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+    .project-card:hover .project-img { transform: scale(1.1); }
+    .project-card:hover .project-details { transform: translateY(0); opacity: 1; }
+    .project-card:hover .project-specs { opacity: 1; }
+    .service-card:hover img { transform: scale(1.05); }
+    .fade-up { opacity: 0; transform: translateY(60px); }
+    .fade-left { opacity: 0; transform: translateX(-80px); }
+    .nav-link { position: relative; }
+    .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 1px; background: #C9A962; transition: width .3s; }
+    .nav-link:hover::after { width: 100%; }
+    @keyframes scrollLine { 0%,100% { transform: translateY(0); opacity: 1; } 50% { transform: translateY(10px); opacity: .5; } }
+    .scroll-indicator { animation: scrollLine 1.5s ease-in-out infinite; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 py-5">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full border border-moon-gold/50 flex items-center justify-center group-hover:border-moon-gold transition-colors">
+          <span class="font-display text-moon-gold text-lg font-bold" style="font-family:'Playfair Display',serif">M</span>
+        </div>
+        <div>
+          <span class="font-display text-xl font-semibold tracking-wide" style="font-family:'Playfair Display',serif">Moon Group</span>
+          <span class="hidden sm:block text-[10px] text-moon-gold/70 tracking-[0.2em] uppercase">Bangladesh</span>
+        </div>
+      </a>
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="#home" class="nav-link text-sm text-white/70 hover:text-moon-gold transition-colors tracking-wide uppercase">Home</a>
+        <a href="#about" class="nav-link text-sm text-white/70 hover:text-moon-gold transition-colors tracking-wide uppercase">About</a>
+        <a href="#projects" class="nav-link text-sm text-white/70 hover:text-moon-gold transition-colors tracking-wide uppercase">Projects</a>
+        <a href="#services" class="nav-link text-sm text-white/70 hover:text-moon-gold transition-colors tracking-wide uppercase">Services</a>
+        <a href="#contact" class="nav-link text-sm text-white/70 hover:text-moon-gold transition-colors tracking-wide uppercase">Contact</a>
+        <a href="#contact" class="px-5 py-2.5 bg-moon-gold text-moon-navy text-sm font-semibold rounded-sm hover:bg-moon-gold-light transition-colors">Get in Touch</a>
+      </nav>
+      <button id="menuBtn" class="lg:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
+        <span class="block w-6 h-0.5 bg-moon-gold transition-transform" id="bar1"></span>
+        <span class="block w-6 h-0.5 bg-moon-gold transition-opacity" id="bar2"></span>
+        <span class="block w-6 h-0.5 bg-moon-gold transition-transform" id="bar3"></span>
+      </button>
+    </div>
+    <div id="mobileMenu" class="lg:hidden hidden glass-nav overflow-hidden">
+      <nav class="flex flex-col px-6 py-4 gap-4">
+        <a href="#home" class="mobile-link text-white/80 py-2 border-b border-white/5">Home</a>
+        <a href="#about" class="mobile-link text-white/80 py-2 border-b border-white/5">About</a>
+        <a href="#projects" class="mobile-link text-white/80 py-2 border-b border-white/5">Projects</a>
+        <a href="#services" class="mobile-link text-white/80 py-2 border-b border-white/5">Services</a>
+        <a href="#contact" class="mobile-link text-white/80 py-2">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="relative min-h-screen flex items-end overflow-hidden">
+    <div class="hero-bg absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=80" alt="Moon Group skyline" class="w-full h-full object-cover scale-110" id="heroImg" />
+      <div class="absolute inset-0 bg-moon-navy/70"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-moon-navy via-moon-navy/50 to-transparent"></div>
+    </div>
+    <div id="three-canvas"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 pb-24 md:pb-32 pt-32 w-full">
+      <p class="hero-el text-moon-gold text-sm tracking-[0.3em] uppercase mb-4 font-medium opacity-0">Building Tomorrow's Bangladesh</p>
+      <h1 class="hero-el font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.1] max-w-4xl mb-6 opacity-0" style="font-family:'Playfair Display',serif">
+        Crafting Landmarks That <span class="text-gradient-gold">Define</span> Excellence
+      </h1>
+      <p class="hero-el text-white/70 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed opacity-0">
+        Moon Group of Industries Ltd — a trusted name in construction, real estate development, and infrastructure across Bangladesh.
+      </p>
+      <div class="hero-el flex flex-wrap gap-4 opacity-0">
+        <a href="#projects" class="px-8 py-4 bg-moon-gold text-moon-navy font-semibold rounded-sm hover:bg-moon-gold-light transition-all hover:scale-105">Explore Projects</a>
+        <a href="#about" class="px-8 py-4 border border-white/30 text-white font-semibold rounded-sm hover:border-moon-gold hover:text-moon-gold transition-all">Our Legacy</a>
+      </div>
+    </div>
+    <div class="scroll-indicator absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
+      <span class="text-[10px] tracking-[0.3em] uppercase text-white/40">Scroll</span>
+      <div class="w-px h-12 bg-gradient-to-b from-moon-gold to-transparent"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="relative py-5 bg-moon-gold overflow-hidden border-y border-moon-gold-light/20">
+    <div id="marqueeTrack" class="flex whitespace-nowrap will-change-transform">
+      <span class="inline-flex items-center mx-8 text-moon-navy font-semibold text-sm tracking-widest uppercase">High Quality Construction <span class="ml-8 text-moon-navy/40">&#9670;</span></span>
+      <span class="inline-flex items-center mx-8 text-moon-navy font-semibold text-sm tracking-widest uppercase">Design Excellence <span class="ml-8 text-moon-navy/40">&#9670;</span></span>
+      <span class="inline-flex items-center mx-8 text-moon-navy font-semibold text-sm tracking-widest uppercase">On-Time Delivery <span class="ml-8 text-moon-navy/40">&#9670;</span></span>
+      <span class="inline-flex items-center mx-8 text-moon-navy font-semibold text-sm tracking-widest uppercase">Customer-Centricity <span class="ml-8 text-moon-navy/40">&#9670;</span></span>
+      <span class="inline-flex items-center mx-8 text-moon-navy font-semibold text-sm tracking-widest uppercase">Integrity & Trust <span class="ml-8 text-moon-navy/40">&#9670;</span></span>
+      <span class="inline-flex items-center mx-8 text-moon-navy font-semibold text-sm tracking-widest uppercase">High Quality Construction <span class="ml-8 text-moon-navy/40">&#9670;</span></span>
+      <span class="inline-flex items-center mx-8 text-moon-navy font-semibold text-sm tracking-widest uppercase">Design Excellence <span class="ml-8 text-moon-navy/40">&#9670;</span></span>
+      <span class="inline-flex items-center mx-8 text-moon-navy font-semibold text-sm tracking-widest uppercase">On-Time Delivery <span class="ml-8 text-moon-navy/40">&#9670;</span></span>
+      <span class="inline-flex items-center mx-8 text-moon-navy font-semibold text-sm tracking-widest uppercase">Customer-Centricity <span class="ml-8 text-moon-navy/40">&#9670;</span></span>
+      <span class="inline-flex items-center mx-8 text-moon-navy font-semibold text-sm tracking-widest uppercase">Integrity & Trust <span class="ml-8 text-moon-navy/40">&#9670;</span></span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-24 md:py-32 bg-moon-navy">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="fade-left relative">
+          <div class="relative aspect-[4/5] rounded-sm overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80" alt="Construction excellence" class="w-full h-full object-cover" />
+            <div class="image-overlay"></div>
+          </div>
+          <div class="absolute -bottom-6 -right-6 md:-bottom-8 md:-right-8 bg-moon-gold p-6 md:p-8 rounded-sm">
+            <p class="font-display text-4xl md:text-5xl font-bold text-moon-navy" style="font-family:'Playfair Display',serif">25+</p>
+            <p class="text-moon-navy/70 text-sm mt-1 uppercase tracking-wider">Years of Trust</p>
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="fade-up text-moon-gold text-sm tracking-[0.3em] uppercase mb-4">About Us</p>
+          <h2 class="fade-up font-display text-3xl md:text-5xl font-bold mb-6 leading-tight" style="font-family:'Playfair Display',serif">A Legacy of <span class="text-gradient-gold">Excellence</span></h2>
+          <p class="fade-up text-white/70 leading-relaxed mb-6">Moon Group (Bangladesh) stands as one of the nation's respected business groups, delivering high-quality construction, residential developments, and commercial projects. Under the visionary leadership of Al-haj Mizanur Rahman, we combine engineering precision with architectural excellence.</p>
+          <p class="fade-up text-white/60 leading-relaxed mb-8">With decades of experience in Bangladesh's building sector, Moon Group has earned the trust of homeowners, investors, and partners through on-time delivery, superior construction quality, and customer-centric service.</p>
+          <div class="fade-up border-l-2 border-moon-gold pl-6 mb-8">
+            <p class="text-white/50 text-sm uppercase tracking-wider mb-1">Chairman</p>
+            <p class="font-display text-xl text-moon-gold" style="font-family:'Playfair Display',serif">Al-haj Mizanur Rahman</p>
+            <p class="text-white/40 text-sm mt-1">Moon Bangladesh Limited</p>
+          </div>
+          <a href="#contact" class="fade-up inline-flex items-center gap-2 text-moon-gold hover:text-moon-gold-light transition-colors group font-semibold">Partner With Us <span class="group-hover:translate-x-1 transition-transform">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section id="stats" class="py-20 bg-moon-navy-light border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+        <div class="text-center stat-item"><div class="font-display text-4xl md:text-6xl font-bold text-moon-gold mb-2" style="font-family:'Playfair Display',serif"><span class="stat-num" data-target="25">0</span>+</div><p class="text-white/50 text-sm uppercase tracking-wider">Years of Excellence</p></div>
+        <div class="text-center stat-item"><div class="font-display text-4xl md:text-6xl font-bold text-moon-gold mb-2" style="font-family:'Playfair Display',serif"><span class="stat-num" data-target="150">0</span>+</div><p class="text-white/50 text-sm uppercase tracking-wider">Projects Completed</p></div>
+        <div class="text-center stat-item"><div class="font-display text-4xl md:text-6xl font-bold text-moon-gold mb-2" style="font-family:'Playfair Display',serif"><span class="stat-num" data-target="5000">0</span>+</div><p class="text-white/50 text-sm uppercase tracking-wider">Happy Families</p></div>
+        <div class="text-center stat-item"><div class="font-display text-4xl md:text-6xl font-bold text-moon-gold mb-2" style="font-family:'Playfair Display',serif"><span class="stat-num" data-target="2">0</span>M+</div><p class="text-white/50 text-sm uppercase tracking-wider">Sq. Ft. Delivered</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-24 md:py-32 bg-moon-navy">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="projects-header flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+        <div class="fade-up">
+          <p class="text-moon-gold text-sm tracking-[0.3em] uppercase mb-4">Portfolio</p>
+          <h2 class="font-display text-3xl md:text-5xl font-bold" style="font-family:'Playfair Display',serif">Featured <span class="text-gradient-gold">Properties</span></h2>
+          <p class="text-white/60 mt-4 max-w-lg">Discover our finest residential and commercial developments across Dhaka and beyond.</p>
+        </div>
+        <div class="flex flex-wrap gap-2 fade-up">
+          <button class="filter-btn px-4 py-2 text-xs uppercase tracking-wider rounded-sm bg-moon-gold text-moon-navy font-semibold" data-filter="all">All</button>
+          <button class="filter-btn px-4 py-2 text-xs uppercase tracking-wider rounded-sm border border-white/20 text-white/60 hover:border-moon-gold" data-filter="ongoing">Ongoing</button>
+          <button class="filter-btn px-4 py-2 text-xs uppercase tracking-wider rounded-sm border border-white/20 text-white/60 hover:border-moon-gold" data-filter="completed">Completed</button>
+          <button class="filter-btn px-4 py-2 text-xs uppercase tracking-wider rounded-sm border border-white/20 text-white/60 hover:border-moon-gold" data-filter="coming">Coming Soon</button>
+        </div>
+      </div>
+      <div id="projectsGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-24 md:py-32 bg-moon-navy-light">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16 fade-up">
+        <p class="text-moon-gold text-sm tracking-[0.3em] uppercase mb-4">What We Do</p>
+        <h2 class="font-display text-3xl md:text-5xl font-bold" style="font-family:'Playfair Display',serif">Our <span class="text-gradient-gold">Services</span></h2>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="service-card fade-up group relative rounded-sm overflow-hidden aspect-[16/10]">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Residential" class="w-full h-full object-cover transition-transform duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-moon-navy via-moon-navy/60 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-8"><span class="text-moon-gold text-xs font-semibold tracking-widest uppercase">01</span><h3 class="font-display text-2xl md:text-3xl font-bold mt-2 mb-3" style="font-family:'Playfair Display',serif">Residential Development</h3><p class="text-white/60 leading-relaxed max-w-md">Premium apartments and gated communities designed for modern living with world-class amenities.</p></div>
+        </div>
+        <div class="service-card fade-up group relative rounded-sm overflow-hidden aspect-[16/10]">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="Commercial" class="w-full h-full object-cover transition-transform duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-moon-navy via-moon-navy/60 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-8"><span class="text-moon-gold text-xs font-semibold tracking-widest uppercase">02</span><h3 class="font-display text-2xl md:text-3xl font-bold mt-2 mb-3" style="font-family:'Playfair Display',serif">Commercial Construction</h3><p class="text-white/60 leading-relaxed max-w-md">Office towers, retail spaces, and mixed-use developments built to the highest standards.</p></div>
+        </div>
+        <div class="service-card fade-up group relative rounded-sm overflow-hidden aspect-[16/10]">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Infrastructure" class="w-full h-full object-cover transition-transform duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-moon-navy via-moon-navy/60 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-8"><span class="text-moon-gold text-xs font-semibold tracking-widest uppercase">03</span><h3 class="font-display text-2xl md:text-3xl font-bold mt-2 mb-3" style="font-family:'Playfair Display',serif">Infrastructure Projects</h3><p class="text-white/60 leading-relaxed max-w-md">Roads, bridges, and civil engineering works that connect communities and drive progress.</p></div>
+        </div>
+        <div class="service-card fade-up group relative rounded-sm overflow-hidden aspect-[16/10]">
+          <img src="https://images.unsplash.com/photo-1618221197210-dd6b41faaea6?w=600&q=80" alt="Interior" class="w-full h-full object-cover transition-transform duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-moon-navy via-moon-navy/60 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-8"><span class="text-moon-gold text-xs font-semibold tracking-widest uppercase">04</span><h3 class="font-display text-2xl md:text-3xl font-bold mt-2 mb-3" style="font-family:'Playfair Display',serif">Interior & Design</h3><p class="text-white/60 leading-relaxed max-w-md">End-to-end interior design solutions that transform spaces into personalized sanctuaries.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-24 md:py-32 bg-moon-navy relative overflow-hidden">
+    <div class="absolute inset-0 opacity-5"><div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-display text-[20rem] font-bold text-moon-gold select-none" style="font-family:'Playfair Display',serif">&ldquo;</div></div>
+    <div class="max-w-4xl mx-auto px-6 relative z-10">
+      <div class="text-center mb-12 fade-up">
+        <p class="text-moon-gold text-sm tracking-[0.3em] uppercase mb-4">Testimonials</p>
+        <h2 class="font-display text-3xl md:text-5xl font-bold" style="font-family:'Playfair Display',serif">What Our <span class="text-gradient-gold">Customers Say</span></h2>
+      </div>
+      <div id="testimonialContent" class="min-h-[200px] flex items-center justify-center text-center"></div>
+      <div id="testimonialDots" class="flex justify-center gap-3 mt-10"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-24 md:py-32 bg-moon-navy-light">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16">
+        <div>
+          <p class="contact-el fade-up text-moon-gold text-sm tracking-[0.3em] uppercase mb-4">Get in Touch</p>
+          <h2 class="contact-el fade-up font-display text-3xl md:text-5xl font-bold mb-6" style="font-family:'Playfair Display',serif">Let's Build <span class="text-gradient-gold">Together</span></h2>
+          <p class="contact-el fade-up text-white/60 leading-relaxed mb-10">Ready to find your dream home or partner on your next project? Reach out to Moon Group — we're here to help.</p>
+          <div class="space-y-6">
+            <div class="contact-el fade-up flex gap-4"><div class="w-10 h-10 rounded-full border border-moon-gold/30 flex items-center justify-center shrink-0"><span class="text-moon-gold text-xs">&#9679;</span></div><div><p class="text-white/40 text-xs uppercase tracking-wider">Hotline</p><p class="text-white/90 mt-1">16604</p></div></div>
+            <div class="contact-el fade-up flex gap-4"><div class="w-10 h-10 rounded-full border border-moon-gold/30 flex items-center justify-center shrink-0"><span class="text-moon-gold text-xs">&#9679;</span></div><div><p class="text-white/40 text-xs uppercase tracking-wider">Phone</p><p class="text-white/90 mt-1">+880 2 0000 0000</p></div></div>
+            <div class="contact-el fade-up flex gap-4"><div class="w-10 h-10 rounded-full border border-moon-gold/30 flex items-center justify-center shrink-0"><span class="text-moon-gold text-xs">&#9679;</span></div><div><p class="text-white/40 text-xs uppercase tracking-wider">Email</p><p class="text-white/90 mt-1">info@moonbangladesh.com</p></div></div>
+            <div class="contact-el fade-up flex gap-4"><div class="w-10 h-10 rounded-full border border-moon-gold/30 flex items-center justify-center shrink-0"><span class="text-moon-gold text-xs">&#9679;</span></div><div><p class="text-white/40 text-xs uppercase tracking-wider">Address</p><p class="text-white/90 mt-1">Dhaka, Bangladesh</p></div></div>
+          </div>
+        </div>
+        <form class="contact-el fade-up space-y-5" onsubmit="event.preventDefault(); alert('Message sent! (Demo)');">
+          <div class="grid sm:grid-cols-2 gap-5">
+            <input type="text" placeholder="Your Name" required class="w-full px-5 py-4 bg-moon-navy border border-white/10 rounded-sm text-white placeholder:text-white/30 focus:border-moon-gold focus:outline-none" />
+            <input type="tel" placeholder="Phone Number" required class="w-full px-5 py-4 bg-moon-navy border border-white/10 rounded-sm text-white placeholder:text-white/30 focus:border-moon-gold focus:outline-none" />
+          </div>
+          <input type="email" placeholder="Email Address" required class="w-full px-5 py-4 bg-moon-navy border border-white/10 rounded-sm text-white placeholder:text-white/30 focus:border-moon-gold focus:outline-none" />
+          <select class="w-full px-5 py-4 bg-moon-navy border border-white/10 rounded-sm text-white/70 focus:border-moon-gold focus:outline-none appearance-none">
+            <option value="" disabled selected>Interested In</option>
+            <option>Residential Property</option>
+            <option>Commercial Space</option>
+            <option>Investment Opportunity</option>
+            <option>Business Partnership</option>
+          </select>
+          <textarea placeholder="Your Message" rows="4" class="w-full px-5 py-4 bg-moon-navy border border-white/10 rounded-sm text-white placeholder:text-white/30 focus:border-moon-gold focus:outline-none resize-none"></textarea>
+          <button type="submit" class="w-full py-4 bg-moon-gold text-moon-navy font-semibold rounded-sm hover:bg-moon-gold-light transition-colors">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-moon-navy border-t border-white/5 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-12 mb-12">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full border border-moon-gold/50 flex items-center justify-center"><span class="font-display text-moon-gold text-lg font-bold" style="font-family:'Playfair Display',serif">M</span></div>
+            <span class="font-display text-xl font-semibold" style="font-family:'Playfair Display',serif">Moon Group</span>
+          </div>
+          <p class="text-white/50 text-sm leading-relaxed">Moon Bangladesh Limited — Building excellence across Bangladesh.</p>
+        </div>
+        <div>
+          <h4 class="text-moon-gold text-sm uppercase tracking-wider mb-4">Quick Links</h4>
+          <nav class="flex flex-col gap-2">
+            <a href="#home" class="text-white/50 hover:text-moon-gold text-sm transition-colors">Home</a>
+            <a href="#about" class="text-white/50 hover:text-moon-gold text-sm transition-colors">About</a>
+            <a href="#projects" class="text-white/50 hover:text-moon-gold text-sm transition-colors">Projects</a>
+            <a href="#services" class="text-white/50 hover:text-moon-gold text-sm transition-colors">Services</a>
+            <a href="#contact" class="text-white/50 hover:text-moon-gold text-sm transition-colors">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="text-moon-gold text-sm uppercase tracking-wider mb-4">Contact</h4>
+          <div class="space-y-2 text-sm text-white/50">
+            <p>+880 2 0000 0000</p>
+            <p>info@moonbangladesh.com</p>
+            <p>Dhaka, Bangladesh</p>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-white/30 text-xs">&copy; 2026 Moon Bangladesh Limited. All rights reserved.</p>
+        <p class="text-white/30 text-xs">Chairman: Al-haj Mizanur Rahman</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+  <script>
+    const projects = [
+      { name:'Moon Heights', location:'Gulshan, Dhaka', img:'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80', size:'2200-3500 sft', beds:'3-4', baths:'3-4', land:'8 Katha', status:'ongoing', type:'Luxury', badge:'Ongoing', badgeClass:'bg-emerald-500/90 text-white' },
+      { name:'Moon Residence', location:'Banani, Dhaka', img:'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80', size:'1800-2400 sft', beds:'3', baths:'3', land:'5 Katha', status:'ongoing', type:'Featured', badge:'Ongoing', badgeClass:'bg-emerald-500/90 text-white' },
+      { name:'Moon Tower', location:'Uttara, Dhaka', img:'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80', size:'1500-2000 sft', beds:'3', baths:'3', land:'10 Katha', status:'completed', type:'Commercial', badge:'Completed', badgeClass:'bg-blue-500/90 text-white' },
+      { name:'Moon Garden Homes', location:'Bashundhara R/A', img:'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80', size:'2100+ sft', beds:'4', baths:'4', land:'5 Katha', status:'ongoing', type:'Luxury', badge:'Ongoing', badgeClass:'bg-emerald-500/90 text-white' },
+      { name:'Moon Plaza', location:'Mirpur, Dhaka', img:'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80', size:'1200-1800 sft', beds:'3', baths:'3', land:'35 Katha', status:'coming', type:'Classic', badge:'Coming Soon', badgeClass:'bg-moon-gold/90 text-moon-navy' },
+      { name:'Moon Skyline', location:'Purbachal, Dhaka', img:'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', size:'2500-4000 sft', beds:'4', baths:'4', land:'6 Katha', status:'coming', type:'Luxury', badge:'Coming Soon', badgeClass:'bg-moon-gold/90 text-moon-navy' },
+    ];
+
+    const testimonials = [
+      { name:'Karim Ahmed', role:'Homeowner, Moon Heights', quote:'Moon Group delivered exactly what they promised — quality construction, timely handover, and exceptional after-sales support.' },
+      { name:'Fatima Rahman', role:'Investor', quote:'Their attention to detail and transparent communication made our investment decision easy. Truly a professional team.' },
+      { name:'Rashid Khan', role:'Business Partner', quote:'Working with Moon Group on our commercial project was seamless. They understand both engineering and aesthetics.' },
+    ];
+
+    function renderProjects(filter='all') {
+      const grid = document.getElementById('projectsGrid');
+      const filtered = filter==='all' ? projects : projects.filter(p=>p.status===filter);
+      grid.innerHTML = filtered.map((p,i)=>`
+        <article class="project-card fade-up group relative rounded-sm overflow-hidden bg-moon-slate" data-status="${p.status}">
+          <div class="relative aspect-[4/3] overflow-hidden">
+            <img src="${p.img}" alt="${p.name}" class="project-img w-full h-full object-cover transition-transform duration-700" />
+            <div class="image-overlay opacity-60 group-hover:opacity-80 transition-opacity"></div>
+            <div class="absolute top-4 left-4 flex gap-2">
+              <span class="px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-sm ${p.badgeClass}">${p.badge}</span>
+              <span class="px-3 py-1 text-xs font-semibold uppercase tracking-wider rounded-sm bg-white/10 backdrop-blur-sm text-white">${p.type}</span>
+            </div>
+            <div class="project-details absolute bottom-0 left-0 right-0 p-6 translate-y-4 transition-transform duration-500">
+              <p class="text-moon-gold text-xs uppercase tracking-wider mb-1">${p.location}</p>
+              <h3 class="font-display text-2xl font-bold mb-3" style="font-family:'Playfair Display',serif">${p.name}</h3>
+              <div class="project-specs grid grid-cols-4 gap-2 opacity-0 transition-opacity duration-500">
+                <div class="text-center"><p class="text-[10px] text-white/50 uppercase">Size</p><p class="text-xs font-semibold">${p.size}</p></div>
+                <div class="text-center"><p class="text-[10px] text-white/50 uppercase">Bed</p><p class="text-xs font-semibold">${p.beds}</p></div>
+                <div class="text-center"><p class="text-[10px] text-white/50 uppercase">Bath</p><p class="text-xs font-semibold">${p.baths}</p></div>
+                <div class="text-center"><p class="text-[10px] text-white/50 uppercase">Land</p><p class="text-xs font-semibold">${p.land}</p></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      `).join('');
+      gsap.from('.project-card', { y:40, opacity:0, duration:.6, stagger:.1, ease:'power3.out' });
+    }
+    renderProjects();
+
+    document.querySelectorAll('.filter-btn').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        document.querySelectorAll('.filter-btn').forEach(b=>{
+          b.className='filter-btn px-4 py-2 text-xs uppercase tracking-wider rounded-sm border border-white/20 text-white/60 hover:border-moon-gold';
+        });
+        btn.className='filter-btn px-4 py-2 text-xs uppercase tracking-wider rounded-sm bg-moon-gold text-moon-navy font-semibold';
+        renderProjects(btn.dataset.filter);
+      });
+    });
+
+    let tIdx=0;
+    function showTestimonial(i) {
+      tIdx=i;
+      const t=testimonials[i];
+      document.getElementById('testimonialContent').innerHTML=`
+        <blockquote>
+          <p class="text-xl md:text-2xl text-white/80 leading-relaxed italic mb-8">&ldquo;${t.quote}&rdquo;</p>
+          <footer><p class="font-display text-lg text-moon-gold" style="font-family:'Playfair Display',serif">${t.name}</p><p class="text-white/40 text-sm mt-1">${t.role}</p></footer>
+        </blockquote>`;
+      document.getElementById('testimonialDots').innerHTML=testimonials.map((_,j)=>`
+        <button onclick="showTestimonial(${j})" aria-label="Testimonial ${j+1}" class="h-2 rounded-full transition-all duration-300 ${j===i?'w-8 bg-moon-gold':'w-2 bg-white/20 hover:bg-white/40'}"></button>`).join('');
+    }
+    showTestimonial(0);
+    setInterval(()=>showTestimonial((tIdx+1)%testimonials.length), 5000);
+
+    // Navbar scroll
+    window.addEventListener('scroll', ()=>{
+      const nav=document.getElementById('navbar');
+      nav.classList.toggle('glass-nav', window.scrollY>50);
+      nav.classList.toggle('py-3', window.scrollY>50);
+      nav.classList.toggle('py-5', window.scrollY<=50);
+    });
+
+    // Mobile menu
+    document.getElementById('menuBtn').addEventListener('click', ()=>{
+      const menu=document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    });
+    document.querySelectorAll('.mobile-link').forEach(l=>l.addEventListener('click',()=>document.getElementById('mobileMenu').classList.add('hidden')));
+
+    // GSAP Hero
+    gsap.to('#heroImg', { scale:1, duration:2, ease:'power2.out' });
+    gsap.to('.hero-el', { y:0, opacity:1, duration:1, stagger:.2, ease:'power3.out', delay:.3 });
+
+    // GSAP ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray('.fade-up').forEach(el=>{
+      gsap.to(el, { scrollTrigger:{ trigger:el, start:'top 85%' }, y:0, opacity:1, duration:.8, ease:'power3.out' });
+    });
+    gsap.to('.fade-left', { scrollTrigger:{ trigger:'#about', start:'top 75%' }, x:0, opacity:1, duration:1.2, ease:'power3.out' });
+
+    // Anime.js Marquee
+    anime({ targets:'#marqueeTrack', translateX:['0%','-50%'], duration:30000, easing:'linear', loop:true });
+
+    // Anime.js Stats
+    let statsAnimated=false;
+    const statsObs=new IntersectionObserver(entries=>{
+      if(entries[0].isIntersecting && !statsAnimated){
+        statsAnimated=true;
+        document.querySelectorAll('.stat-num').forEach((el,i)=>{
+          anime({ targets:{v:0}, v:parseInt(el.dataset.target), duration:2000, delay:i*150, easing:'easeOutExpo',
+            update:a=>{ el.textContent=Math.round(a.animations[0].currentValue); }
+          });
+        });
+      }
+    },{threshold:.3});
+    statsObs.observe(document.getElementById('stats'));
+
+    // Three.js Background
+    (function(){
+      const container=document.getElementById('three-canvas');
+      const w=container.clientWidth, h=container.clientHeight;
+      const scene=new THREE.Scene();
+      const camera=new THREE.PerspectiveCamera(60,w/h,.1,1000);
+      camera.position.z=30;
+      const renderer=new THREE.WebGLRenderer({alpha:true,antialias:true});
+      renderer.setSize(w,h);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
+      container.appendChild(renderer.domElement);
+      const geo=new THREE.IcosahedronGeometry(1,1);
+      const meshes=[];
+      for(let i=0;i<40;i++){
+        const mat=new THREE.MeshBasicMaterial({color:0xC9A962,wireframe:true,transparent:true,opacity:.15});
+        const mesh=new THREE.Mesh(geo,mat);
+        mesh.position.set((Math.random()-.5)*60,(Math.random()-.5)*40,(Math.random()-.5)*30-10);
+        mesh.scale.setScalar(Math.random()*2+.5);
+        mesh.userData={rs:(Math.random()-.5)*.005,fs:Math.random()*.002+.001,fo:Math.random()*Math.PI*2};
+        scene.add(mesh); meshes.push(mesh);
+      }
+      const pGeo=new THREE.BufferGeometry();
+      const pos=new Float32Array(500*3);
+      for(let i=0;i<500;i++){ pos[i*3]=(Math.random()-.5)*80; pos[i*3+1]=(Math.random()-.5)*60; pos[i*3+2]=(Math.random()-.5)*40; }
+      pGeo.setAttribute('position',new THREE.BufferAttribute(pos,3));
+      const particles=new THREE.Points(pGeo,new THREE.PointsMaterial({color:0xC9A962,size:.08,transparent:true,opacity:.4}));
+      scene.add(particles);
+      let mx=0,my=0;
+      window.addEventListener('mousemove',e=>{ mx=(e.clientX/window.innerWidth-.5)*2; my=(e.clientY/window.innerHeight-.5)*2; });
+      const clock=new THREE.Clock();
+      function animate(){
+        requestAnimationFrame(animate);
+        const t=clock.getElapsedTime();
+        meshes.forEach(m=>{ m.rotation.x+=m.userData.rs; m.rotation.y+=m.userData.rs*1.5; m.position.y+=Math.sin(t*m.userData.fs*100+m.userData.fo)*.01; });
+        particles.rotation.y=t*.02;
+        camera.position.x+=(mx*3-camera.position.x)*.02;
+        camera.position.y+=(-my*2-camera.position.y)*.02;
+        camera.lookAt(0,0,0);
+        renderer.render(scene,camera);
+      }
+      animate();
+      window.addEventListener('resize',()=>{
+        const nw=container.clientWidth,nh=container.clientHeight;
+        camera.aspect=nw/nh; camera.updateProjectionMatrix(); renderer.setSize(nw,nh);
+      });
+    })();
+  </script>
+</body>
+</html>

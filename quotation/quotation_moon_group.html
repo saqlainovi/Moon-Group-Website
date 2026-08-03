@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quotation — Moon Group Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @page {
+      size: A4;
+      margin: 18mm 20mm;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #222;
+      background: #fff;
+      font-size: 13px;
+      line-height: 1.7;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 40px 30px;
+    }
+
+    @media print {
+      .container {
+        padding: 0;
+      }
+
+      .no-print {
+        display: none !important;
+      }
+
+      .page-break {
+        page-break-before: always;
+      }
+    }
+
+    /* Header */
+    .doc-header {
+      text-align: center;
+      padding-bottom: 25px;
+      border-bottom: 3px solid #1a1a2e;
+      margin-bottom: 30px;
+    }
+
+    .doc-header h1 {
+      font-size: 26px;
+      font-weight: 800;
+      color: #1a1a2e;
+      margin-bottom: 4px;
+    }
+
+    .doc-header p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* Info table */
+    .info-table {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .info-table td {
+      padding: 6px 0;
+      font-size: 13px;
+    }
+
+    .info-table .label {
+      font-weight: 600;
+      color: #555;
+      width: 160px;
+    }
+
+    .info-table .value {
+      color: #222;
+    }
+
+    /* Section title */
+    .section-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin: 30px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #c9a84c;
+    }
+
+    /* Tables */
+    table.main-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 25px;
+    }
+
+    table.main-table thead th {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    table.main-table thead th:first-child {
+      width: 40px;
+      text-align: center;
+    }
+
+    table.main-table tbody td {
+      padding: 9px 14px;
+      border-bottom: 1px solid #e5e5e5;
+      font-size: 12.5px;
+    }
+
+    table.main-table tbody tr:nth-child(even) {
+      background: #faf8f4;
+    }
+
+    table.main-table tbody td:first-child {
+      text-align: center;
+      font-weight: 600;
+      color: #999;
+    }
+
+    .feat-name {
+      font-weight: 600;
+      color: #1a1a2e;
+    }
+
+    /* Price box */
+    .price-box {
+      background: #1a1a2e;
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+      border-radius: 10px;
+      margin: 20px 0 25px;
+    }
+
+    .price-box .label {
+      font-size: 13px;
+      color: #b0a898;
+      margin-bottom: 5px;
+    }
+
+    .price-box .amount {
+      font-size: 36px;
+      font-weight: 800;
+      color: #c9a84c;
+    }
+
+    .price-box .amount small {
+      font-size: 14px;
+      font-weight: 400;
+      color: #b0a898;
+    }
+
+    .price-box .note {
+      font-size: 11px;
+      color: #888;
+      margin-top: 6px;
+    }
+
+    /* Payment table */
+    table.payment-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 25px;
+    }
+
+    table.payment-table th {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 12px;
+    }
+
+    table.payment-table td {
+      padding: 12px 14px;
+      border-bottom: 1px solid #e5e5e5;
+      font-size: 13px;
+    }
+
+    table.payment-table .total-row td {
+      background: #f5f0e5;
+      font-weight: 700;
+      font-size: 14px;
+      color: #1a1a2e;
+    }
+
+    .amount-col {
+      text-align: right;
+      font-weight: 600;
+    }
+
+    /* Notes */
+    .note-box {
+      background: #faf8f4;
+      border: 1px solid #e5e0d5;
+      border-left: 4px solid #c9a84c;
+      padding: 14px 18px;
+      margin: 15px 0;
+      border-radius: 4px;
+      font-size: 12px;
+      color: #555;
+    }
+
+    .note-box strong {
+      color: #1a1a2e;
+    }
+
+    /* Signature */
+    .sig-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin: 30px 0;
+    }
+
+    .sig-box {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .sig-box h4 {
+      font-size: 12px;
+      color: #1a1a2e;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .sig-line {
+      padding: 10px 0;
+      border-bottom: 1px dotted #bbb;
+      font-size: 12px;
+      color: #777;
+    }
+
+    /* Footer */
+    .doc-footer {
+      text-align: center;
+      margin-top: 35px;
+      padding-top: 15px;
+      border-top: 2px solid #1a1a2e;
+      font-size: 11px;
+      color: #999;
+    }
+
+    /* Demo link */
+    .demo-link {
+      display: inline-block;
+      background: #c9a84c;
+      color: #fff;
+      padding: 8px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    /* Print button */
+    .print-btn {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #1a1a2e;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+      z-index: 100;
+    }
+
+    .print-btn:hover {
+      background: #c9a84c;
+    }
+
+    /* Terms list */
+    .terms-list {
+      list-style: decimal;
+      padding-left: 20px;
+      margin: 10px 0;
+    }
+
+    .terms-list li {
+      padding: 5px 0;
+      font-size: 12px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button class="print-btn no-print" onclick="window.print()">🖨️ Print / Save PDF</button>
+
+  <div class="container">
+
+    <!-- ===== HEADER ===== -->
+    <div class="doc-header">
+      <h1>QUOTATION</h1>
+      <p>Website Design, Development & Deployment</p>
+    </div>
+
+    <!-- ===== PROJECT INFO ===== -->
+    <table class="info-table">
+      <tr>
+        <td class="label">Client:</td>
+        <td class="value"><strong>Moon Group of Industries Ltd.</strong></td>
+      </tr>
+      <tr>
+        <td class="label">Prepared By:</td>
+        <td class="value"><strong>ovisoft</strong></td>
+      </tr>
+      <tr>
+        <td class="label">Project:</td>
+        <td class="value">Corporate Website & Web Application</td>
+      </tr>
+      <tr>
+        <td class="label">Reference No:</td>
+        <td class="value">MG-WEB-2026-001</td>
+      </tr>
+      <tr>
+        <td class="label">Date:</td>
+        <td class="value">July 05, 2026</td>
+      </tr>
+      <tr>
+        <td class="label">Valid Until:</td>
+        <td class="value">August 05, 2026</td>
+      </tr>
+      <tr>
+        <td class="label">Live Demo:</td>
+        <td class="value"><a href="https://moon-group-website.web.app" target="_blank" class="demo-link">🌐
+            moon-group-website.web.app</a></td>
+      </tr>
+    </table>
+
+    <!-- ===== DELIVERABLES ===== -->
+    <h2 class="section-title">কাজের বিবরণ (Scope of Work)</h2>
+
+    <table class="main-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Item</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td class="feat-name">Website Design (UI/UX)</td>
+          <td>Premium Dark ও Light থিম সহ ফুল ডিজাইন, অ্যানিমেশন ও রেসপন্সিভ লেআউট (Mobile + Desktop)</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="feat-name">Hero Section</td>
+          <td>Full-screen ইমেজ স্লাইডার, প্রপার্টি সার্চ ফিল্টার, CTA বাটন</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td class="feat-name">Property Showcase</td>
+          <td>সকল প্রজেক্টের গ্রিড গ্যালারি, ফিল্টারিং (Residential / Commercial), ডিটেইল পেজ</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td class="feat-name">About Us Page</td>
+          <td>কোম্পানির ইতিহাস, ফাউন্ডার প্রোফাইল, মাইলস্টোন স্ট্যাটিস্টিক্স</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td class="feat-name">Group Concerns Page</td>
+          <td>৮+ সিস্টার কনসার্নের শোকেস (Real Estate, Construction, Garments, Hotel ইত্যাদি)</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td class="feat-name">Virtual Blueprint Planner</td>
+          <td>ইন্টারঅ্যাক্টিভ 2D ফ্লোর প্ল্যান — ভিজিটররা রুম সিলেক্ট করে স্পেসিফিকেশন দেখতে পারবে</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td class="feat-name">Visit Booking System</td>
+          <td>সাইট ভিজিটের জন্য অনলাইন বুকিং ফর্ম (তারিখ, সময়, প্রপার্টি সিলেক্ট)</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td class="feat-name">AI Support Chat</td>
+          <td>Gemini AI চ্যাটবট — ভিজিটরদের প্রশ্নের উত্তর দেবে অটোমেটিক্যালি</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td class="feat-name">Land Partnership Portal</td>
+          <td>জমির মালিকদের জন্য জয়েন্ট ভেঞ্চার প্রস্তাব সাবমিশন ফর্ম</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td class="feat-name">Construction Status</td>
+          <td>চলমান প্রজেক্টের নির্মাণ অগ্রগতি ট্র্যাকিং পেজ</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td class="feat-name">NRB Investment Page</td>
+          <td>প্রবাসী বিনিয়োগকারীদের জন্য বিশেষ পেজ</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td class="feat-name">Referral Program</td>
+          <td>রেফারেল কমিশন প্রোগ্রামের তথ্য পেজ</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td class="feat-name">Contact Us Page</td>
+          <td>কন্ট্যাক্ট ফর্ম, ঠিকানা, ম্যাপ,ホットライン</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td class="feat-name">Customer Testimonials</td>
+          <td>ক্লায়েন্ট রিভিউ স্লাইডার</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td class="feat-name">Admin CMS Dashboard</td>
+          <td>ওয়েবসাইটের সব কনটেন্ট ম্যানেজ করার অ্যাডমিন প্যানেল (Add/Edit/Delete Property, Slides, About ইত্যাদি)
+          </td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td class="feat-name">Database Setup</td>
+          <td>Firebase Cloud Firestore ডাটাবেজ — বুকিং, পার্টনারশিপ, প্রপার্টি ডাটা সংরক্ষণ</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td class="feat-name">Domain Purchase</td>
+          <td>কাস্টম ডোমেইন <strong>moongroupofind.ltd</strong> কিনে কানেক্ট করে দেওয়া হবে</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td class="feat-name">Hosting & Deployment</td>
+          <td>Firebase Hosting-এ লাইভ ডেপ্লয়মেন্ট (SSL সার্টিফিকেট + CDN সহ)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ===== PRICING ===== -->
+    <h2 class="section-title">মোট খরচ (Total Cost)</h2>
+
+    <div class="price-box">
+      <div class="label">সর্বমোট প্রজেক্ট খরচ</div>
+      <div class="amount">৳ 90,000 <small>BDT</small></div>
+      <div class="note">ডোমেইন (moongroupofind.ltd) ক্রয় + Firebase হোস্টিং + সম্পূর্ণ ওয়েবসাইট ডেভেলপমেন্ট সহ</div>
+    </div>
+
+    <!-- ===== PAYMENT ===== -->
+    <h2 class="section-title">পেমেন্ট পদ্ধতি (Payment Schedule)</h2>
+
+    <table class="payment-table">
+      <thead>
+        <tr>
+          <th>কিস্তি</th>
+          <th>কখন দিতে হবে</th>
+          <th class="amount-col">পরিমাণ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>১ম কিস্তি</strong></td>
+          <td>চুক্তি স্বাক্ষর ও কাজ শুরুর সময়</td>
+          <td class="amount-col">৳ 45,000</td>
+        </tr>
+        <tr>
+          <td><strong>২য় কিস্তি</strong></td>
+          <td>ফাইনাল ডেলিভারি ও লাইভ ডেপ্লয়মেন্টের পর</td>
+          <td class="amount-col">৳ 45,000</td>
+        </tr>
+        <tr class="total-row">
+          <td colspan="2"><strong>সর্বমোট</strong></td>
+          <td class="amount-col"><strong>৳ 90,000</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note-box">
+      <strong>💳 পেমেন্ট মাধ্যম:</strong> ব্যাংক ট্রান্সফার, bKash, বা Nagad — প্রতিটি পেমেন্টের রশিদ দেওয়া হবে।
+    </div>
+
+    <!-- ===== WHAT'S INCLUDED ===== -->
+    <h2 class="section-title">এই খরচের মধ্যে যা যা অন্তর্ভুক্ত</h2>
+
+    <table class="main-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>বিষয়</th>
+          <th>বিবরণ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>✅</td>
+          <td class="feat-name">সম্পূর্ণ ওয়েবসাইট</td>
+          <td>উপরে উল্লেখিত ১৮টি আইটেমের সবকিছু</td>
+        </tr>
+        <tr>
+          <td>✅</td>
+          <td class="feat-name">ডোমেইন ক্রয়</td>
+          <td>moongroupofind.ltd ডোমেইন কিনে কানেক্ট করে দেওয়া হবে</td>
+        </tr>
+        <tr>
+          <td>✅</td>
+          <td class="feat-name">হোস্টিং</td>
+          <td>Firebase Hosting — SSL Certificate + CDN সহ</td>
+        </tr>
+        <tr>
+          <td>✅</td>
+          <td class="feat-name">সোর্স কোড</td>
+          <td>পূর্ণ পেমেন্টের পর সোর্স কোডের মালিকানা ক্লায়েন্টকে দেওয়া হবে</td>
+        </tr>
+        <tr>
+          <td>✅</td>
+          <td class="feat-name">ফ্রি সাপোর্ট</td>
+          <td>ডেলিভারির পর ৩ মাস ফ্রি বাগ ফিক্স ও ছোটখাটো আপডেট</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ===== TIMELINE ===== -->
+    <div class="page-break"></div>
+    <h2 class="section-title">সময়সীমা (Timeline)</h2>
+
+    <div class="note-box">
+      <strong>📅 চুক্তি ও ১ম কিস্তি পাওয়ার পর ২৫ কার্যদিবসের মধ্যে সম্পূর্ণ প্রজেক্ট ডেলিভারি ও লাইভ ডেপ্লয়মেন্ট করা
+        হবে।</strong>
+      ক্লায়েন্টের কাছ থেকে সময়মতো কনটেন্ট (ছবি, টেক্সট, প্রজেক্ট তথ্য) পেলে নির্ধারিত সময়ে কাজ শেষ হবে।
+    </div>
+
+    <!-- ===== TERMS ===== -->
+    <h2 class="section-title">শর্তাবলি</h2>
+
+    <ol class="terms-list">
+      <li>এই কোটেশনটি ইস্যুর তারিখ থেকে <strong>৩০ দিন</strong> পর্যন্ত কার্যকর।</li>
+      <li>ক্লায়েন্ট প্রয়োজনীয় কনটেন্ট (টেক্সট, ছবি, লোগো) নির্ধারিত সময়ে সরবরাহ করবেন।</li>
+      <li>কাজ শুরুর পর স্কোপে কোনো পরিবর্তন হলে সময় ও খরচ পরিবর্তন হতে পারে।</li>
+      <li>পূর্ণ পেমেন্টের পর সোর্স কোডের মালিকানা ক্লায়েন্টের কাছে হস্তান্তর হবে।</li>
+    </ol>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="doc-footer">
+      <p><strong>ধন্যবাদ। আমরা Moon Group of Industries Ltd. এর সাথে কাজ করতে আগ্রহী।</strong></p>
+      <p style="margin-top:5px;">Ref: MG-WEB-2026-001 | Prepared By: ovisoft | Date: July 05, 2026</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

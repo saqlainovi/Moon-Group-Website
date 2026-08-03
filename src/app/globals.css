@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --moon-gold: #c9a962;
+  --moon-navy: #0a1628;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--moon-navy);
+  color: #f5f0e8;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--moon-gold);
+  color: var(--moon-navy);
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-moon-gold-light via-moon-gold to-moon-gold-light bg-clip-text text-transparent;
+  }
+
+  .image-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-moon-navy via-moon-navy/40 to-transparent;
+  }
+
+  .glass-nav {
+    @apply backdrop-blur-xl bg-moon-navy/80 border-b border-white/5;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a1628;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c9a962;
+  border-radius: 3px;
+}
