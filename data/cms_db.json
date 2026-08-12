@@ -1,0 +1,1158 @@
+{
+  "siteSettings": {
+    "id": "main",
+    "tickerText": "📢 বিশেষ বিজ্ঞপ্তি: হেভেন টাওয়ার (HEAVEN TOWER) উদ্বোধন হয়েছে - বুকিং ও সেল চলছে! 🏢 ✦ 🔥 HEAVEN TOWER INAUGURATED - BOOKING & SALES NOW OPEN! ✦ REAL ESTATE ✦ HOUSING ✦ CONSTRUCTION ✦ INTERIORS ✦ COMMERCIAL SPACES ✦ SINCE 1983 ✦",
+    "hotlinePhone": "+88 02 9009153",
+    "whatsappPhone": "+8801313401405",
+    "emailAddress": "moongroupofindustrylimited@gmail.com",
+    "headOffice": "Mizan Tower, Mirpur Road, Kallyanpur, Dhaka-1207",
+    "facebookLink": "https://facebook.com",
+    "linkedinLink": "https://linkedin.com",
+    "twitterLink": "https://twitter.com",
+    "instagramLink": "https://instagram.com",
+    "youtubeLink": "https://youtube.com",
+    "brandName": "MOON GROUP OF INDUSTRIES LTD",
+    "tagline": "Building Bangladesh's homes and premium skylines since 1983.",
+    "rehabRegNo": "Member 228/2005",
+    "rajukCodeNo": "Code # DL-3215",
+    "telephoneNumbers": "0241002945, 0241002946, 0241002947, 0241002948, 0241002949, 0241000182",
+    "copyrightText": "© 2026 Moon Builders — Moon Group of Industries. All rights reserved.",
+    "showVirtualConfigurator": true,
+    "showHavenTowerBanner": true,
+    "havenTowerBannerImage": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+    "havenTowerTitle": "HEAVEN TOWER by Moon Group",
+    "havenTowerDescription": "📢 হেভেন টাওয়ার (HEAVEN TOWER) এর উদ্বোধন সম্পন্ন হয়েছে - বর্তমানে বুকিং এবং সেল চলছে! আকর্ষণীয় আর্কিটেকচার, ডাবল-হাইট এট্রিয়াম লবি, রুফটপ ইনফিনিটি পুল এবং Zone-4 ভূমিকম্প প্রতিরোধী স্ট্রাকচার বিশিষ্ট মুন গ্রুপের ফ্ল্যাগশিপ প্রজেক্ট।",
+    "tickerSpeed": 28
+  },
+  "properties": [
+    {
+      "id": "haven-tower",
+      "title": "Heaven Tower",
+      "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD"
+    },
+    {
+      "id": "mizan-tower-kallyanpur",
+      "area": "Kallyanpur, Dhaka",
+      "beds": 3,
+      "type": "residential",
+      "baths": 3,
+      "title": "Mizan Tower (মিজান টাওয়ার)",
+      "status": "ongoing",
+      "gallery": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop"
+      ],
+      "features": [
+        "১৪ তলা বিশিষ্ট আধুনিক ও নান্দনিক স্ট্রাকচার",
+        "কল্যানপুর বাস স্ট্যান্ড ও মেট্রো স্টেশন সংলগ্ন প্রাইম লোকেশন",
+        "২৪/৭ সিসিটিভি ক্যামেরা সিকিউরিটি ও ব্যাকআপ জেনারেটর",
+        "উন্নত মানের লিফ্ট ও অগ্নি নির্বাপক ব্যবস্থা"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800&auto=format&fit=crop",
+      "location": "Kallyanpur, Dhaka (কল্যানপুর, ঢাকা)",
+      "amenities": [
+        {
+          "icon": "Shield",
+          "name": "24/7 Security"
+        },
+        {
+          "icon": "Zap",
+          "name": "Power Backup"
+        },
+        {
+          "icon": "Car",
+          "name": "Basement Parking"
+        }
+      ],
+      "sizeRange": "1,650 - 2,800 Sft",
+      "priceRange": "Tk 1.2 - 2.8 Crore",
+      "description": "মিজান টাওয়ার, কল্যানপুর - ১৪ তলা বিশিষ্ট আধুনিক আভিজাত্যের আবাসিক ও বাণিজ্যিক বহুতল ভবন। উন্নত সিকিউরিটি, প্রাইম লোকেশন ও মনোরম জীবনযাত্রার সব আধুনিক সুযোগ-সুবিধা সম্বলিত প্রজেক্ট।",
+      "floorsCount": 14,
+      "floorLayouts": [
+        {
+          "rooms": [
+            {
+              "h": 40,
+              "w": 45,
+              "x": 5,
+              "y": 5,
+              "name": "Drawing & Dining",
+              "type": "living"
+            },
+            {
+              "h": 35,
+              "w": 35,
+              "x": 55,
+              "y": 5,
+              "name": "Master Bed",
+              "type": "bed"
+            },
+            {
+              "h": 30,
+              "w": 35,
+              "x": 55,
+              "y": 45,
+              "name": "Bedroom 2",
+              "type": "bed"
+            },
+            {
+              "h": 35,
+              "w": 25,
+              "x": 5,
+              "y": 50,
+              "name": "Kitchen",
+              "type": "kitchen"
+            },
+            {
+              "h": 35,
+              "w": 18,
+              "x": 32,
+              "y": 50,
+              "name": "Front Balcony",
+              "type": "balcony"
+            }
+          ],
+          "imageUrl": "https://lh3.googleusercontent.com/d/1HfsvkjF_R57oo_rlVDG0lCzB4uSCvJtN",
+          "sizeSqft": 1850,
+          "levelName": "Typical Floor Unit A - 1,850 Sft"
+        },
+        {
+          "rooms": [
+            {
+              "h": 45,
+              "w": 50,
+              "x": 5,
+              "y": 5,
+              "name": "Spacious Living Lounge",
+              "type": "living"
+            },
+            {
+              "h": 35,
+              "w": 35,
+              "x": 60,
+              "y": 5,
+              "name": "Master Suite",
+              "type": "bed"
+            },
+            {
+              "h": 35,
+              "w": 30,
+              "x": 5,
+              "y": 55,
+              "name": "Modern Kitchen",
+              "type": "kitchen"
+            },
+            {
+              "h": 35,
+              "w": 20,
+              "x": 40,
+              "y": 55,
+              "name": "Veranda",
+              "type": "balcony"
+            }
+          ],
+          "imageUrl": "https://lh3.googleusercontent.com/d/18WMuVx9H2CWyO2ZlW5N9vbIGt70cG73S",
+          "sizeSqft": 2200,
+          "levelName": "Executive Suite Unit B - 2,200 Sft"
+        }
+      ]
+    },
+    {
+      "id": "sunmoon-star-plaza",
+      "area": "Kallyanpur, Dhaka",
+      "type": "commercial",
+      "title": "Sunmoon Star Plaza (সানমুন স্টার প্লাজা)",
+      "status": "ongoing",
+      "gallery": [
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop"
+      ],
+      "features": [
+        "২২ তলা বিশিষ্ট আইকনিক কমার্শিয়াল আর্কিটেকচার",
+        "ক্যাপসুল লিফট, ডাবল হাইট গ্র্যান্ড এন্ট্রি ও আধুনিক সেন্ট্রাল এসি ব্যবস্থা",
+        "মাল্টি-লেভেল অটোমেটেড কার পার্কিং"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
+      "location": "Kallyanpur, Dhaka (কল্যানপুর, ঢাকা)",
+      "amenities": [
+        {
+          "icon": "Award",
+          "name": "Grade-A Business Center"
+        },
+        {
+          "icon": "Cpu",
+          "name": "High Speed Elevators"
+        },
+        {
+          "icon": "Shield",
+          "name": "Smart Security"
+        }
+      ],
+      "sizeRange": "2,500 - 8,000 Sft",
+      "priceRange": "Price on Request",
+      "description": "সানমুন স্টার প্লাজা, কল্যানপুর - ২২ তলা বাণিজ্যিক টাওয়ার। কর্পোরেট অফিস, শোরুম ও ব্যাংক হেডকোয়ার্টারের জন্য নির্ধারিত আধুনিক গ্লাস ফেসাড ও আইকনিক আর্কিটেকচার।",
+      "floorsCount": 22,
+      "floorLayouts": [
+        {
+          "rooms": [
+            {
+              "h": 50,
+              "w": 60,
+              "x": 5,
+              "y": 5,
+              "name": "Open Office Space",
+              "type": "living"
+            },
+            {
+              "h": 25,
+              "w": 25,
+              "x": 70,
+              "y": 5,
+              "name": "Executive Cabin",
+              "type": "bed"
+            },
+            {
+              "h": 30,
+              "w": 25,
+              "x": 70,
+              "y": 35,
+              "name": "Conference Room",
+              "type": "corridor"
+            },
+            {
+              "h": 30,
+              "w": 30,
+              "x": 5,
+              "y": 60,
+              "name": "Pantry & Washrooms",
+              "type": "kitchen"
+            }
+          ],
+          "imageUrl": "https://lh3.googleusercontent.com/d/1Hf0dC0-dzgk4r5yLOvfhJc3ZbD3MyXtN",
+          "sizeSqft": 4500,
+          "levelName": "Commercial Office Floor Plan - 4,500 Sft"
+        }
+      ]
+    },
+    {
+      "id": "razia-tower-kallyanpur",
+      "area": "Kallyanpur, Dhaka",
+      "type": "commercial",
+      "title": "Razia Tower (রাজিয়া টাওয়ার)",
+      "status": "ongoing",
+      "gallery": [
+        "https://images.unsplash.com/photo-1577495508048-b635879837f1?q=80&w=800&auto=format&fit=crop"
+      ],
+      "features": [
+        "২০ তলা বিশিষ্ট হাই-রাইজ কমার্শিয়াল টাওয়ার",
+        "উন্নত সেন্ট্রাল বিল্ডিং ম্যানেজমেন্ট সিস্টেম (BMS)",
+        "ডিজিটাল ক্যাফেটেরিয়া ও ফায়ার সেফটি ব্যবস্থা"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1577495508048-b635879837f1?q=80&w=800&auto=format&fit=crop",
+      "location": "Kallyanpur, Dhaka (কল্যানপুর, ঢাকা)",
+      "amenities": [
+        {
+          "icon": "Coffee",
+          "name": "Cafeteria & Lounge"
+        },
+        {
+          "icon": "Zap",
+          "name": "100% Generator Backup"
+        }
+      ],
+      "sizeRange": "2,000 - 6,500 Sft",
+      "priceRange": "Price on Request",
+      "description": "রাজিয়া টাওয়ার, কল্যানপুর - ২০ তলা বাণিজ্যিক ভবন। ব্যবসায়িক প্রসার ও কর্পোরেট হেডকোয়ার্টারের জন্য প্রস্তুতকৃত আধুনিক বাণিজ্যিক কেন্দ্র।",
+      "floorsCount": 20,
+      "floorLayouts": [
+        {
+          "rooms": [
+            {
+              "h": 55,
+              "w": 55,
+              "x": 5,
+              "y": 5,
+              "name": "Corporate Workstation Zone",
+              "type": "living"
+            },
+            {
+              "h": 30,
+              "w": 30,
+              "x": 65,
+              "y": 5,
+              "name": "Director Suite",
+              "type": "bed"
+            },
+            {
+              "h": 25,
+              "w": 30,
+              "x": 65,
+              "y": 40,
+              "name": "Meeting Lounge",
+              "type": "corridor"
+            }
+          ],
+          "imageUrl": "https://lh3.googleusercontent.com/d/1JLtIalfp49hPq57qAKKE-4Ezraaw7asU",
+          "sizeSqft": 3800,
+          "levelName": "Corporate Office Level Plan - 3,800 Sft"
+        }
+      ]
+    },
+    {
+      "id": "madina-mansion-1",
+      "area": "Mirpur, Dhaka",
+      "beds": 3,
+      "type": "residential",
+      "baths": 3,
+      "title": "Madina Mansion 1 (মদিনা ম্যানশন ১)",
+      "status": "completed",
+      "gallery": [
+        "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop"
+      ],
+      "features": [
+        "৭ তলা সুপরিকল্পিত আবাসিক ভবন",
+        "আলোকোজ্জ্বল ও বায়ু চলাচলের উপযোগী রুম লেআউট",
+        "ইন্টারকম ও সিসিটিভি সুবিধা"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop",
+      "location": "Paikpara, Mirpur, Dhaka (পাইকপাড়া, ঢাকা)",
+      "amenities": [
+        {
+          "icon": "Shield",
+          "name": "24/7 Security"
+        },
+        {
+          "icon": "Smile",
+          "name": "Family Environment"
+        }
+      ],
+      "sizeRange": "1,400 - 2,200 Sft",
+      "priceRange": "Completed Project",
+      "description": "মদিনা ম্যানশন (১), ৭ তলা, পাইকপাড়া - শান্ত ও সুন্দর পরিবেশে নিষ্কণ্টক জায়গায় নির্মিত মুন গ্রুপের সফল হ্যান্ডওভারকৃত ৭ তলা আবাসিক অ্যাপার্টমেন্ট।",
+      "floorsCount": 7,
+      "floorLayouts": [
+        {
+          "rooms": [
+            {
+              "h": 40,
+              "w": 40,
+              "x": 5,
+              "y": 5,
+              "name": "Drawing & Dining Room",
+              "type": "living"
+            },
+            {
+              "h": 35,
+              "w": 40,
+              "x": 50,
+              "y": 5,
+              "name": "Master Bed",
+              "type": "bed"
+            },
+            {
+              "h": 35,
+              "w": 25,
+              "x": 5,
+              "y": 50,
+              "name": "Kitchen",
+              "type": "kitchen"
+            },
+            {
+              "h": 35,
+              "w": 20,
+              "x": 35,
+              "y": 50,
+              "name": "Balcony",
+              "type": "balcony"
+            }
+          ],
+          "imageUrl": "https://lh3.googleusercontent.com/d/1JG0sjCKULHmz4JpmfwfFs6tZc2Wl-Hjt",
+          "sizeSqft": 1650,
+          "levelName": "Completed Apartment Layout - 1,650 Sft"
+        }
+      ]
+    },
+    {
+      "id": "hamida-villa",
+      "area": "Mirpur, Dhaka",
+      "beds": 3,
+      "type": "residential",
+      "baths": 3,
+      "title": "Hamida Villa (হামিদা ভילה)",
+      "status": "completed",
+      "gallery": [
+        "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=800&auto=format&fit=crop"
+      ],
+      "features": [
+        "৭ তলা সফলভাবে হস্তান্তরিত অ্যাপার্টমেন্ট",
+        "নিজস্ব ডিপ টিউবওয়েল ও ওয়াটার ফিল্ট্রেশন",
+        "নিরাপদ পার্কিং ও সুপ্রশস্ত ড্রাইভওয়ে"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=800&auto=format&fit=crop",
+      "location": "Paikpara, Mirpur, Dhaka (পাইকপাড়া, ঢাকা)",
+      "amenities": [
+        {
+          "icon": "Car",
+          "name": "Protected Parking"
+        },
+        {
+          "icon": "Zap",
+          "name": "Auto Generator"
+        }
+      ],
+      "sizeRange": "1,500 - 2,400 Sft",
+      "priceRange": "Completed Project",
+      "description": "হামিদা ভילה, ৭ তলা, পাইকপাড়া - পাইকপাড়ার প্রাইম লোকেশনে ৭ তলা বিশিষ্ট আবাসিক ভিলা। সুপরিসর অ্যাপার্টমেন্ট ও আধুনিক ফিটিংসসহ শতভাগ প্রস্তুত।",
+      "floorsCount": 7,
+      "floorLayouts": [
+        {
+          "rooms": [
+            {
+              "h": 40,
+              "w": 45,
+              "x": 5,
+              "y": 5,
+              "name": "Living Space",
+              "type": "living"
+            },
+            {
+              "h": 35,
+              "w": 35,
+              "x": 55,
+              "y": 5,
+              "name": "Master Bedroom",
+              "type": "bed"
+            },
+            {
+              "h": 35,
+              "w": 30,
+              "x": 5,
+              "y": 50,
+              "name": "Kitchen & Pantry",
+              "type": "kitchen"
+            }
+          ],
+          "imageUrl": "https://lh3.googleusercontent.com/d/1MzBr64Y8DJJNG2q_tKa1R-b3ol3rGdgD",
+          "sizeSqft": 1800,
+          "levelName": "Hamida Villa Floor Plan - 1,800 Sft"
+        }
+      ]
+    },
+    {
+      "id": "mizan-tower-2",
+      "area": "Amin Bazar, Dhaka",
+      "beds": 3,
+      "type": "residential",
+      "baths": 3,
+      "title": "Mizan Tower 2 (মিজান টাওয়ার ২)",
+      "status": "ongoing",
+      "gallery": [
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop"
+      ],
+      "features": [
+        "৭ তলা ভূমিকম্প প্রতিরোধী স্ট্রাকচার",
+        "সহজ কিস্তিতে ক্রয়ের আকর্ষণীয় সুযোগ",
+        "খোলামেলা মনোরম পরিবেশ"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop",
+      "location": "Amin Bazar, Dhaka (আমিন বাজার, ঢাকা)",
+      "amenities": [
+        {
+          "icon": "Shield",
+          "name": "Gated Security"
+        },
+        {
+          "icon": "Zap",
+          "name": "Standby Generator"
+        }
+      ],
+      "sizeRange": "1,250 - 2,100 Sft",
+      "priceRange": "Tk 45 - 85 Lakh",
+      "description": "মিজান টাওয়ার (২), ৭ তলা, আমিন বাজার - গাবতলী ও আমিন বাজার ব্রিজের অদূরে ৭ তলা বিশিষ্ট আধুনিক নির্মাণাধীন আবাসিক প্রজেক্ট।",
+      "floorsCount": 7,
+      "floorLayouts": [
+        {
+          "rooms": [
+            {
+              "h": 40,
+              "w": 40,
+              "x": 5,
+              "y": 5,
+              "name": "Drawing & Dining",
+              "type": "living"
+            },
+            {
+              "h": 35,
+              "w": 40,
+              "x": 50,
+              "y": 5,
+              "name": "Master Bed",
+              "type": "bed"
+            },
+            {
+              "h": 35,
+              "w": 25,
+              "x": 5,
+              "y": 50,
+              "name": "Kitchen",
+              "type": "kitchen"
+            }
+          ],
+          "imageUrl": "https://lh3.googleusercontent.com/d/1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6c",
+          "sizeSqft": 1550,
+          "levelName": "Mizan Tower 2 Floor Plan - 1,550 Sft"
+        }
+      ]
+    },
+    {
+      "id": "al-mizan-city",
+      "area": "Amin Bazar, Dhaka",
+      "type": "residential",
+      "title": "Al Mizan City (আল মিজান সিটি - প্রস্তাবিত ১০ বিঘা প্রজেক্ট)",
+      "status": "upcoming",
+      "gallery": [
+        "https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?q=80&w=800&auto=format&fit=crop"
+      ],
+      "features": [
+        "১০ বিঘা বিশাল ভূমির উপর পরিকল্পিত স্যাটেলাইট সিটি",
+        "নিজস্ব স্কুল, মসজিদ, পার্ক, প্লেগ্রাউন্ড ও শপিং সেন্টার",
+        "প্রশস্ত মেম্বেন রোড ও পরিবেশবান্ধব লেকসাইড ভিউ"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?q=80&w=800&auto=format&fit=crop",
+      "landArea": "10 Bigha (৩.৩ একর)",
+      "location": "Amin Bazar, Dhaka (আমিন বাজার, ঢাকা)",
+      "amenities": [
+        {
+          "icon": "Compass",
+          "name": "10 Bigha Mega Project"
+        },
+        {
+          "icon": "Leaf",
+          "name": "Green Park & Lake"
+        },
+        {
+          "icon": "Smile",
+          "name": "Playground & School"
+        }
+      ],
+      "sizeRange": "Proposed 10 Bigha Township",
+      "priceRange": "Price on Request",
+      "description": "আল মিজান সিটি প্রস্তাবিত ১০ বিঘা প্রজেক্ট, আমিন বাজার - ঢাকার প্রবেশদ্বারে ১০ বিঘা জমির উপর প্রস্তাবিত মেগা মডেল টাউন ও গ্রীন টাউনশিপ প্রজেক্ট।",
+      "floorsCount": 15,
+      "floorLayouts": [
+        {
+          "rooms": [
+            {
+              "h": 50,
+              "w": 50,
+              "x": 5,
+              "y": 5,
+              "name": "Residential Zone",
+              "type": "living"
+            },
+            {
+              "h": 35,
+              "w": 35,
+              "x": 60,
+              "y": 5,
+              "name": "Commercial Hub",
+              "type": "corridor"
+            },
+            {
+              "h": 30,
+              "w": 90,
+              "x": 5,
+              "y": 60,
+              "name": "Central Lake & Park",
+              "type": "balcony"
+            }
+          ],
+          "imageUrl": "https://lh3.googleusercontent.com/d/1HfsvkjF_R57oo_rlVDG0lCzB4uSCvJtN",
+          "sizeSqft": 12000,
+          "levelName": "Master Masterplan Layout - 10 Bigha Township"
+        }
+      ]
+    },
+    {
+      "id": "madina-mansion-2",
+      "area": "Gulshan 2, Dhaka",
+      "beds": 4,
+      "type": "residential",
+      "baths": 4,
+      "title": "Madina Mansion 2 (মদিনা ম্যানশন ২)",
+      "status": "completed",
+      "gallery": [
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop"
+      ],
+      "features": [
+        "৭ তলা অভিজাত আল্ট্রা লাক্সারি রেসিডেন্সিয়াল ভবন",
+        "ইতালিয়ান মার্বেল ফ্লোরিং ও সেন্ট্রাল এসি ডাক্টিং",
+        "ব্যক্তিগত কীকার্ড লিফট সার্ভিস"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop",
+      "location": "Gulshan 2, Dhaka (গুলশান ২, ঢাকা)",
+      "amenities": [
+        {
+          "icon": "Crown",
+          "name": "Gulshan 2 Prime Location"
+        },
+        {
+          "icon": "Shield",
+          "name": "Biometric Access Control"
+        }
+      ],
+      "sizeRange": "2,800 - 3,500 Sft",
+      "priceRange": "Completed Luxury Residence",
+      "description": "মদিনা ম্যানশন ২, ৭ তলা, গুলশান ২ - গুলশান ২ এর সর্বোচ্চ নিরাপত্তা বেষ্টিত ডিপ্লোম্যাটিক জোনের কাছে ৭ তলা লাক্সারি রেসিডেন্স।",
+      "floorsCount": 7,
+      "floorLayouts": [
+        {
+          "rooms": [
+            {
+              "h": 45,
+              "w": 50,
+              "x": 5,
+              "y": 5,
+              "name": "Grand Living Hall",
+              "type": "living"
+            },
+            {
+              "h": 35,
+              "w": 35,
+              "x": 60,
+              "y": 5,
+              "name": "Master Suite",
+              "type": "bed"
+            },
+            {
+              "h": 35,
+              "w": 30,
+              "x": 5,
+              "y": 55,
+              "name": "Kitchen & Island",
+              "type": "kitchen"
+            },
+            {
+              "h": 35,
+              "w": 20,
+              "x": 40,
+              "y": 55,
+              "name": "Veranda",
+              "type": "balcony"
+            }
+          ],
+          "imageUrl": "https://lh3.googleusercontent.com/d/18WMuVx9H2CWyO2ZlW5N9vbIGt70cG73S",
+          "sizeSqft": 3200,
+          "levelName": "Gulshan 2 Ultra-Luxury Floor Plan - 3,200 Sft"
+        }
+      ]
+    },
+    {
+      "id": "al-mizan-shopping-complex",
+      "area": "Barguna",
+      "type": "commercial",
+      "title": "Al Mizan Shopping Complex (আল মিজান শপিং কমপ্লেক্স)",
+      "status": "completed",
+      "gallery": [
+        "https://images.unsplash.com/photo-1555636222-cae831e670b3?q=80&w=800&auto=format&fit=crop"
+      ],
+      "features": [
+        "১০ তলা আধুনিক বরগুনা সেন্ট্রাল শপিং কমপ্লেক্স",
+        "ব্র্যান্ড শোরুম, ব্যাংক, এস্কেলেটর ও সেন্ট্রাল এসি সুবিধা",
+        "বিশাল শপিং এরিয়া ও ফুডকোর্ট"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1555636222-cae831e670b3?q=80&w=800&auto=format&fit=crop",
+      "location": "Barguna (বরগুনা)",
+      "amenities": [
+        {
+          "icon": "Award",
+          "name": "10-Story Shopping Mall"
+        },
+        {
+          "icon": "Car",
+          "name": "Spacious Mall Parking"
+        }
+      ],
+      "sizeRange": "10-Story Commercial Plaza",
+      "priceRange": "Completed Commercial Landmark",
+      "description": "আল মিজান শপিং কমপ্লেক্স ১০ তলা, বরগুনা - বরগুনা শহরের কেন্দ্রস্থলে অবস্থিত ১০ তলা বাণিজ্যিক কেনাকাটার কেন্দ্র ও কর্পোরেট প্লাজা।",
+      "floorsCount": 10,
+      "floorLayouts": [
+        {
+          "rooms": [
+            {
+              "h": 60,
+              "w": 60,
+              "x": 5,
+              "y": 5,
+              "name": "Central Atrium & Outlets",
+              "type": "living"
+            },
+            {
+              "h": 25,
+              "w": 25,
+              "x": 70,
+              "y": 5,
+              "name": "Escalator & Elevator Bank",
+              "type": "corridor"
+            }
+          ],
+          "imageUrl": "https://lh3.googleusercontent.com/d/1Hf0dC0-dzgk4r5yLOvfhJc3ZbD3MyXtN",
+          "sizeSqft": 6000,
+          "levelName": "Shopping Mall Floor Layout - Level 1 to 5"
+        }
+      ]
+    },
+    {
+      "id": "kuakata-resort",
+      "area": "Kuakata, Patuakhali",
+      "type": "commercial",
+      "title": "Kuakata Resort Project (৩০ বিঘা কুয়াকাটা রিসোর্ট প্রকল্প)",
+      "status": "upcoming",
+      "gallery": [
+        "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop"
+      ],
+      "features": [
+        "৩০ বিঘা জুড়ে বিস্তৃত বিশ্বমানের সমুদ্র সৈকত রিসোর্ট",
+        "প্রাইভেট বিচ এক্সেস, ওয়াটার স্পোর্টস ও প্রিমিয়াম ভিলা",
+        "ইনফিনিটি পুল, স্পা ও আন্তর্জাতিক কনভেনশন হল"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop",
+      "landArea": "30 Bigha",
+      "location": "Kuakata Beach, Patuakhali (কুয়াকাটা, পটুয়াখালী)",
+      "amenities": [
+        {
+          "icon": "Waves",
+          "name": "Beachfront Infinity Pool"
+        },
+        {
+          "icon": "Compass",
+          "name": "30 Bigha Ocean Resort"
+        }
+      ],
+      "sizeRange": "30 Bigha Beachfront Eco Resort",
+      "priceRange": "Upcoming Hospitality Venture",
+      "description": "৩০ বিঘা কুয়াকাটা রিসোর্ট প্রকল্প - সাগরকন্যা কুয়াকাটা সমুদ্র সৈকত সংলগ্ন ৩০ বিঘা আয়তনের ৫-স্টার ক্যাটাগরির আন্তর্জাতিক মানের ওয়াটার রিসোর্ট।",
+      "floorsCount": 8,
+      "floorLayouts": [
+        {
+          "rooms": [
+            {
+              "h": 45,
+              "w": 45,
+              "x": 5,
+              "y": 5,
+              "name": "Luxury Villas Zone",
+              "type": "living"
+            },
+            {
+              "h": 40,
+              "w": 40,
+              "x": 55,
+              "y": 5,
+              "name": "Infinity Pool & Spa",
+              "type": "balcony"
+            }
+          ],
+          "imageUrl": "https://lh3.googleusercontent.com/d/1JLtIalfp49hPq57qAKKE-4Ezraaw7asU",
+          "sizeSqft": 15000,
+          "levelName": "Resort Beachfront Master Layout - 30 Bigha"
+        }
+      ]
+    },
+    {
+      "id": "coxs-bazar-resort",
+      "area": "Cox's Bazar",
+      "type": "commercial",
+      "title": "Cox's Bazar Resort Project (২০ বিঘা কক্সবাজার রিসোর্ট প্রকল্প)",
+      "status": "upcoming",
+      "gallery": [
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=800&auto=format&fit=crop"
+      ],
+      "features": [
+        "মেরিন ড্রাইভ রোডে ২০ বিঘা প্রাইম ওশান ফ্রন্ট প্রপার্টি",
+        "হেলিপ্যাড, প্রাইভেট সি-ভিউ ব্যালকনি ও আন্তর্জাতিক শেফ রেস্টুরেন্ট",
+        "ব্যাংকুয়েট হল, সুইমিং পুল ও স্পা সেন্ট্রাল"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=800&auto=format&fit=crop",
+      "landArea": "20 Bigha",
+      "location": "Marine Drive, Cox's Bazar (কক্সবাজার)",
+      "amenities": [
+        {
+          "icon": "Waves",
+          "name": "Oceanfront Luxury Resort"
+        },
+        {
+          "icon": "Crown",
+          "name": "5-Star Hospitality"
+        }
+      ],
+      "sizeRange": "20 Bigha Oceanfront Luxury Resort",
+      "priceRange": "Upcoming Five-Star Destination",
+      "description": "কক্সবাজার ২০ বিঘা রিসোর্ট প্রকল্প - মেরিন ড্রাইভ রোড সংলগ্ন ২০ বিঘা জমির ওপর নির্মিতব্য ফাইভ স্টার রিসোর্ট ও লাক্সারি কটেজ প্রজেক্ট।",
+      "floorsCount": 12,
+      "floorLayouts": [
+        {
+          "rooms": [
+            {
+              "h": 45,
+              "w": 50,
+              "x": 5,
+              "y": 5,
+              "name": "Ocean View Suites",
+              "type": "living"
+            },
+            {
+              "h": 35,
+              "w": 90,
+              "x": 5,
+              "y": 55,
+              "name": "Beachfront Boardwalk",
+              "type": "balcony"
+            }
+          ],
+          "imageUrl": "https://lh3.googleusercontent.com/d/1JG0sjCKULHmz4JpmfwfFs6tZc2Wl-Hjt",
+          "sizeSqft": 12500,
+          "levelName": "Marine Drive Resort Masterplan - 20 Bigha"
+        }
+      ]
+    },
+    {
+      "id": "sunmoon-star-tower",
+      "area": "Motijheel C/A, Dhaka",
+      "type": "commercial",
+      "title": "Sunmoon Star Tower (সানমুন স্টার টাওয়ার, ৩৭ দিলকুশা)",
+      "status": "ongoing",
+      "gallery": [
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop"
+      ],
+      "features": [
+        "২৪ তলা বিশিষ্ট রাজকীয় মতিঝিল দিলকুশা কমার্শিয়াল টাওয়ার",
+        "হাই-স্পিড প্যাসেঞ্জার ও কার্গো ক্যাপসুল লিফট",
+        "মাল্টি-লেভেল বেসমেন্ট পার্কিং ও সর্বোচ্চ সিকিউরিটি"
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
+      "location": "37 Dilkusha, Motijheel, Dhaka (৩৭ দিলকুশা, মতিঝিল)",
+      "amenities": [
+        {
+          "icon": "Award",
+          "name": "24-Story Commercial Tower"
+        },
+        {
+          "icon": "Cpu",
+          "name": "Smart Building Automation"
+        },
+        {
+          "icon": "Zap",
+          "name": "Full Redundant Power"
+        }
+      ],
+      "sizeRange": "3,500 - 12,000 Sft",
+      "priceRange": "Price on Request",
+      "description": "সানমুন স্টার টাওয়ার, ৩৭ দিলকুশা, মতিঝিল ২৪ তলা - মতিঝিল বাণিজ্যিক এলাকার প্রানকেন্দ্রে ৩৭ দিলকুশায় ২৪ তলা আইকনিক কর্পোরেট টাওয়ার।",
+      "floorsCount": 24,
+      "floorLayouts": [
+        {
+          "rooms": [
+            {
+              "h": 50,
+              "w": 60,
+              "x": 5,
+              "y": 5,
+              "name": "Executive Suite & Trading Floor",
+              "type": "living"
+            },
+            {
+              "h": 30,
+              "w": 25,
+              "x": 70,
+              "y": 5,
+              "name": "Boardroom",
+              "type": "corridor"
+            }
+          ],
+          "imageUrl": "https://lh3.googleusercontent.com/d/1MzBr64Y8DJJNG2q_tKa1R-b3ol3rGdgD",
+          "sizeSqft": 6500,
+          "levelName": "37 Dilkusha Corporate Floor Plan - 6,500 Sft"
+        }
+      ]
+    }
+  ],
+  "aboutUs": {
+    "id": "main",
+    "tagline": "A Legacy Since 1983",
+    "title": "FOUR DECADES OF\nBUILDING TRUST.",
+    "paragraph1": "Moon Builders is the construction and real estate arm of Moon Group of Industries, founded in 1983 under the visionary leadership of Al-haj Mizanur Rahman. What began with a single housing venture has grown into a conglomerate spanning real estate, housing, construction, textiles, hospitality, and agriculture — with the exact same site discipline applied on every project, big or small.",
+    "paragraph2": "We handle the full span of delivery: land assessment, structural engineering, on-site raw material quality control, and timely handover. Our promise is simple: what is drafted on paper is precisely what stands on the ground.",
+    "imageUrl": "https://images.unsplash.com/photo-1609867271967-a82f85c48531?fm=jpg&q=70&w=1400&auto=format&fit=crop",
+    "yearFounded": 1983,
+    "sisterConcernsCount": 19,
+    "sectorsActiveCount": 11
+  },
+  "heroSlides": [
+    {
+      "id": "haven-tower",
+      "tag": "🔥 FLAGSHIP PROJECT - NOW OPEN FOR BOOKING",
+      "type": "residential",
+      "price": "Tk 2.2 - 5.5 Crore",
+      "stats": {
+        "beds": "4 Beds",
+        "size": "1,850 - 3,600 Sft",
+        "baths": "4 Baths"
+      },
+      "title": "Heaven Tower",
+      "status": "ongoing",
+      "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
+      "description": "★ MAIN ATTRACTION - HEAVEN TOWER INAUGURATED! Moon Group’s flagship architectural masterpiece featuring double-height atrium lobby, rooftop sky infinity pool, high-speed elevators, Zone-4 earthquake resistance, and smart home luxury. Booking & sales now open!"
+    },
+    {
+      "id": "slide-1",
+      "tag": "Flagship Residential",
+      "type": "residential",
+      "price": "Tk 6.5 - 9.8 Crore",
+      "stats": {
+        "beds": "4 Beds",
+        "size": "3,250 - 4,800 Sft",
+        "baths": "5 Baths"
+      },
+      "title": "Sun Moon Star",
+      "status": "ongoing",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1ipWRwMZ9rmEX0zlwXwZKj-AsRRipCuim",
+      "description": "An architectural masterwork soaring into the Dhaka skyline. Sun Moon Star redefines urban luxury with towering architectural grandeur, cantilevered garden terraces, and majestic 270-degree views of Gulshan Lake."
+    },
+    {
+      "id": "slide-2",
+      "tag": "Completed Masterpiece",
+      "type": "residential",
+      "price": "Tk 5.8 - 8.2 Crore",
+      "stats": {
+        "beds": "3 Beds",
+        "size": "2,800 - 3,600 Sft",
+        "baths": "4 Baths"
+      },
+      "title": "Al-Mizan Shopping Complex & Masjid Market",
+      "status": "completed",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1z0rDLW4oNG-6S1PgrPxw0sIJXjUy22il",
+      "description": "An oasis of refined luxury. Designed by internationally acclaimed architects, Al-Mizan Shopping Complex & Masjid Market merges premium commercial & residential spaces, expansive floor-to-ceiling panoramic glass, and a boutique community ambiance in the heart of Banani."
+    },
+    {
+      "id": "slide-3",
+      "tag": "Premium Commercial",
+      "type": "commercial",
+      "price": "Price on Request",
+      "stats": {
+        "size": "4,500 - 15,000 Sft",
+        "levels": "30 Floors",
+        "parking": "5 Basements"
+      },
+      "title": "Razia Tower",
+      "status": "ongoing",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1XwSyxMxjuTIj8IDAoAjfwv1o_pbAVvMV",
+      "description": "The future of commercial excellence. Razia Tower is a highly sophisticated, Grade-A smart office tower offering multi-tiered structural redundancy, high-speed capsule elevators, and spectacular double-height commercial lobbies."
+    },
+    {
+      "id": "slide-4",
+      "tag": "Upcoming Signature",
+      "type": "residential",
+      "price": "Tk 12.0 - 18.5 Crore",
+      "stats": {
+        "beds": "4 Beds",
+        "size": "4,500 - 6,200 Sft",
+        "baths": "5 Baths"
+      },
+      "title": "Josna Nir",
+      "status": "upcoming",
+      "imageUrl": "https://lh3.googleusercontent.com/d/1xZ7UnlKaachkZH2D6LWhAm_fNZrfKTYx",
+      "description": "Indulge in ultra-exclusive residential living. Set in the highly secured Baridhara Diplomatic Zone, these select luxury penthouses boast private lap pools, vast botanical sky gardens, and state-of-the-art security integration."
+    }
+  ],
+  "groupConcerns": [
+    {
+      "id": "concern-1",
+      "num": "01",
+      "desc": "Real Estate & Land Development — Est. 1989",
+      "name": "Madina Properties & Housing Ltd",
+      "email": "madina.properties@moon-bd.com",
+      "phone": "+8801713401405",
+      "address": "Mizan Tower, Mirpur Road, Kallyanpur, Dhaka-1207",
+      "gallery": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?fm=jpg&q=80&w=800",
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?fm=jpg&q=80&w=800",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?fm=jpg&q=80&w=800"
+      ],
+      "website": "https://www.madinaproperties.com",
+      "features": [
+        "35+ Luxury Developments Completed",
+        "Strategic Gated Communities",
+        "Fully Legal & RAJUK Approved Land",
+        "Eco-friendly Green Building Designs"
+      ],
+      "aboutText": "The foundational real estate wing of Moon Group, establishing prestigious residential projects, secure luxury apartment complexes, and high-standard gated communities across Bangladesh. For over three decades, we have shaped the modern landscape of Dhaka with visual landmarks and structural perfection.",
+      "established": "1989"
+    },
+    {
+      "id": "concern-2",
+      "num": "02",
+      "desc": "Heavy Civil Infrastructure & Engineering",
+      "name": "The Moon Construction",
+      "email": "construction@moon-bd.com",
+      "phone": "+8801712345671",
+      "address": "Plot 12, Road 11, Block H, Banani, Dhaka",
+      "gallery": [
+        "https://images.unsplash.com/photo-1504307651254-35680f356dfd?fm=jpg&q=80&w=800",
+        "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?fm=jpg&q=80&w=800",
+        "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?fm=jpg&q=80&w=800"
+      ],
+      "website": "https://www.moonconstruction.com",
+      "features": [
+        "State-of-the-Art Batching Plants",
+        "In-house Concrete Quality Labs",
+        "Over 150km of Highways Completed",
+        "Collaborations with International Consultants"
+      ],
+      "aboutText": "Our main heavy engineering division, constructing major roads, high-grade bridges, commercial towers, and multi-story institutional structures under BUET guidelines and rigorous government-level testing standards.",
+      "established": "1992"
+    },
+    {
+      "id": "concern-3",
+      "num": "03",
+      "desc": "Commercial Developments & Corporate Assets",
+      "name": "Bidhilipi Constructions Ltd",
+      "email": "bidhilipi@moon-bd.com",
+      "phone": "+8801712345672",
+      "address": "Kamal Ataturk Avenue, Banani, Dhaka-1213",
+      "gallery": [
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?fm=jpg&q=80&w=800",
+        "https://images.unsplash.com/photo-1497366216548-37526070297c?fm=jpg&q=80&w=800",
+        "https://images.unsplash.com/photo-1497215728101-856f4ea42174?fm=jpg&q=80&w=800"
+      ],
+      "website": "https://www.bidhilipi.com",
+      "features": [
+        "Grade-A Smart Workspace Towers",
+        "High-speed Intelligent Elevators",
+        "Double-height Reception Lobbies",
+        "LEED-certified Structural Layouts"
+      ],
+      "aboutText": "Specializes in iconic multi-tenant commercial centers, shopping complexes, and state-of-the-art office assets designed for local corporate leaders and international enterprises seeking premier Grade-A work environments.",
+      "established": "1998"
+    },
+    {
+      "id": "concern-4",
+      "num": "04",
+      "desc": "Premium Housing & Luxury Living — Est. 2003",
+      "name": "Sun Moon Star Real Estate Int'l",
+      "email": "luxury@moon-bd.com",
+      "phone": "+8801712345673",
+      "address": "Road 54, Sector 1, Block F, Gulshan 2, Dhaka",
+      "gallery": [
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?fm=jpg&q=80&w=800",
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?fm=jpg&q=80&w=800",
+        "https://images.unsplash.com/photo-1613977257363-707ba9348227?fm=jpg&q=80&w=800"
+      ],
+      "website": "https://www.sunmoonstar.com",
+      "features": [
+        "Premium Italian Marble Finishes",
+        "Rooftop Infinity Swimming Pools",
+        "24/7 Multi-Tier Biometric Security",
+        "Exclusive Residents Clubhouses"
+      ],
+      "aboutText": "Redefining the standards of ultimate luxury residential communities. Sun Moon Star incorporates smart-home automation, high-end recreational clubhouses, infinity pools, and sustainable therapeutic botanical garden layouts.",
+      "established": "2003"
+    },
+    {
+      "id": "concern-5",
+      "num": "05",
+      "desc": "Global Logistics, Trading & Materials — Est. 1994",
+      "name": "Moon Bangladesh Limited",
+      "email": "trading@moon-bd.com",
+      "phone": "+8801712345674",
+      "address": "Kallyanpur Bus Terminal, Mirpur Road, Dhaka",
+      "gallery": [
+        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?fm=jpg&q=80&w=800",
+        "https://images.unsplash.com/photo-1578575437130-527eed3abbec?fm=jpg&q=80&w=800",
+        "https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?fm=jpg&q=80&w=800"
+      ],
+      "website": "https://www.moonbangladesh.com",
+      "features": [
+        "National Inbound Cargo Fleet",
+        "Import Aggregates For Concrete Production",
+        "Chemical Warehousing in 4 Districts",
+        "Bulk Distribution Partnerships"
+      ],
+      "aboutText": "Our international trading and chemical supply arm, supporting massive logistics networks, chemical processing, raw material imports, construction aggregates, and critical resource distribution nationwide.",
+      "established": "1994"
+    },
+    {
+      "id": "concern-6",
+      "num": "06",
+      "desc": "High-Scale Textile Production & Exports",
+      "name": "Moon Int'l Garments & Textile",
+      "email": "garments@moon-bd.com",
+      "phone": "+8801712345675",
+      "address": "Savars Industrial Area, Dhaka",
+      "gallery": [
+        "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?fm=jpg&q=80&w=800",
+        "https://images.unsplash.com/photo-1524295928322-4b986a49ad23?fm=jpg&q=80&w=800",
+        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?fm=jpg&q=80&w=800"
+      ],
+      "website": "https://www.moontextiles.com",
+      "features": [
+        "100% Export-Oriented Operations",
+        "Rana Plaza Safety Compliant",
+        "Oeko-Tex Certified Dyeing Units",
+        "Annual Production of 12M+ Units"
+      ],
+      "aboutText": "Operating state-of-the-art manufacturing plants supplying major European and North American fashion brands, ensuring highly safe, environmentally friendly production lines and strict ethical labor compliance.",
+      "established": "2001"
+    },
+    {
+      "id": "concern-7",
+      "num": "07",
+      "desc": "Luxury Corporate Hospitality & Fine Dining",
+      "name": "Sun Moon Star Int'l Hotel",
+      "email": "hotel@moon-bd.com",
+      "phone": "+88029881122",
+      "address": "Road 11, Banani, Dhaka-1213",
+      "gallery": [
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?fm=jpg&q=80&w=800",
+        "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?fm=jpg&q=80&w=800",
+        "https://images.unsplash.com/photo-1582719508461-905c673771fd?fm=jpg&q=80&w=800"
+      ],
+      "website": "https://www.sms-hotel.com",
+      "features": [
+        "120 Multi-room Luxury Suites",
+        "Rooftop Helipad & Sky Lounge",
+        "Fully Equipped Convention Center",
+        "Michelin-inspired Restaurants"
+      ],
+      "aboutText": "Delivering five-star business hospitality, high-end corporate banquet facilities, luxury international suites, health club centers, and fine culinary experiences for international travelers and foreign corporate delegations.",
+      "established": "2010"
+    },
+    {
+      "id": "concern-8",
+      "num": "08",
+      "desc": "Banking, Trade Finance & Synergies",
+      "name": "South Bangla Agriculture & Commerce Bank",
+      "email": "info@sbacbank.com",
+      "phone": "+8802223384501",
+      "address": "BSCIC Bhaban, 37/A Dilkusha C/A, Dhaka-1000",
+      "gallery": [
+        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?fm=jpg&q=80&w=800",
+        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?fm=jpg&q=80&w=800",
+        "https://images.unsplash.com/photo-1560518883-ce09059eeffa?fm=jpg&q=80&w=800"
+      ],
+      "website": "https://www.sbacbank.com",
+      "features": [
+        "85+ Branches Across Bangladesh",
+        "Fast-Track Construction Finance",
+        "Custom Home Loan Portfolios",
+        "Advanced Digital Corporate Banking"
+      ],
+      "aboutText": "Strong capital and institutional investment partner, facilitating fast-track construction financing, home loan options, export-import facilities, and international trade finance operations for Moon Group developments.",
+      "established": "2013"
+    }
+  ],
+  "testimonials": [],
+  "bookings": [],
+  "inquiries": [],
+  "partnerships": []
+}

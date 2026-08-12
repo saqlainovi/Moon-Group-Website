@@ -1,0 +1,50 @@
+{
+  "entities": {
+    "booking": {
+      "title": "Visit Booking",
+      "description": "Visitor reservation for in-person luxury property viewing",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "propertyId": { "type": "string" },
+        "propertyName": { "type": "string" },
+        "date": { "type": "string" },
+        "timeSlot": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "name", "email", "phone", "propertyId", "propertyName", "date", "timeSlot", "createdAt"]
+    },
+    "partnership": {
+      "title": "Landowner Partnership Submission",
+      "description": "Joint venture application submitted by landowner",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "phone": { "type": "string" },
+        "email": { "type": "string" },
+        "location": { "type": "string" },
+        "sizeKatha": { "type": "number" },
+        "roadWidthFt": { "type": "number" },
+        "frontageFt": { "type": "number" },
+        "facing": { "type": "string" },
+        "additionalDetails": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "name", "phone", "location", "sizeKatha", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/bookings/{bookingId}": {
+      "schema": "booking",
+      "description": "Private site tour appointment entries"
+    },
+    "/partnerships/{partnershipId}": {
+      "schema": "partnership",
+      "description": "Joint venture landowner spatial feasibility applications"
+    }
+  }
+}
