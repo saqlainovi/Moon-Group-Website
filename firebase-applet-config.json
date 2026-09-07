@@ -1,11 +1,10 @@
 {
-  "projectId": "profound-ace-35rl6",
-  "appId": "1:97440504023:web:98cd26572e261e6c163892",
-  "apiKey": "AIzaSyC4BwGyyXOQlJaBSukwlPuRMC47cdIAYr8",
-  "authDomain": "profound-ace-35rl6.firebaseapp.com",
-  "storageBucket": "profound-ace-35rl6.firebasestorage.app",
-  "messagingSenderId": "97440504023",
-  "measurementId": "",
-  "oAuthClientId": "97440504023-d4dnq812airjvjvbcqoukk1p50gn4q07.apps.googleusercontent.com",
-  "recaptchaSiteKey": ""
+  "projectId": "moon-group-website",
+  "appId": "1:560836157749:web:92f477f7eec7b909b9ec7c",
+  "apiKey": "AIzaSyBTRiTsMAWCOJVx6bZ2aTmwkxCR2ZGdJ6M",
+  "authDomain": "moon-group-website.firebaseapp.com",
+  "firestoreDatabaseId": "ai-studio-moonbangladeshli-3cb52391-023d-45d8-ae39-a1def95662ee",
+  "storageBucket": "moon-group-website.firebasestorage.app",
+  "messagingSenderId": "560836157749",
+  "measurementId": ""
 }

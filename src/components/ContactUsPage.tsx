@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { doc, setDoc } from 'firebase/firestore';
 import { db, isQuotaExceeded, markQuotaExceeded, withTimeout } from '../lib/firebase';
+import { submitContactInquiry } from '../lib/cms';
 import { 
   Phone, 
   Mail, 
@@ -44,20 +45,7 @@ export default function ContactUsPage() {
       createdAt: new Date().toLocaleDateString()
     };
 
-    try {
-      await fetch('/api/cms/inquiries', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(inquiryData)
-      });
-    } catch (err) {
-      console.warn('Fallback to local storage for contact:', err);
-    }
-
-    // Save locally
-    const existing = localStorage.getItem('moon_contact_inquiries');
-    const list = existing ? JSON.parse(existing) : [];
-    list.push(inquiryData);
+    await submitContactInquiry(inquiryData);
 
     setStatus('success');
   };

@@ -9,6 +9,7 @@ import { doc, setDoc } from 'firebase/firestore';
 import { db, handleFirestoreError, OperationType, isQuotaExceeded, markQuotaExceeded, withTimeout } from '../lib/firebase';
 import { properties } from '../data/properties';
 import { Property, VisitBooking } from '../types';
+import { submitVisitorBooking } from '../lib/cms';
 import { useTheme } from '../context/ThemeContext';
 import {
   Calendar,
@@ -142,30 +143,7 @@ export default function VisitBooker({ preSelectedProperty, onClearPreSelected, p
       createdAt: new Date().toLocaleDateString()
     };
 
-    let savedToCloud = false;
-    try {
-      const res = await fetch('/api/cms/bookings', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(ticket)
-      });
-      if (res.ok) {
-        savedToCloud = true;
-      }
-    } catch (error) {
-      console.warn('Server API booking submit fallback to local storage:', error);
-    }
-
-    // Save to localStorage as a robust local fallback
-    try {
-      const existing = localStorage.getItem('moon_bookings');
-      const list = existing ? JSON.parse(existing) : [];
-      if (!list.some((b: any) => b.id === ticketId)) {
-        list.push(ticket);
-      }
-    } catch (e) {
-      console.warn('LocalStorage error:', e);
-    }
+    await submitVisitorBooking(ticket);
 
     setBookingResult(ticket);
     setIsSubmitting(false);

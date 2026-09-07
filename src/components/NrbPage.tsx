@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../lib/firebase';
+import { submitContactInquiry } from '../lib/cms';
 import { 
   Globe, 
   TrendingUp, 
@@ -44,20 +45,7 @@ export default function NrbPage() {
       status: 'new'
     };
 
-    try {
-      await fetch('/api/cms/inquiries', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(nrbData)
-      });
-    } catch (err) {
-      console.warn('Fallback to local storage for NRB inquiry:', err);
-    }
-
-    // Save locally
-    const existing = localStorage.getItem('moon_nrb_inquiries');
-    const list = existing ? JSON.parse(existing) : [];
-    list.push(nrbData);
+    await submitContactInquiry(nrbData);
 
     setNrbStatus('success');
   };

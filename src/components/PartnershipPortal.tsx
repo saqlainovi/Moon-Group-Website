@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { doc, setDoc } from 'firebase/firestore';
 import { db, handleFirestoreError, OperationType, isQuotaExceeded, markQuotaExceeded, withTimeout } from '../lib/firebase';
 import { LandownerPartnerSubmission } from '../types';
+import { submitLandownerPartnership } from '../lib/cms';
 import { useTheme } from '../context/ThemeContext';
 import {
   TrendingUp,
@@ -65,26 +66,7 @@ export default function PartnershipPortal() {
       createdAt: new Date().toLocaleDateString()
     };
 
-    try {
-      await fetch('/api/cms/partnerships', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(submission)
-      });
-    } catch (error) {
-      console.warn('Firebase error, stored in local database backup:', error);
-    }
-
-    // Save submission to localStorage so it is immediately visible in Admin CMS
-    try {
-      const existing = localStorage.getItem('moon_partnerships');
-      const list = existing ? JSON.parse(existing) : [];
-      if (!list.some((item: any) => item.id === submissionId)) {
-        list.push(submission);
-      }
-    } catch (err) {
-      console.warn('LocalStorage error:', err);
-    }
+    await submitLandownerPartnership(submission);
 
     setSubmittedData(submission);
     setIsSubmitting(false);

@@ -1447,6 +1447,154 @@ export async function getLandownerPartnerships(): Promise<LandownerPartnerSubmis
 }
 
 /**
+ * Submit Visitor Booking directly to Firestore buffer, local server API (if up), and localStorage.
+ */
+export async function submitVisitorBooking(ticket: VisitBooking): Promise<boolean> {
+  let saved = false;
+
+  // 1. Direct Firestore write (Cloud Buffer - works 24/7 even during power outage)
+  if (!isQuotaExceeded()) {
+    try {
+      const docRef = doc(db, 'bookings', ticket.id);
+      await withTimeout(setDoc(docRef, {
+        ...ticket,
+        createdAt: ticket.createdAt || new Date().toISOString()
+      }), 5000, true);
+      saved = true;
+    } catch (err: any) {
+      const errMsg = String(err?.message || err || '').toLowerCase();
+      if (errMsg.includes('quota') || errMsg.includes('resource-exhausted')) {
+        markQuotaExceeded();
+      }
+      console.warn('Direct Firestore booking write notice:', err);
+    }
+  }
+
+  // 2. Local Server API (if Coolify / Proxmox server is accessible)
+  try {
+    const res = await fetch('/api/cms/bookings', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(ticket)
+    });
+    if (res.ok) saved = true;
+  } catch (e) {
+    // Expected on static hosting
+  }
+
+  // 3. LocalStorage persistence
+  try {
+    const existing = localStorage.getItem('moon_bookings');
+    const list = existing ? JSON.parse(existing) : [];
+    if (!list.some((b: any) => b.id === ticket.id)) {
+      list.push(ticket);
+      localStorage.setItem('moon_bookings', JSON.stringify(list));
+    }
+  } catch (e) {}
+
+  return saved;
+}
+
+/**
+ * Submit Contact Inquiry / NRB / Referral directly to Firestore buffer, local server API, and localStorage.
+ */
+export async function submitContactInquiry(inquiry: any): Promise<boolean> {
+  let saved = false;
+
+  // 1. Direct Firestore write (Cloud Buffer)
+  if (!isQuotaExceeded()) {
+    try {
+      const docRef = doc(db, 'inquiries', inquiry.id);
+      await withTimeout(setDoc(docRef, {
+        ...inquiry,
+        createdAt: inquiry.createdAt || new Date().toISOString()
+      }), 5000, true);
+      saved = true;
+    } catch (err: any) {
+      const errMsg = String(err?.message || err || '').toLowerCase();
+      if (errMsg.includes('quota') || errMsg.includes('resource-exhausted')) {
+        markQuotaExceeded();
+      }
+      console.warn('Direct Firestore inquiry write notice:', err);
+    }
+  }
+
+  // 2. Local Server API
+  try {
+    const res = await fetch('/api/cms/inquiries', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(inquiry)
+    });
+    if (res.ok) saved = true;
+  } catch (e) {
+    // Expected on static hosting
+  }
+
+  // 3. LocalStorage persistence
+  try {
+    const existing = localStorage.getItem('moon_contact_inquiries');
+    const list = existing ? JSON.parse(existing) : [];
+    if (!list.some((b: any) => b.id === inquiry.id)) {
+      list.push(inquiry);
+      localStorage.setItem('moon_contact_inquiries', JSON.stringify(list));
+    }
+  } catch (e) {}
+
+  return saved;
+}
+
+/**
+ * Submit Landowner Partnership directly to Firestore buffer, local server API, and localStorage.
+ */
+export async function submitLandownerPartnership(partnership: LandownerPartnerSubmission): Promise<boolean> {
+  let saved = false;
+
+  // 1. Direct Firestore write (Cloud Buffer)
+  if (!isQuotaExceeded()) {
+    try {
+      const docRef = doc(db, 'partnerships', partnership.id);
+      await withTimeout(setDoc(docRef, {
+        ...partnership,
+        createdAt: partnership.createdAt || new Date().toISOString()
+      }), 5000, true);
+      saved = true;
+    } catch (err: any) {
+      const errMsg = String(err?.message || err || '').toLowerCase();
+      if (errMsg.includes('quota') || errMsg.includes('resource-exhausted')) {
+        markQuotaExceeded();
+      }
+      console.warn('Direct Firestore partnership write notice:', err);
+    }
+  }
+
+  // 2. Local Server API
+  try {
+    const res = await fetch('/api/cms/partnerships', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(partnership)
+    });
+    if (res.ok) saved = true;
+  } catch (e) {
+    // Expected on static hosting
+  }
+
+  // 3. LocalStorage persistence
+  try {
+    const existing = localStorage.getItem('moon_partnerships');
+    const list = existing ? JSON.parse(existing) : [];
+    if (!list.some((p: any) => p.id === partnership.id)) {
+      list.push(partnership);
+      localStorage.setItem('moon_partnerships', JSON.stringify(list));
+    }
+  } catch (e) {}
+
+  return saved;
+}
+
+
+/**
  * Fetch all Testimonials / Reviews for Home Page.
  */
 export async function getCMSTestimonials(): Promise<CMSTestimonial[]> {

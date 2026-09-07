@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../lib/firebase';
+import { submitContactInquiry } from '../lib/cms';
 import { 
   Gift, 
   Award, 
@@ -46,20 +47,7 @@ export default function ReferralProgramPage() {
       status: 'pending'
     };
 
-    try {
-      await fetch('/api/cms/inquiries', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(referralData)
-      });
-    } catch (err) {
-      console.warn('Fallback to local storage for referrals:', err);
-    }
-
-    // Save locally
-    const existing = localStorage.getItem('moon_referrals');
-    const list = existing ? JSON.parse(existing) : [];
-    list.push(referralData);
+    await submitContactInquiry(referralData);
 
     setRefStatus('success');
   };
