@@ -1,0 +1,8 @@
+# Robots.txt for Moon Group of Industries (Moon Builders)
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /cms
+Disallow: /api/
+
+Sitemap: https://moongroupofind.ltd/sitemap.xml

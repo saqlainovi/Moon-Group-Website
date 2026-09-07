@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Big Shoulders Display", Georgia, serif;
+  --font-mono: "Space Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-gold-50: #fff5f5;
+  --color-gold-100: #ffe3e3;
+  --color-gold-200: #ffc9c9;
+  --color-gold-300: #ffa8a8;
+  --color-gold-400: #ff4a4f;
+  --color-gold-500: #ee1b24;
+  --color-gold-600: #cc121a;
+  --color-gold-700: #a60b11;
+  --color-gold-800: #82070c;
+  --color-gold-900: #5c0307;
+  --color-gold-950: #330003;
+  
+  --color-luxury-charcoal: #0b0b0c;
+  --color-luxury-slate: #161617;
+  --color-luxury-beige: #0b0b0c;
+  
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  position: relative;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Bulletproof Theme Overrides with specific high specificity */
+body.theme-light,
+body[class*="FAF6EE"] {
+  background-color: #FAF6EE !important;
+  color: #2B251F !important;
+}
+
+body.theme-dark,
+body[class*="0b0b0c"] {
+  background-color: #0B0B0C !important;
+  color: #f1f0ee !important;
+}
+
+/* Automatic background adapting for light cream theme */
+body.theme-light,
+body.theme-light .bg-\[\#0B0B0C\]:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-\[\#0b0b0c\]:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-\[\#0B0E14\]:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-\[\#0b0e14\]:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-\[\#05070a\]:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-black:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-neutral-950:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-stone-950:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-luxury-beige:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-luxury-charcoal:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light section:not(#marquee-ticker),
+body.theme-light main:not(#marquee-ticker),
+body.theme-light footer:not(#marquee-ticker) {
+  background-color: #FAF6EE !important;
+}
+
+body.theme-light .bg-\[\#161617\]:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-\[\#141416\]:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-\[\#1C1C1E\]:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-\[\#111112\]:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-\[\#0E0E0F\]:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-\[\#111215\]:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-\[\#121214\]:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-\[\#0c0d12\]:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-\[\#131a2c\]\/60:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-\[\#161617\]\/40:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-\[\#161617\]\/50:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-\[\#161617\]\/80:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-\[\#161617\]\/95:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-\[\#141416\]\/50:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-\[\#141416\]\/80:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-\[\#121214\]\/85:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-luxury-slate:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-neutral-900:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-neutral-800:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-stone-900:not(#marquee-ticker):not(#marquee-ticker *),
+body.theme-light .bg-stone-800:not(#marquee-ticker):not(#marquee-ticker *) {
+  background-color: #F4EEDA !important; /* Warm sand/cream contrast shade */
+}
+
+/* Red accents and white text preservation inside red containers */
+body.theme-light .bg-\[\#EE1B24\],
+body.theme-light .bg-\[\#FF4A4F\],
+body.theme-light .bg-red-500,
+body.theme-light .bg-red-600 {
+  background-color: #EE1B24 !important;
+}
+
+body.theme-light .bg-\[\#EE1B24\] *:not(#marquee-ticker *),
+body.theme-light .bg-\[\#FF4A4F\] *:not(#marquee-ticker *),
+body.theme-light .bg-red-500 *:not(#marquee-ticker *),
+body.theme-light .bg-red-600 *:not(#marquee-ticker *),
+body.theme-light button.bg-\[\#EE1B24\],
+body.theme-light button.bg-\[\#FF4A4F\] {
+  color: #ffffff !important;
+}
+
+/* Scoped Marquee Ticker Rules - High contrast & vibrant in both dark and light modes */
+#marquee-ticker {
+  background-color: #EE1B24 !important;
+  border-color: #B91C1C !important;
+}
+
+#marquee-ticker .marquee-standard-text {
+  color: #FFFFFF !important;
+  font-weight: 900 !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
+}
+
+#marquee-ticker .marquee-notice-badge {
+  background-color: #0F0F10 !important;
+  color: #FCD34D !important; /* Warm Amber 300 */
+  border: 1.5px solid #F59E0B !important; /* Amber 500 */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6) !important;
+}
+
+body.theme-light .text-\[\#FF4A4F\],
+body.theme-light .text-\[\#EE1B24\],
+body.theme-light .text-red-500,
+body.theme-light .text-red-600 {
+  color: #EE1B24 !important;
+}
+
+/* Make sure text elements adapt beautifully on cream mode */
+body.theme-light h1:not(#hero *),
+body.theme-light h2:not(#hero *),
+body.theme-light h3:not(#hero *),
+body.theme-light h4:not(#hero *),
+body.theme-light h5:not(#hero *),
+body.theme-light h6:not(#hero *),
+body.theme-light .text-white:not(.bg-\[\#EE1B24\] *):not(.bg-gold-500 *):not(button *):not(a *):not(#hero *),
+body.theme-light .text-neutral-100:not(.bg-\[\#EE1B24\] *):not(#hero *),
+body.theme-light .text-slate-100:not(.bg-\[\#EE1B24\] *):not(#hero *),
+body.theme-light .text-gray-100:not(.bg-\[\#EE1B24\] *):not(#hero *),
+body.theme-light .text-stone-100:not(.bg-\[\#EE1B24\] *):not(#hero *) {
+  color: #2B251F !important;
+}
+
+body.theme-light p:not(#hero *),
+body.theme-light li:not(#hero *),
+body.theme-light .text-slate-200:not(#hero *),
+body.theme-light .text-slate-300:not(#hero *),
+body.theme-light .text-slate-400:not(#hero *),
+body.theme-light .text-neutral-200:not(#hero *),
+body.theme-light .text-neutral-300:not(#hero *),
+body.theme-light .text-neutral-400:not(#hero *),
+body.theme-light .text-gray-200:not(#hero *),
+body.theme-light .text-gray-300:not(#hero *),
+body.theme-light .text-gray-400:not(#hero *),
+body.theme-light .text-stone-200:not(#hero *),
+body.theme-light .text-stone-300:not(#hero *),
+body.theme-light .text-stone-400:not(#hero *),
+body.theme-light .text-\[\#D8D8D6\]:not(#hero *),
+body.theme-light .text-slate-200\/90:not(#hero *),
+body.theme-light .text-slate-300\/90:not(#hero *),
+body.theme-light .text-slate-400\/90:not(#hero *) {
+  color: #554E44 !important; /* Premium subtle corporate charcoal */
+}
+
+body.theme-light .text-slate-500:not(#hero *),
+body.theme-light .text-neutral-500:not(#hero *),
+body.theme-light .text-neutral-600:not(#hero *),
+body.theme-light .text-\[\#6B6B6A\]:not(#hero *) {
+  color: #7A7266 !important;
+}
+
+/* Base styling for anchors in day mode to make sure footer and general links are perfectly visible */
+body.theme-light a:not(.bg-\[\#EE1B24\] *):not(.bg-gold-500 *):not(button *):not(.text-\[\#EE1B24\]):not(.text-\[\#FF4A4F\]) {
+  color: #554E44 !important;
+}
+
+body.theme-light a:hover:not(.bg-\[\#EE1B24\] *):not(.bg-gold-500 *):not(button *) {
+  color: #EE1B24 !important; /* Red hover accent */
+}
+
+body.theme-light .hover\:text-white:hover {
+  color: #2B251F !important;
+}
+
+/* Adjust borders from white to soft stone borders */
+body.theme-light .border-white\/5:not(#hero *),
+body.theme-light .border-white\/10:not(#hero *),
+body.theme-light .border-white\/15:not(#hero *),
+body.theme-light .border-white\/20:not(#hero *),
+body.theme-light .border-white\/30:not(#hero *),
+body.theme-light .border-stone-800:not(#hero *) {
+  border-color: rgba(43, 37, 31, 0.12) !important;
+}
+
+/* Forms and Inputs */
+body.theme-light input:not(#hero *),
+body.theme-light textarea:not(#hero *),
+body.theme-light select:not(#hero *) {
+  background-color: #FAF6EE !important;
+  color: #2B251F !important;
+  border-color: rgba(43, 37, 31, 0.2) !important;
+}
+
+body.theme-light input::placeholder,
+body.theme-light textarea::placeholder {
+  color: #8C8273 !important;
+}
+
+/* Hide dark mode checkered grid pattern in light mode as requested */
+body.theme-light::before {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+/* Professional Polish Tech Grid Overlay for dark mode */
+body.theme-dark::before,
+body:not(.theme-light)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.05;
+  pointer-events: none;
+  background-image: 
+    linear-gradient(rgba(238, 27, 36, 0.1) 1px, transparent 1px), 
+    linear-gradient(90deg, rgba(238, 27, 36, 0.1) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Custom scrollbar to look extremely premium */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+body[class*="0b0b0c"] ::-webkit-scrollbar-track {
+  background: #0b0b0c;
+}
+body[class*="FAF6EE"] ::-webkit-scrollbar-track {
+  background: #faf6ee;
+}
+::-webkit-scrollbar-thumb {
+  background: #ee1b24;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #cc121a;
+}
+

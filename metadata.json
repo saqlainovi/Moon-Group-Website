@@ -1,0 +1,6 @@
+{
+  "name": "Moon Group of Industries",
+  "description": "Official website for Moon Group of Industries featuring real estate properties, group concerns, interactive tours, and client services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
