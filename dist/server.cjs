@@ -31,35 +31,30 @@ var import_vite = require("vite");
 // src/data/properties.ts
 var properties = [
   {
-    id: "haven-tower",
-    title: "Haven Tower",
-    type: "residential",
-    status: "ongoing",
-    location: "Gulshan 1, Dhaka",
-    area: "Gulshan 1, Dhaka",
-    address: "House: 15 Heaven Tower, Road: 126/127, Gulshan 1, Dhaka",
-    landArea: "28 Katha",
-    aptPerFloor: "4 Units / Floor (A, B, C, D)",
-    totalUnits: "96 Luxury Units",
-    sizeRange: "A- 4293 Sft | B- 3000 Sft | C- 3000 Sft | D- 3770 Sft",
-    priceRange: "Tk 2.2 - 5.5 Crore",
-    beds: 4,
-    baths: 4,
-    balconies: "3 Balconies (Verandahs)",
-    facing: "South Facing (Open Panoramic View)",
-    parking: "1 - 2 Dedicated Basement Car Parking",
-    imageUrl: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
-    gallery: [
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1579725942955-4d8377f8c66a?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1428360905656-e63a3fa0400b?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80",
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80"
+    "id": "haven-tower",
+    "area": "Gulshan 1, Dhaka",
+    "beds": 4,
+    "type": "residential",
+    "baths": 4,
+    "title": "HEAVEN TOWER",
+    "facing": "South Facing (Open Panoramic View)",
+    "status": "ongoing",
+    "address": "House: 15 Heaven Tower, Road: 126/127, Gulshan 1, Dhaka",
+    "gallery": [
+      "/project_images/haven-tower-gallery-0.jpg",
+      "/project_images/haven-tower-gallery-1.jpg",
+      "/project_images/haven-tower-gallery-2.jpg",
+      "/project_images/haven-tower-gallery-3.jpg",
+      "/project_images/haven-tower-gallery-4.jpg",
+      "/project_images/haven-tower-gallery-5.jpg",
+      "/project_images/haven-tower-gallery-6.jpg",
+      "/project_images/haven-tower-gallery-7.jpg",
+      "/project_images/haven-tower-gallery-8.jpg",
+      "/project_images/haven-tower-gallery-9.jpg",
+      "/project_images/haven-tower-gallery-10.jpg"
     ],
-    description: "\u2605 FLAGSHIP ONGOING PROJECT - Heaven Tower stands as Moon Group\u2019s crowning achievement in architectural innovation and luxury urban living. Featuring Zone-4 earthquake resistance, double-height grand atrium lobby, rooftop infinity sky-lounge & pool, intelligent elevators, and smart home automation.",
-    features: [
+    "parking": "1 - 2 Dedicated Basement Car Parking",
+    "features": [
       "\u{1F525} Flagship Ongoing Luxury Tower in Gulshan 1",
       "Grand Double-Height Entrance Atrium Lobby with 24/7 Concierge",
       "Rooftop Infinity Sky Lounge, Swimming Pool & Botanical Terrace",
@@ -67,518 +62,888 @@ var properties = [
       "High-Speed Intelligent Elevators & 100% Generator Power Backup",
       "Smart Home Automation with Biometric Security"
     ],
-    amenities: [
-      { icon: "Crown", name: "Flagship Luxury Tower" },
-      { icon: "Waves", name: "Rooftop Sky Infinity Pool" },
-      { icon: "Dumbbell", name: "Ultra-Modern Gym & Spa" },
-      { icon: "Shield", name: "Biometric Access & 24/7 Security" },
-      { icon: "Zap", name: "Full Power Backup Generator" },
-      { icon: "Car", name: "Multi-Level Basement Parking" }
-    ],
-    floorsCount: 25,
-    launchDate: "July 2026",
-    handoverDate: "December 2028",
-    floorLayouts: [
+    "imageUrl": "/project_images/haven-tower.jpg",
+    "landArea": "28 Katha",
+    "location": "House: 15 Heaven Tower, Road: 126/127, Gulshan 1, Dhaka",
+    "amenities": [
       {
-        levelName: "Heaven Grand Suite - 2,850 Sft",
-        sizeSqft: 2850,
-        imageUrl: "https://lh3.googleusercontent.com/d/1MzBr64Y8DJJNG2q_tKa1R-b3ol3rGdgD",
-        rooms: [
-          { name: "Panoramic Living Room", x: 5, y: 5, w: 45, h: 45, type: "living" },
-          { name: "Master Suite & Walk-in Closet", x: 55, y: 5, w: 30, h: 35, type: "bed" },
-          { name: "Master Luxury Bath", x: 88, y: 5, w: 10, h: 35, type: "bath" },
-          { name: "Bedroom 2", x: 55, y: 45, w: 20, h: 25, type: "bed" },
-          { name: "Gourmet Kitchen", x: 5, y: 55, w: 25, h: 35, type: "kitchen" },
-          { name: "Sky Terrace Balcony", x: 35, y: 55, w: 15, h: 35, type: "balcony" }
-        ]
+        "icon": "Crown",
+        "name": "Flagship Luxury Tower"
       },
       {
-        levelName: "Penthouse Executive Suite - 3,600 Sft",
-        sizeSqft: 3600,
-        imageUrl: "https://lh3.googleusercontent.com/d/1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6c",
-        rooms: [
-          { name: "Royal Grand Salon", x: 5, y: 5, w: 50, h: 45, type: "living" },
-          { name: "Presidential Bedroom", x: 60, y: 5, w: 35, h: 35, type: "bed" },
-          { name: "Chef Kitchen", x: 5, y: 55, w: 30, h: 35, type: "kitchen" },
-          { name: "Panoramic Sky Deck", x: 40, y: 55, w: 55, h: 35, type: "balcony" }
-        ]
+        "icon": "Waves",
+        "name": "Rooftop Sky Infinity Pool"
+      },
+      {
+        "icon": "Dumbbell",
+        "name": "Ultra-Modern Gym & Spa"
+      },
+      {
+        "icon": "Shield",
+        "name": "Biometric Access & 24/7 Security"
+      },
+      {
+        "icon": "Zap",
+        "name": "Full Power Backup Generator"
+      },
+      {
+        "icon": "Car",
+        "name": "Multi-Level Basement Parking"
       }
-    ]
+    ],
+    "balconies": "3 Balconies (Verandahs)",
+    "sizeRange": "A- 4293 Sft | B- 3000 Sft | C- 3000 Sft | D- 3770 Sft",
+    "launchDate": "July 2026",
+    "priceRange": "call for price",
+    "totalUnits": "",
+    "aptPerFloor": "4 Units / Floor (A, B, C, D)",
+    "description": "\u{1F4E2} \u09B9\u09C7\u09AD\u09C7\u09A8 \u099F\u09BE\u0993\u09AF\u09BC\u09BE\u09B0 (HEAVEN TOWER) \u098F\u09B0 \u0989\u09A6\u09CD\u09AC\u09CB\u09A7\u09A8 \u09B8\u09AE\u09CD\u09AA\u09A8\u09CD\u09A8 \u09B9\u09AF\u09BC\u09C7\u099B\u09C7 - \u09AC\u09B0\u09CD\u09A4\u09AE\u09BE\u09A8\u09C7 \u09AC\u09C1\u0995\u09BF\u0982 \u098F\u09AC\u0982 \u09B8\u09C7\u09B2 \u099A\u09B2\u099B\u09C7! \u0986\u0995\u09B0\u09CD\u09B7\u09A3\u09C0\u09AF\u09BC \u0986\u09B0\u09CD\u0995\u09BF\u099F\u09C7\u0995\u099A\u09BE\u09B0, \u09A1\u09BE\u09AC\u09B2-\u09B9\u09BE\u0987\u099F \u098F\u099F\u09CD\u09B0\u09BF\u09AF\u09BC\u09BE\u09AE \u09B2\u09AC\u09BF, \u09B0\u09C1\u09AB\u099F\u09AA \u0987\u09A8\u09AB\u09BF\u09A8\u09BF\u099F\u09BF \u09AA\u09C1\u09B2 \u098F\u09AC\u0982 Zone-4 \u09AD\u09C2\u09AE\u09BF\u0995\u09AE\u09CD\u09AA \u09AA\u09CD\u09B0\u09A4\u09BF\u09B0\u09CB\u09A7\u09C0 \u09B8\u09CD\u099F\u09CD\u09B0\u09BE\u0995\u099A\u09BE\u09B0 \u09AC\u09BF\u09B6\u09BF\u09B7\u09CD\u099F \u09AE\u09C1\u09A8 \u0997\u09CD\u09B0\u09C1\u09AA\u09C7\u09B0 \u09AB\u09CD\u09B2\u09CD\u09AF\u09BE\u0997\u09B6\u09BF\u09AA \u09AA\u09CD\u09B0\u099C\u09C7\u0995\u09CD\u099F\u0964",
+    "floorsCount": 13,
+    "floorLayouts": [
+      {
+        "rooms": [
+          {
+            "h": 45,
+            "w": 45,
+            "x": 5,
+            "y": 5,
+            "name": "Panoramic Living Room",
+            "type": "living"
+          },
+          {
+            "h": 35,
+            "w": 30,
+            "x": 55,
+            "y": 5,
+            "name": "Master Suite & Walk-in Closet",
+            "type": "bed"
+          },
+          {
+            "h": 35,
+            "w": 10,
+            "x": 88,
+            "y": 5,
+            "name": "Master Luxury Bath",
+            "type": "bath"
+          },
+          {
+            "h": 25,
+            "w": 20,
+            "x": 55,
+            "y": 45,
+            "name": "Bedroom 2",
+            "type": "bed"
+          },
+          {
+            "h": 35,
+            "w": 25,
+            "x": 5,
+            "y": 55,
+            "name": "Gourmet Kitchen",
+            "type": "kitchen"
+          },
+          {
+            "h": 35,
+            "w": 15,
+            "x": 35,
+            "y": 55,
+            "name": "Sky Terrace Balcony",
+            "type": "balcony"
+          }
+        ],
+        "imageUrl": "https://lh3.googleusercontent.com/d/1MzBr64Y8DJJNG2q_tKa1R-b3ol3rGdgD",
+        "sizeSqft": 0,
+        "levelName": "Heaven  "
+      },
+      {
+        "rooms": [
+          {
+            "h": 45,
+            "w": 50,
+            "x": 5,
+            "y": 5,
+            "name": "Royal Grand Salon",
+            "type": "living"
+          },
+          {
+            "h": 35,
+            "w": 35,
+            "x": 60,
+            "y": 5,
+            "name": "Presidential Bedroom",
+            "type": "bed"
+          },
+          {
+            "h": 35,
+            "w": 30,
+            "x": 5,
+            "y": 55,
+            "name": "Chef Kitchen",
+            "type": "kitchen"
+          },
+          {
+            "h": 35,
+            "w": 55,
+            "x": 40,
+            "y": 55,
+            "name": "Panoramic Sky Deck",
+            "type": "balcony"
+          }
+        ],
+        "imageUrl": "https://lh3.googleusercontent.com/d/1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6c",
+        "sizeSqft": 0,
+        "levelName": ""
+      }
+    ],
+    "handoverDate": "December 2028"
   },
   {
-    id: "mizan-tower-kallyanpur",
-    title: "Mizan Tower (\u09AE\u09BF\u099C\u09BE\u09A8 \u099F\u09BE\u0993\u09DF\u09BE\u09B0)",
-    type: "residential",
-    status: "ongoing",
-    location: "Kallyanpur, Dhaka (\u0995\u09B2\u09CD\u09AF\u09BE\u09A8\u09AA\u09C1\u09B0, \u09A2\u09BE\u0995\u09BE)",
-    area: "Kallyanpur, Dhaka",
-    sizeRange: "1,650 - 2,800 Sft",
-    priceRange: "Tk 1.2 - 2.8 Crore",
-    beds: 3,
-    baths: 3,
-    floorsCount: 14,
-    imageUrl: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800&auto=format&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop"
+    "id": "mizan-tower-kallyanpur",
+    "area": "Kallyanpur, Dhaka",
+    "beds": 3,
+    "type": "residential",
+    "baths": 3,
+    "title": "Mizan Tower (\u09AE\u09BF\u099C\u09BE\u09A8 \u099F\u09BE\u0993\u09DF\u09BE\u09B0)",
+    "status": "completed",
+    "address": "Kallyanpur, Dhaka",
+    "gallery": [
+      "/project_images/mizan-tower-kallyanpur-gallery-0.jpg",
+      "/project_images/mizan-tower-kallyanpur-gallery-1.jpg",
+      "/project_images/mizan-tower-kallyanpur-gallery-2.jpg",
+      "/project_images/mizan-tower-kallyanpur-gallery-3.jpg"
     ],
-    description: "\u09AE\u09BF\u099C\u09BE\u09A8 \u099F\u09BE\u0993\u09DF\u09BE\u09B0, \u0995\u09B2\u09CD\u09AF\u09BE\u09A8\u09AA\u09C1\u09B0 - \u09E7\u09EA \u09A4\u09B2\u09BE \u09AC\u09BF\u09B6\u09BF\u09B7\u09CD\u099F \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u0986\u09AD\u09BF\u099C\u09BE\u09A4\u09CD\u09AF\u09C7\u09B0 \u0986\u09AC\u09BE\u09B8\u09BF\u0995 \u0993 \u09AC\u09BE\u09A3\u09BF\u099C\u09CD\u09AF\u09BF\u0995 \u09AC\u09B9\u09C1\u09A4\u09B2 \u09AD\u09AC\u09A8\u0964 \u0989\u09A8\u09CD\u09A8\u09A4 \u09B8\u09BF\u0995\u09BF\u0989\u09B0\u09BF\u099F\u09BF, \u09AA\u09CD\u09B0\u09BE\u0987\u09AE \u09B2\u09CB\u0995\u09C7\u09B6\u09A8 \u0993 \u09AE\u09A8\u09CB\u09B0\u09AE \u099C\u09C0\u09AC\u09A8\u09AF\u09BE\u09A4\u09CD\u09B0\u09BE\u09B0 \u09B8\u09AC \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u09B8\u09C1\u09AF\u09CB\u0997-\u09B8\u09C1\u09AC\u09BF\u09A7\u09BE \u09B8\u09AE\u09CD\u09AC\u09B2\u09BF\u09A4 \u09AA\u09CD\u09B0\u099C\u09C7\u0995\u09CD\u099F\u0964",
-    features: [
+    "features": [
       "\u09E7\u09EA \u09A4\u09B2\u09BE \u09AC\u09BF\u09B6\u09BF\u09B7\u09CD\u099F \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u0993 \u09A8\u09BE\u09A8\u09CD\u09A6\u09A8\u09BF\u0995 \u09B8\u09CD\u099F\u09CD\u09B0\u09BE\u0995\u099A\u09BE\u09B0",
       "\u0995\u09B2\u09CD\u09AF\u09BE\u09A8\u09AA\u09C1\u09B0 \u09AC\u09BE\u09B8 \u09B8\u09CD\u099F\u09CD\u09AF\u09BE\u09A8\u09CD\u09A1 \u0993 \u09AE\u09C7\u099F\u09CD\u09B0\u09CB \u09B8\u09CD\u099F\u09C7\u09B6\u09A8 \u09B8\u0982\u09B2\u0997\u09CD\u09A8 \u09AA\u09CD\u09B0\u09BE\u0987\u09AE \u09B2\u09CB\u0995\u09C7\u09B6\u09A8",
       "\u09E8\u09EA/\u09ED \u09B8\u09BF\u09B8\u09BF\u099F\u09BF\u09AD\u09BF \u0995\u09CD\u09AF\u09BE\u09AE\u09C7\u09B0\u09BE \u09B8\u09BF\u0995\u09BF\u0989\u09B0\u09BF\u099F\u09BF \u0993 \u09AC\u09CD\u09AF\u09BE\u0995\u0986\u09AA \u099C\u09C7\u09A8\u09BE\u09B0\u09C7\u099F\u09B0",
       "\u0989\u09A8\u09CD\u09A8\u09A4 \u09AE\u09BE\u09A8\u09C7\u09B0 \u09B2\u09BF\u09AB\u09CD\u099F \u0993 \u0985\u0997\u09CD\u09A8\u09BF \u09A8\u09BF\u09B0\u09CD\u09AC\u09BE\u09AA\u0995 \u09AC\u09CD\u09AF\u09AC\u09B8\u09CD\u09A5\u09BE"
     ],
-    amenities: [
-      { icon: "Shield", name: "24/7 Security" },
-      { icon: "Zap", name: "Power Backup" },
-      { icon: "Car", name: "Basement Parking" }
-    ],
-    floorLayouts: [
+    "imageFit": "fill",
+    "imageUrl": "/project_images/mizan-tower-kallyanpur.jpg",
+    "location": "Kallyanpur, Dhaka (\u0995\u09B2\u09CD\u09AF\u09BE\u09A8\u09AA\u09C1\u09B0, \u09A2\u09BE\u0995\u09BE)",
+    "amenities": [
       {
-        levelName: "Typical Floor Unit A - 1,850 Sft",
-        sizeSqft: 1850,
-        imageUrl: "https://lh3.googleusercontent.com/d/1HfsvkjF_R57oo_rlVDG0lCzB4uSCvJtN",
-        rooms: [
-          { name: "Drawing & Dining", x: 5, y: 5, w: 45, h: 40, type: "living" },
-          { name: "Master Bed", x: 55, y: 5, w: 35, h: 35, type: "bed" },
-          { name: "Bedroom 2", x: 55, y: 45, w: 35, h: 30, type: "bed" },
-          { name: "Kitchen", x: 5, y: 50, w: 25, h: 35, type: "kitchen" },
-          { name: "Front Balcony", x: 32, y: 50, w: 18, h: 35, type: "balcony" }
-        ]
+        "icon": "Shield",
+        "name": "24/7 Security"
       },
       {
-        levelName: "Executive Suite Unit B - 2,200 Sft",
-        sizeSqft: 2200,
-        imageUrl: "https://lh3.googleusercontent.com/d/18WMuVx9H2CWyO2ZlW5N9vbIGt70cG73S",
-        rooms: [
-          { name: "Spacious Living Lounge", x: 5, y: 5, w: 50, h: 45, type: "living" },
-          { name: "Master Suite", x: 60, y: 5, w: 35, h: 35, type: "bed" },
-          { name: "Modern Kitchen", x: 5, y: 55, w: 30, h: 35, type: "kitchen" },
-          { name: "Veranda", x: 40, y: 55, w: 20, h: 35, type: "balcony" }
-        ]
+        "icon": "Zap",
+        "name": "Power Backup"
+      },
+      {
+        "icon": "Car",
+        "name": "Basement Parking"
+      }
+    ],
+    "sizeRange": "",
+    "priceRange": "",
+    "description": "\u09AE\u09BF\u099C\u09BE\u09A8 \u099F\u09BE\u0993\u09DF\u09BE\u09B0, \u0995\u09B2\u09CD\u09AF\u09BE\u09A8\u09AA\u09C1\u09B0 - \u09E7\u09EA \u09A4\u09B2\u09BE \u09AC\u09BF\u09B6\u09BF\u09B7\u09CD\u099F \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u0986\u09AD\u09BF\u099C\u09BE\u09A4\u09CD\u09AF\u09C7\u09B0 \u0986\u09AC\u09BE\u09B8\u09BF\u0995 \u0993 \u09AC\u09BE\u09A3\u09BF\u099C\u09CD\u09AF\u09BF\u0995 \u09AC\u09B9\u09C1\u09A4\u09B2 \u09AD\u09AC\u09A8\u0964 \u0989\u09A8\u09CD\u09A8\u09A4 \u09B8\u09BF\u0995\u09BF\u0989\u09B0\u09BF\u099F\u09BF, \u09AA\u09CD\u09B0\u09BE\u0987\u09AE \u09B2\u09CB\u0995\u09C7\u09B6\u09A8 \u0993 \u09AE\u09A8\u09CB\u09B0\u09AE \u099C\u09C0\u09AC\u09A8\u09AF\u09BE\u09A4\u09CD\u09B0\u09BE\u09B0 \u09B8\u09AC \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u09B8\u09C1\u09AF\u09CB\u0997-\u09B8\u09C1\u09AC\u09BF\u09A7\u09BE \u09B8\u09AE\u09CD\u09AC\u09B2\u09BF\u09A4 \u09AA\u09CD\u09B0\u099C\u09C7\u0995\u09CD\u099F\u0964",
+    "floorsCount": 14,
+    "floorLayouts": [
+      {
+        "rooms": [
+          {
+            "h": 40,
+            "w": 45,
+            "x": 5,
+            "y": 5,
+            "name": "Drawing & Dining",
+            "type": "living"
+          },
+          {
+            "h": 35,
+            "w": 35,
+            "x": 55,
+            "y": 5,
+            "name": "Master Bed",
+            "type": "bed"
+          },
+          {
+            "h": 30,
+            "w": 35,
+            "x": 55,
+            "y": 45,
+            "name": "Bedroom 2",
+            "type": "bed"
+          },
+          {
+            "h": 35,
+            "w": 25,
+            "x": 5,
+            "y": 50,
+            "name": "Kitchen",
+            "type": "kitchen"
+          },
+          {
+            "h": 35,
+            "w": 18,
+            "x": 32,
+            "y": 50,
+            "name": "Front Balcony",
+            "type": "balcony"
+          }
+        ],
+        "imageUrl": "https://lh3.googleusercontent.com/d/1HfsvkjF_R57oo_rlVDG0lCzB4uSCvJtN",
+        "sizeSqft": 1850,
+        "levelName": ""
+      },
+      {
+        "rooms": [
+          {
+            "h": 45,
+            "w": 50,
+            "x": 5,
+            "y": 5,
+            "name": "Spacious Living Lounge",
+            "type": "living"
+          },
+          {
+            "h": 35,
+            "w": 35,
+            "x": 60,
+            "y": 5,
+            "name": "Master Suite",
+            "type": "bed"
+          },
+          {
+            "h": 35,
+            "w": 30,
+            "x": 5,
+            "y": 55,
+            "name": "Modern Kitchen",
+            "type": "kitchen"
+          },
+          {
+            "h": 35,
+            "w": 20,
+            "x": 40,
+            "y": 55,
+            "name": "Veranda",
+            "type": "balcony"
+          }
+        ],
+        "imageUrl": "https://lh3.googleusercontent.com/d/18WMuVx9H2CWyO2ZlW5N9vbIGt70cG73S",
+        "sizeSqft": 2200,
+        "levelName": "Executive Suite Unit B - 2,200 Sft"
       }
     ]
   },
   {
-    id: "sunmoon-star-plaza",
-    title: "Sunmoon Star Plaza (\u09B8\u09BE\u09A8\u09AE\u09C1\u09A8 \u09B8\u09CD\u099F\u09BE\u09B0 \u09AA\u09CD\u09B2\u09BE\u099C\u09BE)",
-    type: "commercial",
-    status: "ongoing",
-    location: "Kallyanpur, Dhaka (\u0995\u09B2\u09CD\u09AF\u09BE\u09A8\u09AA\u09C1\u09B0, \u09A2\u09BE\u0995\u09BE)",
-    area: "Kallyanpur, Dhaka",
-    sizeRange: "2,500 - 8,000 Sft",
-    priceRange: "Price on Request",
-    floorsCount: 22,
-    imageUrl: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop"
+    "id": "sunmoon-star-plaza",
+    "area": "Kallyanpur, Dhaka",
+    "type": "commercial",
+    "title": "Sunmoon Star Plaza (\u09B8\u09BE\u09A8\u09AE\u09C1\u09A8 \u09B8\u09CD\u099F\u09BE\u09B0 \u09AA\u09CD\u09B2\u09BE\u099C\u09BE)",
+    "status": "completed",
+    "address": "Kallyanpur, Dhaka",
+    "gallery": [
+      "/project_images/sunmoon-star-plaza-gallery-0.jpg",
+      "/project_images/sunmoon-star-plaza-gallery-1.jpg"
     ],
-    description: "\u09B8\u09BE\u09A8\u09AE\u09C1\u09A8 \u09B8\u09CD\u099F\u09BE\u09B0 \u09AA\u09CD\u09B2\u09BE\u099C\u09BE, \u0995\u09B2\u09CD\u09AF\u09BE\u09A8\u09AA\u09C1\u09B0 - \u09E8\u09E8 \u09A4\u09B2\u09BE \u09AC\u09BE\u09A3\u09BF\u099C\u09CD\u09AF\u09BF\u0995 \u099F\u09BE\u0993\u09DF\u09BE\u09B0\u0964 \u0995\u09B0\u09CD\u09AA\u09CB\u09B0\u09C7\u099F \u0985\u09AB\u09BF\u09B8, \u09B6\u09CB\u09B0\u09C1\u09AE \u0993 \u09AC\u09CD\u09AF\u09BE\u0982\u0995 \u09B9\u09C7\u09A1\u0995\u09CB\u09DF\u09BE\u09B0\u09CD\u099F\u09BE\u09B0\u09C7\u09B0 \u099C\u09A8\u09CD\u09AF \u09A8\u09BF\u09B0\u09CD\u09A7\u09BE\u09B0\u09BF\u09A4 \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u0997\u09CD\u09B2\u09BE\u09B8 \u09AB\u09C7\u09B8\u09BE\u09A1 \u0993 \u0986\u0987\u0995\u09A8\u09BF\u0995 \u0986\u09B0\u09CD\u0995\u09BF\u099F\u09C7\u0995\u099A\u09BE\u09B0\u0964",
-    features: [
+    "features": [
       "\u09E8\u09E8 \u09A4\u09B2\u09BE \u09AC\u09BF\u09B6\u09BF\u09B7\u09CD\u099F \u0986\u0987\u0995\u09A8\u09BF\u0995 \u0995\u09AE\u09BE\u09B0\u09CD\u09B6\u09BF\u09DF\u09BE\u09B2 \u0986\u09B0\u09CD\u0995\u09BF\u099F\u09C7\u0995\u099A\u09BE\u09B0",
       "\u0995\u09CD\u09AF\u09BE\u09AA\u09B8\u09C1\u09B2 \u09B2\u09BF\u09AB\u099F, \u09A1\u09BE\u09AC\u09B2 \u09B9\u09BE\u0987\u099F \u0997\u09CD\u09B0\u09CD\u09AF\u09BE\u09A8\u09CD\u09A1 \u098F\u09A8\u09CD\u099F\u09CD\u09B0\u09BF \u0993 \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u09B8\u09C7\u09A8\u09CD\u099F\u09CD\u09B0\u09BE\u09B2 \u098F\u09B8\u09BF \u09AC\u09CD\u09AF\u09AC\u09B8\u09CD\u09A5\u09BE",
       "\u09AE\u09BE\u09B2\u09CD\u099F\u09BF-\u09B2\u09C7\u09AD\u09C7\u09B2 \u0985\u099F\u09CB\u09AE\u09C7\u099F\u09C7\u09A1 \u0995\u09BE\u09B0 \u09AA\u09BE\u09B0\u09CD\u0995\u09BF\u0982"
     ],
-    amenities: [
-      { icon: "Award", name: "Grade-A Business Center" },
-      { icon: "Cpu", name: "High Speed Elevators" },
-      { icon: "Shield", name: "Smart Security" }
-    ],
-    floorLayouts: [
+    "imageFit": "fill",
+    "imageUrl": "/project_images/sunmoon-star-plaza.jpg",
+    "location": "Kallyanpur, Dhaka (\u0995\u09B2\u09CD\u09AF\u09BE\u09A8\u09AA\u09C1\u09B0, \u09A2\u09BE\u0995\u09BE)",
+    "amenities": [
       {
-        levelName: "Commercial Office Floor Plan - 4,500 Sft",
-        sizeSqft: 4500,
-        imageUrl: "https://lh3.googleusercontent.com/d/1Hf0dC0-dzgk4r5yLOvfhJc3ZbD3MyXtN",
-        rooms: [
-          { name: "Open Office Space", x: 5, y: 5, w: 60, h: 50, type: "living" },
-          { name: "Executive Cabin", x: 70, y: 5, w: 25, h: 25, type: "bed" },
-          { name: "Conference Room", x: 70, y: 35, w: 25, h: 30, type: "corridor" },
-          { name: "Pantry & Washrooms", x: 5, y: 60, w: 30, h: 30, type: "kitchen" }
-        ]
+        "icon": "Award",
+        "name": "Grade-A Business Center"
+      },
+      {
+        "icon": "Cpu",
+        "name": "High Speed Elevators"
+      },
+      {
+        "icon": "Shield",
+        "name": "Smart Security"
+      }
+    ],
+    "sizeRange": "",
+    "priceRange": "Price on Request",
+    "description": "\u09B8\u09BE\u09A8\u09AE\u09C1\u09A8 \u09B8\u09CD\u099F\u09BE\u09B0 \u09AA\u09CD\u09B2\u09BE\u099C\u09BE, \u0995\u09B2\u09CD\u09AF\u09BE\u09A8\u09AA\u09C1\u09B0 - \u09E8\u09E8 \u09A4\u09B2\u09BE \u09AC\u09BE\u09A3\u09BF\u099C\u09CD\u09AF\u09BF\u0995 \u099F\u09BE\u0993\u09DF\u09BE\u09B0\u0964 \u0995\u09B0\u09CD\u09AA\u09CB\u09B0\u09C7\u099F \u0985\u09AB\u09BF\u09B8, \u09B6\u09CB\u09B0\u09C1\u09AE \u0993 \u09AC\u09CD\u09AF\u09BE\u0982\u0995 \u09B9\u09C7\u09A1\u0995\u09CB\u09DF\u09BE\u09B0\u09CD\u099F\u09BE\u09B0\u09C7\u09B0 \u099C\u09A8\u09CD\u09AF \u09A8\u09BF\u09B0\u09CD\u09A7\u09BE\u09B0\u09BF\u09A4 \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u0997\u09CD\u09B2\u09BE\u09B8 \u09AB\u09C7\u09B8\u09BE\u09A1 \u0993 \u0986\u0987\u0995\u09A8\u09BF\u0995 \u0986\u09B0\u09CD\u0995\u09BF\u099F\u09C7\u0995\u099A\u09BE\u09B0\u0964",
+    "floorsCount": 22,
+    "floorLayouts": [
+      {
+        "rooms": [
+          {
+            "h": 50,
+            "w": 60,
+            "x": 5,
+            "y": 5,
+            "name": "Open Office Space",
+            "type": "living"
+          },
+          {
+            "h": 25,
+            "w": 25,
+            "x": 70,
+            "y": 5,
+            "name": "Executive Cabin",
+            "type": "bed"
+          },
+          {
+            "h": 30,
+            "w": 25,
+            "x": 70,
+            "y": 35,
+            "name": "Conference Room",
+            "type": "corridor"
+          },
+          {
+            "h": 30,
+            "w": 30,
+            "x": 5,
+            "y": 60,
+            "name": "Pantry & Washrooms",
+            "type": "kitchen"
+          }
+        ],
+        "imageUrl": "https://lh3.googleusercontent.com/d/1Hf0dC0-dzgk4r5yLOvfhJc3ZbD3MyXtN",
+        "sizeSqft": 0,
+        "levelName": ""
       }
     ]
   },
   {
-    id: "razia-tower-kallyanpur",
-    title: "Razia Tower (\u09B0\u09BE\u099C\u09BF\u09DF\u09BE \u099F\u09BE\u0993\u09DF\u09BE\u09B0)",
-    type: "commercial",
-    status: "ongoing",
-    location: "Kallyanpur, Dhaka (\u0995\u09B2\u09CD\u09AF\u09BE\u09A8\u09AA\u09C1\u09B0, \u09A2\u09BE\u0995\u09BE)",
-    area: "Kallyanpur, Dhaka",
-    sizeRange: "2,000 - 6,500 Sft",
-    priceRange: "Price on Request",
-    floorsCount: 20,
-    imageUrl: "https://images.unsplash.com/photo-1577495508048-b635879837f1?q=80&w=800&auto=format&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1577495508048-b635879837f1?q=80&w=800&auto=format&fit=crop"
+    "id": "razia-tower-kallyanpur",
+    "area": "Kallyanpur, Dhaka",
+    "type": "residential",
+    "title": "Razia Tower (\u09B0\u09BE\u099C\u09BF\u09DF\u09BE \u099F\u09BE\u0993\u09DF\u09BE\u09B0)",
+    "status": "completed",
+    "address": "Kallyanpur, Dhaka",
+    "gallery": [
+      "/project_images/razia-tower-kallyanpur-gallery-0.jpg",
+      "/project_images/razia-tower-kallyanpur-gallery-1.jpg"
     ],
-    description: "\u09B0\u09BE\u099C\u09BF\u09DF\u09BE \u099F\u09BE\u0993\u09DF\u09BE\u09B0, \u0995\u09B2\u09CD\u09AF\u09BE\u09A8\u09AA\u09C1\u09B0 - \u09E8\u09E6 \u09A4\u09B2\u09BE \u09AC\u09BE\u09A3\u09BF\u099C\u09CD\u09AF\u09BF\u0995 \u09AD\u09AC\u09A8\u0964 \u09AC\u09CD\u09AF\u09AC\u09B8\u09BE\u09DF\u09BF\u0995 \u09AA\u09CD\u09B0\u09B8\u09BE\u09B0 \u0993 \u0995\u09B0\u09CD\u09AA\u09CB\u09B0\u09C7\u099F \u09B9\u09C7\u09A1\u0995\u09CB\u09DF\u09BE\u09B0\u09CD\u099F\u09BE\u09B0\u09C7\u09B0 \u099C\u09A8\u09CD\u09AF \u09AA\u09CD\u09B0\u09B8\u09CD\u09A4\u09C1\u09A4\u0995\u09C3\u09A4 \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u09AC\u09BE\u09A3\u09BF\u099C\u09CD\u09AF\u09BF\u0995 \u0995\u09C7\u09A8\u09CD\u09A6\u09CD\u09B0\u0964",
-    features: [
+    "features": [
       "\u09E8\u09E6 \u09A4\u09B2\u09BE \u09AC\u09BF\u09B6\u09BF\u09B7\u09CD\u099F \u09B9\u09BE\u0987-\u09B0\u09BE\u0987\u099C \u0995\u09AE\u09BE\u09B0\u09CD\u09B6\u09BF\u09DF\u09BE\u09B2 \u099F\u09BE\u0993\u09DF\u09BE\u09B0",
       "\u0989\u09A8\u09CD\u09A8\u09A4 \u09B8\u09C7\u09A8\u09CD\u099F\u09CD\u09B0\u09BE\u09B2 \u09AC\u09BF\u09B2\u09CD\u09A1\u09BF\u0982 \u09AE\u09CD\u09AF\u09BE\u09A8\u09C7\u099C\u09AE\u09C7\u09A8\u09CD\u099F \u09B8\u09BF\u09B8\u09CD\u099F\u09C7\u09AE (BMS)",
       "\u09A1\u09BF\u099C\u09BF\u099F\u09BE\u09B2 \u0995\u09CD\u09AF\u09BE\u09AB\u09C7\u099F\u09C7\u09B0\u09BF\u09DF\u09BE \u0993 \u09AB\u09BE\u09DF\u09BE\u09B0 \u09B8\u09C7\u09AB\u099F\u09BF \u09AC\u09CD\u09AF\u09AC\u09B8\u09CD\u09A5\u09BE"
     ],
-    amenities: [
-      { icon: "Coffee", name: "Cafeteria & Lounge" },
-      { icon: "Zap", name: "100% Generator Backup" }
-    ],
-    floorLayouts: [
+    "imageUrl": "/project_images/razia-tower-kallyanpur.jpg",
+    "location": "Kallyanpur, Dhaka (\u0995\u09B2\u09CD\u09AF\u09BE\u09A8\u09AA\u09C1\u09B0, \u09A2\u09BE\u0995\u09BE)",
+    "amenities": [
       {
-        levelName: "Corporate Office Level Plan - 3,800 Sft",
-        sizeSqft: 3800,
-        imageUrl: "https://lh3.googleusercontent.com/d/1JLtIalfp49hPq57qAKKE-4Ezraaw7asU",
-        rooms: [
-          { name: "Corporate Workstation Zone", x: 5, y: 5, w: 55, h: 55, type: "living" },
-          { name: "Director Suite", x: 65, y: 5, w: 30, h: 30, type: "bed" },
-          { name: "Meeting Lounge", x: 65, y: 40, w: 30, h: 25, type: "corridor" }
-        ]
+        "icon": "Coffee",
+        "name": "Cafeteria & Lounge"
+      },
+      {
+        "icon": "Zap",
+        "name": "100% Generator Backup"
+      }
+    ],
+    "sizeRange": "",
+    "priceRange": "Price on Request",
+    "description": "\u09B0\u09BE\u099C\u09BF\u09DF\u09BE \u099F\u09BE\u0993\u09DF\u09BE\u09B0, \u0995\u09B2\u09CD\u09AF\u09BE\u09A8\u09AA\u09C1\u09B0 - \u09E8\u09E6 \u09A4\u09B2\u09BE \u09AC\u09BE\u09A3\u09BF\u099C\u09CD\u09AF\u09BF\u0995 \u09AD\u09AC\u09A8\u0964 \u09AC\u09CD\u09AF\u09AC\u09B8\u09BE\u09DF\u09BF\u0995 \u09AA\u09CD\u09B0\u09B8\u09BE\u09B0 \u0993 \u0995\u09B0\u09CD\u09AA\u09CB\u09B0\u09C7\u099F \u09B9\u09C7\u09A1\u0995\u09CB\u09DF\u09BE\u09B0\u09CD\u099F\u09BE\u09B0\u09C7\u09B0 \u099C\u09A8\u09CD\u09AF \u09AA\u09CD\u09B0\u09B8\u09CD\u09A4\u09C1\u09A4\u0995\u09C3\u09A4 \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u09AC\u09BE\u09A3\u09BF\u099C\u09CD\u09AF\u09BF\u0995 \u0995\u09C7\u09A8\u09CD\u09A6\u09CD\u09B0\u0964",
+    "floorsCount": 20,
+    "floorLayouts": [
+      {
+        "rooms": [
+          {
+            "h": 55,
+            "w": 55,
+            "x": 5,
+            "y": 5,
+            "name": "Corporate Workstation Zone",
+            "type": "living"
+          },
+          {
+            "h": 30,
+            "w": 30,
+            "x": 65,
+            "y": 5,
+            "name": "Director Suite",
+            "type": "bed"
+          },
+          {
+            "h": 25,
+            "w": 30,
+            "x": 65,
+            "y": 40,
+            "name": "Meeting Lounge",
+            "type": "corridor"
+          }
+        ],
+        "imageUrl": "https://lh3.googleusercontent.com/d/1JLtIalfp49hPq57qAKKE-4Ezraaw7asU",
+        "sizeSqft": 0,
+        "levelName": ""
       }
     ]
   },
   {
-    id: "madina-mansion-1",
-    title: "Madina Mansion 1 (\u09AE\u09A6\u09BF\u09A8\u09BE \u09AE\u09CD\u09AF\u09BE\u09A8\u09B6\u09A8 \u09E7)",
-    type: "residential",
-    status: "completed",
-    location: "Paikpara, Mirpur, Dhaka (\u09AA\u09BE\u0987\u0995\u09AA\u09BE\u09DC\u09BE, \u09A2\u09BE\u0995\u09BE)",
-    area: "Mirpur, Dhaka",
-    sizeRange: "1,400 - 2,200 Sft",
-    priceRange: "Completed Project",
-    beds: 3,
-    baths: 3,
-    floorsCount: 7,
-    imageUrl: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=800&auto=format&fit=crop"
+    "id": "madina-mansion-1",
+    "area": "Paikpara, Mirpur, Dhaka (\u09AA\u09BE\u0987\u0995\u09AA\u09BE\u09DC\u09BE, \u09A2\u09BE\u0995\u09BE)",
+    "beds": 3,
+    "type": "residential",
+    "baths": 3,
+    "title": "\u09AE\u09A6\u09BF\u09A8\u09BE \u09AE\u09CD\u09AF\u09BE\u09A8\u09B6\u09A8 \u09E7",
+    "status": "completed",
+    "address": "Paikpara, Mirpur, Dhaka (\u09AA\u09BE\u0987\u0995\u09AA\u09BE\u09DC\u09BE, \u09A2\u09BE\u0995\u09BE)",
+    "gallery": [
+      "/project_images/madina-mansion-1-gallery-0.jpg",
+      "/project_images/madina-mansion-1-gallery-1.jpg",
+      "/project_images/madina-mansion-1-gallery-2.jpg",
+      "/project_images/madina-mansion-1-gallery-3.jpg"
     ],
-    description: "\u09AE\u09A6\u09BF\u09A8\u09BE \u09AE\u09CD\u09AF\u09BE\u09A8\u09B6\u09A8 (\u09E7), \u09ED \u09A4\u09B2\u09BE, \u09AA\u09BE\u0987\u0995\u09AA\u09BE\u09DC\u09BE - \u09B6\u09BE\u09A8\u09CD\u09A4 \u0993 \u09B8\u09C1\u09A8\u09CD\u09A6\u09B0 \u09AA\u09B0\u09BF\u09AC\u09C7\u09B6\u09C7 \u09A8\u09BF\u09B7\u09CD\u0995\u09A3\u09CD\u099F\u0995 \u099C\u09BE\u09DF\u0997\u09BE\u09DF \u09A8\u09BF\u09B0\u09CD\u09AE\u09BF\u09A4 \u09AE\u09C1\u09A8 \u0997\u09CD\u09B0\u09C1\u09AA\u09C7\u09B0 \u09B8\u09AB\u09B2 \u09B9\u09CD\u09AF\u09BE\u09A8\u09CD\u09A1\u0993\u09AD\u09BE\u09B0\u0995\u09C3\u09A4 \u09ED \u09A4\u09B2\u09BE \u0986\u09AC\u09BE\u09B8\u09BF\u0995 \u0985\u09CD\u09AF\u09BE\u09AA\u09BE\u09B0\u09CD\u099F\u09AE\u09C7\u09A8\u09CD\u099F\u0964",
-    features: [
+    "features": [
       "\u09ED \u09A4\u09B2\u09BE \u09B8\u09C1\u09AA\u09B0\u09BF\u0995\u09B2\u09CD\u09AA\u09BF\u09A4 \u0986\u09AC\u09BE\u09B8\u09BF\u0995 \u09AD\u09AC\u09A8",
       "\u0986\u09B2\u09CB\u0995\u09CB\u099C\u09CD\u099C\u09CD\u09AC\u09B2 \u0993 \u09AC\u09BE\u09DF\u09C1 \u099A\u09B2\u09BE\u099A\u09B2\u09C7\u09B0 \u0989\u09AA\u09AF\u09CB\u0997\u09C0 \u09B0\u09C1\u09AE \u09B2\u09C7\u0986\u0989\u099F",
       "\u0987\u09A8\u09CD\u099F\u09BE\u09B0\u0995\u09AE \u0993 \u09B8\u09BF\u09B8\u09BF\u099F\u09BF\u09AD\u09BF \u09B8\u09C1\u09AC\u09BF\u09A7\u09BE"
     ],
-    amenities: [
-      { icon: "Shield", name: "24/7 Security" },
-      { icon: "Smile", name: "Family Environment" }
-    ],
-    floorLayouts: [
+    "imageUrl": "/project_images/madina-mansion-1.jpg",
+    "location": "Paikpara, Mirpur, Dhaka (\u09AA\u09BE\u0987\u0995\u09AA\u09BE\u09DC\u09BE, \u09A2\u09BE\u0995\u09BE)",
+    "amenities": [
       {
-        levelName: "Completed Apartment Layout - 1,650 Sft",
-        sizeSqft: 1650,
-        imageUrl: "https://lh3.googleusercontent.com/d/1JG0sjCKULHmz4JpmfwfFs6tZc2Wl-Hjt",
-        rooms: [
-          { name: "Drawing & Dining Room", x: 5, y: 5, w: 40, h: 40, type: "living" },
-          { name: "Master Bed", x: 50, y: 5, w: 40, h: 35, type: "bed" },
-          { name: "Kitchen", x: 5, y: 50, w: 25, h: 35, type: "kitchen" },
-          { name: "Balcony", x: 35, y: 50, w: 20, h: 35, type: "balcony" }
-        ]
+        "icon": "Shield",
+        "name": "24/7 Security"
+      },
+      {
+        "icon": "Smile",
+        "name": "Family Environment"
       }
-    ]
+    ],
+    "sizeRange": "",
+    "priceRange": "Completed Project",
+    "description": "\u09AE\u09A6\u09BF\u09A8\u09BE \u09AE\u09CD\u09AF\u09BE\u09A8\u09B6\u09A8 (\u09E7), \u09ED \u09A4\u09B2\u09BE, \u09AA\u09BE\u0987\u0995\u09AA\u09BE\u09DC\u09BE - \u09B6\u09BE\u09A8\u09CD\u09A4 \u0993 \u09B8\u09C1\u09A8\u09CD\u09A6\u09B0 \u09AA\u09B0\u09BF\u09AC\u09C7\u09B6\u09C7 \u09A8\u09BF\u09B7\u09CD\u0995\u09A3\u09CD\u099F\u0995 \u099C\u09BE\u09DF\u0997\u09BE\u09DF \u09A8\u09BF\u09B0\u09CD\u09AE\u09BF\u09A4 \u09AE\u09C1\u09A8 \u0997\u09CD\u09B0\u09C1\u09AA\u09C7\u09B0 \u09B8\u09AB\u09B2 \u09B9\u09CD\u09AF\u09BE\u09A8\u09CD\u09A1\u0993\u09AD\u09BE\u09B0\u0995\u09C3\u09A4 \u09ED \u09A4\u09B2\u09BE \u0986\u09AC\u09BE\u09B8\u09BF\u0995 \u0985\u09CD\u09AF\u09BE\u09AA\u09BE\u09B0\u09CD\u099F\u09AE\u09C7\u09A8\u09CD\u099F\u0964",
+    "floorsCount": 7,
+    "floorLayouts": []
   },
   {
-    id: "hamida-villa",
-    title: "Hamida Villa (\u09B9\u09BE\u09AE\u09BF\u09A6\u09BE \u09AD\u05D9\u05DC\u05D4)",
-    type: "residential",
-    status: "completed",
-    location: "Paikpara, Mirpur, Dhaka (\u09AA\u09BE\u0987\u0995\u09AA\u09BE\u09DC\u09BE, \u09A2\u09BE\u0995\u09BE)",
-    area: "Mirpur, Dhaka",
-    sizeRange: "1,500 - 2,400 Sft",
-    priceRange: "Completed Project",
-    beds: 3,
-    baths: 3,
-    floorsCount: 7,
-    imageUrl: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=800&auto=format&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=800&auto=format&fit=crop"
+    "id": "hamida-villa",
+    "area": "Paikpara, Mirpur, Dhaka (\u09AA\u09BE\u0987\u0995\u09AA\u09BE\u09DC\u09BE, \u09A2\u09BE\u0995\u09BE)",
+    "beds": 3,
+    "type": "residential",
+    "baths": 3,
+    "title": "Hamida Villa",
+    "status": "completed",
+    "address": "Paikpara, Mirpur, Dhaka (\u09AA\u09BE\u0987\u0995\u09AA\u09BE\u09DC\u09BE, \u09A2\u09BE\u0995\u09BE)",
+    "gallery": [
+      "/project_images/hamida-villa-gallery-0.jpg"
     ],
-    description: "\u09B9\u09BE\u09AE\u09BF\u09A6\u09BE \u09AD\u05D9\u05DC\u05D4, \u09ED \u09A4\u09B2\u09BE, \u09AA\u09BE\u0987\u0995\u09AA\u09BE\u09DC\u09BE - \u09AA\u09BE\u0987\u0995\u09AA\u09BE\u09DC\u09BE\u09B0 \u09AA\u09CD\u09B0\u09BE\u0987\u09AE \u09B2\u09CB\u0995\u09C7\u09B6\u09A8\u09C7 \u09ED \u09A4\u09B2\u09BE \u09AC\u09BF\u09B6\u09BF\u09B7\u09CD\u099F \u0986\u09AC\u09BE\u09B8\u09BF\u0995 \u09AD\u09BF\u09B2\u09BE\u0964 \u09B8\u09C1\u09AA\u09B0\u09BF\u09B8\u09B0 \u0985\u09CD\u09AF\u09BE\u09AA\u09BE\u09B0\u09CD\u099F\u09AE\u09C7\u09A8\u09CD\u099F \u0993 \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u09AB\u09BF\u099F\u09BF\u0982\u09B8\u09B8\u09B9 \u09B6\u09A4\u09AD\u09BE\u0997 \u09AA\u09CD\u09B0\u09B8\u09CD\u09A4\u09C1\u09A4\u0964",
-    features: [
+    "features": [
       "\u09ED \u09A4\u09B2\u09BE \u09B8\u09AB\u09B2\u09AD\u09BE\u09AC\u09C7 \u09B9\u09B8\u09CD\u09A4\u09BE\u09A8\u09CD\u09A4\u09B0\u09BF\u09A4 \u0985\u09CD\u09AF\u09BE\u09AA\u09BE\u09B0\u09CD\u099F\u09AE\u09C7\u09A8\u09CD\u099F",
       "\u09A8\u09BF\u099C\u09B8\u09CD\u09AC \u09A1\u09BF\u09AA \u099F\u09BF\u0989\u09AC\u0993\u09DF\u09C7\u09B2 \u0993 \u0993\u09DF\u09BE\u099F\u09BE\u09B0 \u09AB\u09BF\u09B2\u09CD\u099F\u09CD\u09B0\u09C7\u09B6\u09A8",
       "\u09A8\u09BF\u09B0\u09BE\u09AA\u09A6 \u09AA\u09BE\u09B0\u09CD\u0995\u09BF\u0982 \u0993 \u09B8\u09C1\u09AA\u09CD\u09B0\u09B6\u09B8\u09CD\u09A4 \u09A1\u09CD\u09B0\u09BE\u0987\u09AD\u0993\u09DF\u09C7"
     ],
-    amenities: [
-      { icon: "Car", name: "Protected Parking" },
-      { icon: "Zap", name: "Auto Generator" }
-    ],
-    floorLayouts: [
+    "imageUrl": "/project_images/hamida-villa.jpg",
+    "location": "Paikpara, Mirpur, Dhaka (\u09AA\u09BE\u0987\u0995\u09AA\u09BE\u09DC\u09BE, \u09A2\u09BE\u0995\u09BE)",
+    "amenities": [
       {
-        levelName: "Hamida Villa Floor Plan - 1,800 Sft",
-        sizeSqft: 1800,
-        imageUrl: "https://lh3.googleusercontent.com/d/1MzBr64Y8DJJNG2q_tKa1R-b3ol3rGdgD",
-        rooms: [
-          { name: "Living Space", x: 5, y: 5, w: 45, h: 40, type: "living" },
-          { name: "Master Bedroom", x: 55, y: 5, w: 35, h: 35, type: "bed" },
-          { name: "Kitchen & Pantry", x: 5, y: 50, w: 30, h: 35, type: "kitchen" }
-        ]
+        "icon": "Car",
+        "name": "Protected Parking"
+      },
+      {
+        "icon": "Zap",
+        "name": "Auto Generator"
       }
-    ]
+    ],
+    "sizeRange": "",
+    "priceRange": "Completed Project",
+    "description": "Hamida Villa, \u09ED \u09A4\u09B2\u09BE, \u09AA\u09BE\u0987\u0995\u09AA\u09BE\u09DC\u09BE - \u09AA\u09BE\u0987\u0995\u09AA\u09BE\u09DC\u09BE\u09B0 \u09AA\u09CD\u09B0\u09BE\u0987\u09AE \u09B2\u09CB\u0995\u09C7\u09B6\u09A8\u09C7 \u09ED \u09A4\u09B2\u09BE \u09AC\u09BF\u09B6\u09BF\u09B7\u09CD\u099F \u0986\u09AC\u09BE\u09B8\u09BF\u0995 \u09AD\u09BF\u09B2\u09BE\u0964 \u09B8\u09C1\u09AA\u09B0\u09BF\u09B8\u09B0 \u0985\u09CD\u09AF\u09BE\u09AA\u09BE\u09B0\u09CD\u099F\u09AE\u09C7\u09A8\u09CD\u099F \u0993 \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u09AB\u09BF\u099F\u09BF\u0982\u09B8\u09B8\u09B9 \u09B6\u09A4\u09AD\u09BE\u0997 \u09AA\u09CD\u09B0\u09B8\u09CD\u09A4\u09C1\u09A4\u0964",
+    "floorsCount": 7,
+    "floorLayouts": []
   },
   {
-    id: "mizan-tower-2",
-    title: "Mizan Tower 2 (\u09AE\u09BF\u099C\u09BE\u09A8 \u099F\u09BE\u0993\u09DF\u09BE\u09B0 \u09E8)",
-    type: "residential",
-    status: "ongoing",
-    location: "Amin Bazar, Dhaka (\u0986\u09AE\u09BF\u09A8 \u09AC\u09BE\u099C\u09BE\u09B0, \u09A2\u09BE\u0995\u09BE)",
-    area: "Amin Bazar, Dhaka",
-    sizeRange: "1,250 - 2,100 Sft",
-    priceRange: "Tk 45 - 85 Lakh",
-    beds: 3,
-    baths: 3,
-    floorsCount: 7,
-    imageUrl: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop"
+    "id": "mizan-tower-2",
+    "area": "Amin Bazar, Dhaka",
+    "beds": 3,
+    "type": "residential",
+    "baths": 3,
+    "title": "Mizan Tower 2 (\u09AE\u09BF\u099C\u09BE\u09A8 \u099F\u09BE\u0993\u09DF\u09BE\u09B0 \u09E8)",
+    "status": "completed",
+    "address": "Amin Bazar, Dhaka (\u0986\u09AE\u09BF\u09A8 \u09AC\u09BE\u099C\u09BE\u09B0, \u09A2\u09BE\u0995\u09BE)",
+    "gallery": [
+      "/project_images/mizan-tower-2-gallery-0.jpg",
+      "/project_images/mizan-tower-2-gallery-1.jpg",
+      "/project_images/mizan-tower-2-gallery-2.jpg"
     ],
-    description: "\u09AE\u09BF\u099C\u09BE\u09A8 \u099F\u09BE\u0993\u09DF\u09BE\u09B0 (\u09E8), \u09ED \u09A4\u09B2\u09BE, \u0986\u09AE\u09BF\u09A8 \u09AC\u09BE\u099C\u09BE\u09B0 - \u0997\u09BE\u09AC\u09A4\u09B2\u09C0 \u0993 \u0986\u09AE\u09BF\u09A8 \u09AC\u09BE\u099C\u09BE\u09B0 \u09AC\u09CD\u09B0\u09BF\u099C\u09C7\u09B0 \u0985\u09A6\u09C2\u09B0\u09C7 \u09ED \u09A4\u09B2\u09BE \u09AC\u09BF\u09B6\u09BF\u09B7\u09CD\u099F \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u09A8\u09BF\u09B0\u09CD\u09AE\u09BE\u09A3\u09BE\u09A7\u09C0\u09A8 \u0986\u09AC\u09BE\u09B8\u09BF\u0995 \u09AA\u09CD\u09B0\u099C\u09C7\u0995\u09CD\u099F\u0964",
-    features: [
+    "features": [
       "\u09ED \u09A4\u09B2\u09BE \u09AD\u09C2\u09AE\u09BF\u0995\u09AE\u09CD\u09AA \u09AA\u09CD\u09B0\u09A4\u09BF\u09B0\u09CB\u09A7\u09C0 \u09B8\u09CD\u099F\u09CD\u09B0\u09BE\u0995\u099A\u09BE\u09B0",
       "\u09B8\u09B9\u099C \u0995\u09BF\u09B8\u09CD\u09A4\u09BF\u09A4\u09C7 \u0995\u09CD\u09B0\u09DF\u09C7\u09B0 \u0986\u0995\u09B0\u09CD\u09B7\u09A3\u09C0\u09DF \u09B8\u09C1\u09AF\u09CB\u0997",
       "\u0996\u09CB\u09B2\u09BE\u09AE\u09C7\u09B2\u09BE \u09AE\u09A8\u09CB\u09B0\u09AE \u09AA\u09B0\u09BF\u09AC\u09C7\u09B6"
     ],
-    amenities: [
-      { icon: "Shield", name: "Gated Security" },
-      { icon: "Zap", name: "Standby Generator" }
-    ],
-    floorLayouts: [
+    "imageUrl": "/project_images/mizan-tower-2.jpg",
+    "location": "Amin Bazar, Dhaka (\u0986\u09AE\u09BF\u09A8 \u09AC\u09BE\u099C\u09BE\u09B0, \u09A2\u09BE\u0995\u09BE)",
+    "amenities": [
       {
-        levelName: "Mizan Tower 2 Floor Plan - 1,550 Sft",
-        sizeSqft: 1550,
-        imageUrl: "https://lh3.googleusercontent.com/d/1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6c",
-        rooms: [
-          { name: "Drawing & Dining", x: 5, y: 5, w: 40, h: 40, type: "living" },
-          { name: "Master Bed", x: 50, y: 5, w: 40, h: 35, type: "bed" },
-          { name: "Kitchen", x: 5, y: 50, w: 25, h: 35, type: "kitchen" }
-        ]
+        "icon": "Shield",
+        "name": "Gated Security"
+      },
+      {
+        "icon": "Zap",
+        "name": "Standby Generator"
       }
-    ]
+    ],
+    "sizeRange": "",
+    "priceRange": "",
+    "description": "\u09AE\u09BF\u099C\u09BE\u09A8 \u099F\u09BE\u0993\u09DF\u09BE\u09B0 (\u09E8), \u09ED \u09A4\u09B2\u09BE, \u0986\u09AE\u09BF\u09A8 \u09AC\u09BE\u099C\u09BE\u09B0 - \u0997\u09BE\u09AC\u09A4\u09B2\u09C0 \u0993 \u0986\u09AE\u09BF\u09A8 \u09AC\u09BE\u099C\u09BE\u09B0 \u09AC\u09CD\u09B0\u09BF\u099C\u09C7\u09B0 \u0985\u09A6\u09C2\u09B0\u09C7 \u09ED \u09A4\u09B2\u09BE \u09AC\u09BF\u09B6\u09BF\u09B7\u09CD\u099F \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u09A8\u09BF\u09B0\u09CD\u09AE\u09BE\u09A3\u09BE\u09A7\u09C0\u09A8 \u0986\u09AC\u09BE\u09B8\u09BF\u0995 \u09AA\u09CD\u09B0\u099C\u09C7\u0995\u09CD\u099F\u0964",
+    "floorsCount": 7,
+    "floorLayouts": []
   },
   {
-    id: "al-mizan-city",
-    title: "Al Mizan City (\u0986\u09B2 \u09AE\u09BF\u099C\u09BE\u09A8 \u09B8\u09BF\u099F\u09BF - \u09AA\u09CD\u09B0\u09B8\u09CD\u09A4\u09BE\u09AC\u09BF\u09A4 \u09E7\u09E6 \u09AC\u09BF\u0998\u09BE \u09AA\u09CD\u09B0\u099C\u09C7\u0995\u09CD\u099F)",
-    type: "residential",
-    status: "upcoming",
-    location: "Amin Bazar, Dhaka (\u0986\u09AE\u09BF\u09A8 \u09AC\u09BE\u099C\u09BE\u09B0, \u09A2\u09BE\u0995\u09BE)",
-    area: "Amin Bazar, Dhaka",
-    sizeRange: "Proposed 10 Bigha Township",
-    priceRange: "Price on Request",
-    landArea: "10 Bigha (\u09E9.\u09E9 \u098F\u0995\u09B0)",
-    floorsCount: 15,
-    imageUrl: "https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?q=80&w=800&auto=format&fit=crop",
-    gallery: [
+    "id": "al-mizan-city",
+    "area": "Amin Bazar, Dhaka",
+    "type": "residential",
+    "title": "Al Mizan City (\u0986\u09B2 \u09AE\u09BF\u099C\u09BE\u09A8 \u09B8\u09BF\u099F\u09BF - \u09AA\u09CD\u09B0\u09B8\u09CD\u09A4\u09BE\u09AC\u09BF\u09A4 \u09E7\u09E6 \u09AC\u09BF\u0998\u09BE \u09AA\u09CD\u09B0\u099C\u09C7\u0995\u09CD\u099F)",
+    "status": "proposed",
+    "address": "Amin Bazar, Dhaka",
+    "gallery": [
       "https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?q=80&w=800&auto=format&fit=crop"
     ],
-    description: "\u0986\u09B2 \u09AE\u09BF\u099C\u09BE\u09A8 \u09B8\u09BF\u099F\u09BF \u09AA\u09CD\u09B0\u09B8\u09CD\u09A4\u09BE\u09AC\u09BF\u09A4 \u09E7\u09E6 \u09AC\u09BF\u0998\u09BE \u09AA\u09CD\u09B0\u099C\u09C7\u0995\u09CD\u099F, \u0986\u09AE\u09BF\u09A8 \u09AC\u09BE\u099C\u09BE\u09B0 - \u09A2\u09BE\u0995\u09BE\u09B0 \u09AA\u09CD\u09B0\u09AC\u09C7\u09B6\u09A6\u09CD\u09AC\u09BE\u09B0\u09C7 \u09E7\u09E6 \u09AC\u09BF\u0998\u09BE \u099C\u09AE\u09BF\u09B0 \u0989\u09AA\u09B0 \u09AA\u09CD\u09B0\u09B8\u09CD\u09A4\u09BE\u09AC\u09BF\u09A4 \u09AE\u09C7\u0997\u09BE \u09AE\u09A1\u09C7\u09B2 \u099F\u09BE\u0989\u09A8 \u0993 \u0997\u09CD\u09B0\u09C0\u09A8 \u099F\u09BE\u0989\u09A8\u09B6\u09BF\u09AA \u09AA\u09CD\u09B0\u099C\u09C7\u0995\u09CD\u099F\u0964",
-    features: [
+    "features": [
       "\u09E7\u09E6 \u09AC\u09BF\u0998\u09BE \u09AC\u09BF\u09B6\u09BE\u09B2 \u09AD\u09C2\u09AE\u09BF\u09B0 \u0989\u09AA\u09B0 \u09AA\u09B0\u09BF\u0995\u09B2\u09CD\u09AA\u09BF\u09A4 \u09B8\u09CD\u09AF\u09BE\u099F\u09C7\u09B2\u09BE\u0987\u099F \u09B8\u09BF\u099F\u09BF",
       "\u09A8\u09BF\u099C\u09B8\u09CD\u09AC \u09B8\u09CD\u0995\u09C1\u09B2, \u09AE\u09B8\u099C\u09BF\u09A6, \u09AA\u09BE\u09B0\u09CD\u0995, \u09AA\u09CD\u09B2\u09C7\u0997\u09CD\u09B0\u09BE\u0989\u09A8\u09CD\u09A1 \u0993 \u09B6\u09AA\u09BF\u0982 \u09B8\u09C7\u09A8\u09CD\u099F\u09BE\u09B0",
       "\u09AA\u09CD\u09B0\u09B6\u09B8\u09CD\u09A4 \u09AE\u09C7\u09AE\u09CD\u09AC\u09C7\u09A8 \u09B0\u09CB\u09A1 \u0993 \u09AA\u09B0\u09BF\u09AC\u09C7\u09B6\u09AC\u09BE\u09A8\u09CD\u09A7\u09AC \u09B2\u09C7\u0995\u09B8\u09BE\u0987\u09A1 \u09AD\u09BF\u0989"
     ],
-    amenities: [
-      { icon: "Compass", name: "10 Bigha Mega Project" },
-      { icon: "Leaf", name: "Green Park & Lake" },
-      { icon: "Smile", name: "Playground & School" }
-    ],
-    floorLayouts: [
+    "imageFit": "fill",
+    "imageUrl": "https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?q=80&w=800&auto=format&fit=crop",
+    "landArea": "10 Bigha (\u09E9.\u09E9 \u098F\u0995\u09B0)",
+    "location": "Amin Bazar, Dhaka (\u0986\u09AE\u09BF\u09A8 \u09AC\u09BE\u099C\u09BE\u09B0, \u09A2\u09BE\u0995\u09BE)",
+    "amenities": [
       {
-        levelName: "Master Masterplan Layout - 10 Bigha Township",
-        sizeSqft: 12e3,
-        imageUrl: "https://lh3.googleusercontent.com/d/1HfsvkjF_R57oo_rlVDG0lCzB4uSCvJtN",
-        rooms: [
-          { name: "Residential Zone", x: 5, y: 5, w: 50, h: 50, type: "living" },
-          { name: "Commercial Hub", x: 60, y: 5, w: 35, h: 35, type: "corridor" },
-          { name: "Central Lake & Park", x: 5, y: 60, w: 90, h: 30, type: "balcony" }
-        ]
+        "icon": "Compass",
+        "name": "10 Bigha Mega Project"
+      },
+      {
+        "icon": "Leaf",
+        "name": "Green Park & Lake"
+      },
+      {
+        "icon": "Smile",
+        "name": "Playground & School"
       }
-    ]
+    ],
+    "sizeRange": "Proposed 10 Bigha Township",
+    "priceRange": "Price on Request",
+    "description": "\u0986\u09B2 \u09AE\u09BF\u099C\u09BE\u09A8 \u09B8\u09BF\u099F\u09BF \u09AA\u09CD\u09B0\u09B8\u09CD\u09A4\u09BE\u09AC\u09BF\u09A4 \u09E7\u09E6 \u09AC\u09BF\u0998\u09BE \u09AA\u09CD\u09B0\u099C\u09C7\u0995\u09CD\u099F, \u0986\u09AE\u09BF\u09A8 \u09AC\u09BE\u099C\u09BE\u09B0 - \u09A2\u09BE\u0995\u09BE\u09B0 \u09AA\u09CD\u09B0\u09AC\u09C7\u09B6\u09A6\u09CD\u09AC\u09BE\u09B0\u09C7 \u09E7\u09E6 \u09AC\u09BF\u0998\u09BE \u099C\u09AE\u09BF\u09B0 \u0989\u09AA\u09B0 \u09AA\u09CD\u09B0\u09B8\u09CD\u09A4\u09BE\u09AC\u09BF\u09A4 \u09AE\u09C7\u0997\u09BE \u09AE\u09A1\u09C7\u09B2 \u099F\u09BE\u0989\u09A8 \u0993 \u0997\u09CD\u09B0\u09C0\u09A8 \u099F\u09BE\u0989\u09A8\u09B6\u09BF\u09AA \u09AA\u09CD\u09B0\u099C\u09C7\u0995\u09CD\u099F\u0964",
+    "floorsCount": 15,
+    "floorLayouts": []
   },
   {
-    id: "madina-mansion-2",
-    title: "Madina Mansion 2 (\u09AE\u09A6\u09BF\u09A8\u09BE \u09AE\u09CD\u09AF\u09BE\u09A8\u09B6\u09A8 \u09E8)",
-    type: "residential",
-    status: "completed",
-    location: "Gulshan 2, Dhaka (\u0997\u09C1\u09B2\u09B6\u09BE\u09A8 \u09E8, \u09A2\u09BE\u0995\u09BE)",
-    area: "Gulshan 2, Dhaka",
-    sizeRange: "2,800 - 3,500 Sft",
-    priceRange: "Completed Luxury Residence",
-    beds: 4,
-    baths: 4,
-    floorsCount: 7,
-    imageUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop"
+    "id": "madina-mansion-2",
+    "area": "Gulshan 2, Dhaka",
+    "beds": 4,
+    "type": "residential",
+    "baths": 4,
+    "title": "Madina Mansion 2 (\u09AE\u09A6\u09BF\u09A8\u09BE \u09AE\u09CD\u09AF\u09BE\u09A8\u09B6\u09A8 \u09E8)",
+    "status": "completed",
+    "address": "Gulshan 2, Dhaka",
+    "gallery": [
+      "/project_images/madina-mansion-2-gallery-0.jpg",
+      "/project_images/madina-mansion-2-gallery-1.jpg",
+      "/project_images/madina-mansion-2-gallery-2.jpg",
+      "/project_images/madina-mansion-2-gallery-3.jpg"
     ],
-    description: "\u09AE\u09A6\u09BF\u09A8\u09BE \u09AE\u09CD\u09AF\u09BE\u09A8\u09B6\u09A8 \u09E8, \u09ED \u09A4\u09B2\u09BE, \u0997\u09C1\u09B2\u09B6\u09BE\u09A8 \u09E8 - \u0997\u09C1\u09B2\u09B6\u09BE\u09A8 \u09E8 \u098F\u09B0 \u09B8\u09B0\u09CD\u09AC\u09CB\u099A\u09CD\u099A \u09A8\u09BF\u09B0\u09BE\u09AA\u09A4\u09CD\u09A4\u09BE \u09AC\u09C7\u09B7\u09CD\u099F\u09BF\u09A4 \u09A1\u09BF\u09AA\u09CD\u09B2\u09CB\u09AE\u09CD\u09AF\u09BE\u099F\u09BF\u0995 \u099C\u09CB\u09A8\u09C7\u09B0 \u0995\u09BE\u099B\u09C7 \u09ED \u09A4\u09B2\u09BE \u09B2\u09BE\u0995\u09CD\u09B8\u09BE\u09B0\u09BF \u09B0\u09C7\u09B8\u09BF\u09A1\u09C7\u09A8\u09CD\u09B8\u0964",
-    features: [
+    "features": [
       "\u09ED \u09A4\u09B2\u09BE \u0985\u09AD\u09BF\u099C\u09BE\u09A4 \u0986\u09B2\u09CD\u099F\u09CD\u09B0\u09BE \u09B2\u09BE\u0995\u09CD\u09B8\u09BE\u09B0\u09BF \u09B0\u09C7\u09B8\u09BF\u09A1\u09C7\u09A8\u09CD\u09B8\u09BF\u09DF\u09BE\u09B2 \u09AD\u09AC\u09A8",
       "\u0987\u09A4\u09BE\u09B2\u09BF\u09DF\u09BE\u09A8 \u09AE\u09BE\u09B0\u09CD\u09AC\u09C7\u09B2 \u09AB\u09CD\u09B2\u09CB\u09B0\u09BF\u0982 \u0993 \u09B8\u09C7\u09A8\u09CD\u099F\u09CD\u09B0\u09BE\u09B2 \u098F\u09B8\u09BF \u09A1\u09BE\u0995\u09CD\u099F\u09BF\u0982",
       "\u09AC\u09CD\u09AF\u0995\u09CD\u09A4\u09BF\u0997\u09A4 \u0995\u09C0\u0995\u09BE\u09B0\u09CD\u09A1 \u09B2\u09BF\u09AB\u099F \u09B8\u09BE\u09B0\u09CD\u09AD\u09BF\u09B8"
     ],
-    amenities: [
-      { icon: "Crown", name: "Gulshan 2 Prime Location" },
-      { icon: "Shield", name: "Biometric Access Control" }
-    ],
-    floorLayouts: [
+    "imageUrl": "/project_images/madina-mansion-2.jpg",
+    "location": "Gulshan 2, Dhaka (\u0997\u09C1\u09B2\u09B6\u09BE\u09A8 \u09E8, \u09A2\u09BE\u0995\u09BE)",
+    "amenities": [
       {
-        levelName: "Gulshan 2 Ultra-Luxury Floor Plan - 3,200 Sft",
-        sizeSqft: 3200,
-        imageUrl: "https://lh3.googleusercontent.com/d/18WMuVx9H2CWyO2ZlW5N9vbIGt70cG73S",
-        rooms: [
-          { name: "Grand Living Hall", x: 5, y: 5, w: 50, h: 45, type: "living" },
-          { name: "Master Suite", x: 60, y: 5, w: 35, h: 35, type: "bed" },
-          { name: "Kitchen & Island", x: 5, y: 55, w: 30, h: 35, type: "kitchen" },
-          { name: "Veranda", x: 40, y: 55, w: 20, h: 35, type: "balcony" }
-        ]
+        "icon": "Crown",
+        "name": "Gulshan 2 Prime Location"
+      },
+      {
+        "icon": "Shield",
+        "name": "Biometric Access Control"
       }
-    ]
+    ],
+    "sizeRange": "",
+    "priceRange": "Completed Luxury Residence",
+    "description": "\u09AE\u09A6\u09BF\u09A8\u09BE \u09AE\u09CD\u09AF\u09BE\u09A8\u09B6\u09A8 \u09E8, \u09ED \u09A4\u09B2\u09BE, \u0997\u09C1\u09B2\u09B6\u09BE\u09A8 \u09E8 - \u0997\u09C1\u09B2\u09B6\u09BE\u09A8 \u09E8 \u098F\u09B0 \u09B8\u09B0\u09CD\u09AC\u09CB\u099A\u09CD\u099A \u09A8\u09BF\u09B0\u09BE\u09AA\u09A4\u09CD\u09A4\u09BE \u09AC\u09C7\u09B7\u09CD\u099F\u09BF\u09A4 \u09A1\u09BF\u09AA\u09CD\u09B2\u09CB\u09AE\u09CD\u09AF\u09BE\u099F\u09BF\u0995 \u099C\u09CB\u09A8\u09C7\u09B0 \u0995\u09BE\u099B\u09C7 \u09ED \u09A4\u09B2\u09BE \u09B2\u09BE\u0995\u09CD\u09B8\u09BE\u09B0\u09BF \u09B0\u09C7\u09B8\u09BF\u09A1\u09C7\u09A8\u09CD\u09B8\u0964",
+    "floorsCount": 7,
+    "floorLayouts": []
   },
   {
-    id: "al-mizan-shopping-complex",
-    title: "Al Mizan Shopping Complex (\u0986\u09B2 \u09AE\u09BF\u099C\u09BE\u09A8 \u09B6\u09AA\u09BF\u0982 \u0995\u09AE\u09AA\u09CD\u09B2\u09C7\u0995\u09CD\u09B8)",
-    type: "commercial",
-    status: "completed",
-    location: "Barguna (\u09AC\u09B0\u0997\u09C1\u09A8\u09BE)",
-    area: "Barguna",
-    sizeRange: "10-Story Commercial Plaza",
-    priceRange: "Completed Commercial Landmark",
-    floorsCount: 10,
-    imageUrl: "https://images.unsplash.com/photo-1555636222-cae831e670b3?q=80&w=800&auto=format&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1555636222-cae831e670b3?q=80&w=800&auto=format&fit=crop"
+    "id": "al-mizan-shopping-complex",
+    "area": "Barguna",
+    "type": "commercial",
+    "title": "Al Mizan Shopping Complex (\u0986\u09B2 \u09AE\u09BF\u099C\u09BE\u09A8 \u09B6\u09AA\u09BF\u0982 \u0995\u09AE\u09AA\u09CD\u09B2\u09C7\u0995\u09CD\u09B8)",
+    "status": "completed",
+    "address": "Barguna",
+    "gallery": [
+      "/project_images/al-mizan-shopping-complex-gallery-0.jpg",
+      "/project_images/al-mizan-shopping-complex-gallery-1.jpg",
+      "/project_images/al-mizan-shopping-complex-gallery-2.jpg",
+      "/project_images/al-mizan-shopping-complex-gallery-3.jpg",
+      "/project_images/al-mizan-shopping-complex-gallery-4.jpg",
+      "/project_images/al-mizan-shopping-complex-gallery-5.jpg",
+      "/project_images/al-mizan-shopping-complex-gallery-6.jpg"
     ],
-    description: "\u0986\u09B2 \u09AE\u09BF\u099C\u09BE\u09A8 \u09B6\u09AA\u09BF\u0982 \u0995\u09AE\u09AA\u09CD\u09B2\u09C7\u0995\u09CD\u09B8 \u09E7\u09E6 \u09A4\u09B2\u09BE, \u09AC\u09B0\u0997\u09C1\u09A8\u09BE - \u09AC\u09B0\u0997\u09C1\u09A8\u09BE \u09B6\u09B9\u09B0\u09C7\u09B0 \u0995\u09C7\u09A8\u09CD\u09A6\u09CD\u09B0\u09B8\u09CD\u09A5\u09B2\u09C7 \u0985\u09AC\u09B8\u09CD\u09A5\u09BF\u09A4 \u09E7\u09E6 \u09A4\u09B2\u09BE \u09AC\u09BE\u09A3\u09BF\u099C\u09CD\u09AF\u09BF\u0995 \u0995\u09C7\u09A8\u09BE\u0995\u09BE\u099F\u09BE\u09B0 \u0995\u09C7\u09A8\u09CD\u09A6\u09CD\u09B0 \u0993 \u0995\u09B0\u09CD\u09AA\u09CB\u09B0\u09C7\u099F \u09AA\u09CD\u09B2\u09BE\u099C\u09BE\u0964",
-    features: [
+    "features": [
       "\u09E7\u09E6 \u09A4\u09B2\u09BE \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u09AC\u09B0\u0997\u09C1\u09A8\u09BE \u09B8\u09C7\u09A8\u09CD\u099F\u09CD\u09B0\u09BE\u09B2 \u09B6\u09AA\u09BF\u0982 \u0995\u09AE\u09AA\u09CD\u09B2\u09C7\u0995\u09CD\u09B8",
       "\u09AC\u09CD\u09B0\u09CD\u09AF\u09BE\u09A8\u09CD\u09A1 \u09B6\u09CB\u09B0\u09C1\u09AE, \u09AC\u09CD\u09AF\u09BE\u0982\u0995, \u098F\u09B8\u09CD\u0995\u09C7\u09B2\u09C7\u099F\u09B0 \u0993 \u09B8\u09C7\u09A8\u09CD\u099F\u09CD\u09B0\u09BE\u09B2 \u098F\u09B8\u09BF \u09B8\u09C1\u09AC\u09BF\u09A7\u09BE",
       "\u09AC\u09BF\u09B6\u09BE\u09B2 \u09B6\u09AA\u09BF\u0982 \u098F\u09B0\u09BF\u09DF\u09BE \u0993 \u09AB\u09C1\u09A1\u0995\u09CB\u09B0\u09CD\u099F"
     ],
-    amenities: [
-      { icon: "Award", name: "10-Story Shopping Mall" },
-      { icon: "Car", name: "Spacious Mall Parking" }
-    ],
-    floorLayouts: [
+    "imageFit": "fill",
+    "imageUrl": "/project_images/al-mizan-shopping-complex.jpg",
+    "location": "Barguna (\u09AC\u09B0\u0997\u09C1\u09A8\u09BE)",
+    "videoUrl": "https://www.youtube.com/watch?v=p5OwVF2eXGU",
+    "amenities": [
       {
-        levelName: "Shopping Mall Floor Layout - Level 1 to 5",
-        sizeSqft: 6e3,
-        imageUrl: "https://lh3.googleusercontent.com/d/1Hf0dC0-dzgk4r5yLOvfhJc3ZbD3MyXtN",
-        rooms: [
-          { name: "Central Atrium & Outlets", x: 5, y: 5, w: 60, h: 60, type: "living" },
-          { name: "Escalator & Elevator Bank", x: 70, y: 5, w: 25, h: 25, type: "corridor" }
-        ]
+        "icon": "Award",
+        "name": "10-Story Shopping Mall"
+      },
+      {
+        "icon": "Car",
+        "name": "Spacious Mall Parking"
       }
-    ]
+    ],
+    "sizeRange": "10-Story Commercial Plaza",
+    "priceRange": "Completed Commercial Landmark",
+    "description": "\u0986\u09B2 \u09AE\u09BF\u099C\u09BE\u09A8 \u09B6\u09AA\u09BF\u0982 \u0995\u09AE\u09AA\u09CD\u09B2\u09C7\u0995\u09CD\u09B8 \u09E7\u09E6 \u09A4\u09B2\u09BE, \u09AC\u09B0\u0997\u09C1\u09A8\u09BE - \u09AC\u09B0\u0997\u09C1\u09A8\u09BE \u09B6\u09B9\u09B0\u09C7\u09B0 \u0995\u09C7\u09A8\u09CD\u09A6\u09CD\u09B0\u09B8\u09CD\u09A5\u09B2\u09C7 \u0985\u09AC\u09B8\u09CD\u09A5\u09BF\u09A4 \u09E7\u09E6 \u09A4\u09B2\u09BE \u09AC\u09BE\u09A3\u09BF\u099C\u09CD\u09AF\u09BF\u0995 \u0995\u09C7\u09A8\u09BE\u0995\u09BE\u099F\u09BE\u09B0 \u0995\u09C7\u09A8\u09CD\u09A6\u09CD\u09B0 \u0993 \u0995\u09B0\u09CD\u09AA\u09CB\u09B0\u09C7\u099F \u09AA\u09CD\u09B2\u09BE\u099C\u09BE\u0964",
+    "floorsCount": 10,
+    "floorLayouts": []
   },
   {
-    id: "kuakata-resort",
-    title: "Kuakata Resort Project (\u09E9\u09E6 \u09AC\u09BF\u0998\u09BE \u0995\u09C1\u09DF\u09BE\u0995\u09BE\u099F\u09BE \u09B0\u09BF\u09B8\u09CB\u09B0\u09CD\u099F \u09AA\u09CD\u09B0\u0995\u09B2\u09CD\u09AA)",
-    type: "commercial",
-    status: "upcoming",
-    location: "Kuakata Beach, Patuakhali (\u0995\u09C1\u09DF\u09BE\u0995\u09BE\u099F\u09BE, \u09AA\u099F\u09C1\u09DF\u09BE\u0996\u09BE\u09B2\u09C0)",
-    area: "Kuakata, Patuakhali",
-    sizeRange: "30 Bigha Beachfront Eco Resort",
-    priceRange: "Upcoming Hospitality Venture",
-    landArea: "30 Bigha",
-    floorsCount: 8,
-    imageUrl: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800&auto=format&fit=crop"
+    "id": "kuakata-resort",
+    "area": "Kuakata, Patuakhali",
+    "type": "commercial",
+    "title": "Kuakata Resort Project (\u09E9\u09E6 \u09AC\u09BF\u0998\u09BE \u0995\u09C1\u09DF\u09BE\u0995\u09BE\u099F\u09BE \u09B0\u09BF\u09B8\u09CB\u09B0\u09CD\u099F \u09AA\u09CD\u09B0\u0995\u09B2\u09CD\u09AA)",
+    "status": "proposed",
+    "address": "Kuakata, Patuakhali",
+    "gallery": [
+      "/project_images/kuakata-resort-gallery-0.jpg",
+      "/project_images/kuakata-resort-gallery-1.jpg",
+      "/project_images/kuakata-resort-gallery-2.jpg",
+      "/project_images/kuakata-resort-gallery-3.jpg",
+      "/project_images/kuakata-resort-gallery-4.jpg",
+      "/project_images/kuakata-resort-gallery-5.jpg",
+      "/project_images/kuakata-resort-gallery-6.jpg"
     ],
-    description: "\u09E9\u09E6 \u09AC\u09BF\u0998\u09BE \u0995\u09C1\u09DF\u09BE\u0995\u09BE\u099F\u09BE \u09B0\u09BF\u09B8\u09CB\u09B0\u09CD\u099F \u09AA\u09CD\u09B0\u0995\u09B2\u09CD\u09AA - \u09B8\u09BE\u0997\u09B0\u0995\u09A8\u09CD\u09AF\u09BE \u0995\u09C1\u09DF\u09BE\u0995\u09BE\u099F\u09BE \u09B8\u09AE\u09C1\u09A6\u09CD\u09B0 \u09B8\u09C8\u0995\u09A4 \u09B8\u0982\u09B2\u0997\u09CD\u09A8 \u09E9\u09E6 \u09AC\u09BF\u0998\u09BE \u0986\u09DF\u09A4\u09A8\u09C7\u09B0 \u09EB-\u09B8\u09CD\u099F\u09BE\u09B0 \u0995\u09CD\u09AF\u09BE\u099F\u09BE\u0997\u09B0\u09BF\u09B0 \u0986\u09A8\u09CD\u09A4\u09B0\u09CD\u099C\u09BE\u09A4\u09BF\u0995 \u09AE\u09BE\u09A8\u09C7\u09B0 \u0993\u09DF\u09BE\u099F\u09BE\u09B0 \u09B0\u09BF\u09B8\u09CB\u09B0\u09CD\u099F\u0964",
-    features: [
+    "features": [
       "\u09E9\u09E6 \u09AC\u09BF\u0998\u09BE \u099C\u09C1\u09DC\u09C7 \u09AC\u09BF\u09B8\u09CD\u09A4\u09C3\u09A4 \u09AC\u09BF\u09B6\u09CD\u09AC\u09AE\u09BE\u09A8\u09C7\u09B0 \u09B8\u09AE\u09C1\u09A6\u09CD\u09B0 \u09B8\u09C8\u0995\u09A4 \u09B0\u09BF\u09B8\u09CB\u09B0\u09CD\u099F",
       "\u09AA\u09CD\u09B0\u09BE\u0987\u09AD\u09C7\u099F \u09AC\u09BF\u099A \u098F\u0995\u09CD\u09B8\u09C7\u09B8, \u0993\u09DF\u09BE\u099F\u09BE\u09B0 \u09B8\u09CD\u09AA\u09CB\u09B0\u09CD\u099F\u09B8 \u0993 \u09AA\u09CD\u09B0\u09BF\u09AE\u09BF\u09AF\u09BC\u09BE\u09AE \u09AD\u09BF\u09B2\u09BE",
       "\u0987\u09A8\u09AB\u09BF\u09A8\u09BF\u099F\u09BF \u09AA\u09C1\u09B2, \u09B8\u09CD\u09AA\u09BE \u0993 \u0986\u09A8\u09CD\u09A4\u09B0\u09CD\u099C\u09BE\u09A4\u09BF\u0995 \u0995\u09A8\u09AD\u09C7\u09A8\u09B6\u09A8 \u09B9\u09B2"
     ],
-    amenities: [
-      { icon: "Waves", name: "Beachfront Infinity Pool" },
-      { icon: "Compass", name: "30 Bigha Ocean Resort" }
-    ],
-    floorLayouts: [
+    "imageFit": "fill",
+    "imageUrl": "/project_images/kuakata-resort.jpg",
+    "landArea": "30 Bigha",
+    "location": "Kuakata Beach, Patuakhali (\u0995\u09C1\u09DF\u09BE\u0995\u09BE\u099F\u09BE, \u09AA\u099F\u09C1\u09DF\u09BE\u0996\u09BE\u09B2\u09C0)",
+    "amenities": [
       {
-        levelName: "Resort Beachfront Master Layout - 30 Bigha",
-        sizeSqft: 15e3,
-        imageUrl: "https://lh3.googleusercontent.com/d/1JLtIalfp49hPq57qAKKE-4Ezraaw7asU",
-        rooms: [
-          { name: "Luxury Villas Zone", x: 5, y: 5, w: 45, h: 45, type: "living" },
-          { name: "Infinity Pool & Spa", x: 55, y: 5, w: 40, h: 40, type: "balcony" }
-        ]
+        "icon": "Waves",
+        "name": "Beachfront Infinity Pool"
+      },
+      {
+        "icon": "Compass",
+        "name": "30 Bigha Ocean Resort"
       }
-    ]
+    ],
+    "sizeRange": "30 Bigha Beachfront Eco Resort",
+    "priceRange": "Upcoming Hospitality Venture",
+    "description": "\u09E9\u09E6 \u09AC\u09BF\u0998\u09BE \u0995\u09C1\u09DF\u09BE\u0995\u09BE\u099F\u09BE \u09B0\u09BF\u09B8\u09CB\u09B0\u09CD\u099F \u09AA\u09CD\u09B0\u0995\u09B2\u09CD\u09AA - \u09B8\u09BE\u0997\u09B0\u0995\u09A8\u09CD\u09AF\u09BE \u0995\u09C1\u09DF\u09BE\u0995\u09BE\u099F\u09BE \u09B8\u09AE\u09C1\u09A6\u09CD\u09B0 \u09B8\u09C8\u0995\u09A4 \u09B8\u0982\u09B2\u0997\u09CD\u09A8 \u09E9\u09E6 \u09AC\u09BF\u0998\u09BE \u0986\u09DF\u09A4\u09A8\u09C7\u09B0 \u09EB-\u09B8\u09CD\u099F\u09BE\u09B0 \u0995\u09CD\u09AF\u09BE\u099F\u09BE\u0997\u09B0\u09BF\u09B0 \u0986\u09A8\u09CD\u09A4\u09B0\u09CD\u099C\u09BE\u09A4\u09BF\u0995 \u09AE\u09BE\u09A8\u09C7\u09B0 \u0993\u09DF\u09BE\u099F\u09BE\u09B0 \u09B0\u09BF\u09B8\u09CB\u09B0\u09CD\u099F\u0964",
+    "floorsCount": 8,
+    "floorLayouts": []
   },
   {
-    id: "coxs-bazar-resort",
-    title: "Cox's Bazar Resort Project (\u09E8\u09E6 \u09AC\u09BF\u0998\u09BE \u0995\u0995\u09CD\u09B8\u09AC\u09BE\u099C\u09BE\u09B0 \u09B0\u09BF\u09B8\u09CB\u09B0\u09CD\u099F \u09AA\u09CD\u09B0\u0995\u09B2\u09CD\u09AA)",
-    type: "commercial",
-    status: "upcoming",
-    location: "Marine Drive, Cox's Bazar (\u0995\u0995\u09CD\u09B8\u09AC\u09BE\u099C\u09BE\u09B0)",
-    area: "Cox's Bazar",
-    sizeRange: "20 Bigha Oceanfront Luxury Resort",
-    priceRange: "Upcoming Five-Star Destination",
-    landArea: "20 Bigha",
-    floorsCount: 12,
-    imageUrl: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=800&auto=format&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=800&auto=format&fit=crop"
+    "id": "coxs-bazar-resort",
+    "area": "Cox's Bazar",
+    "type": "commercial",
+    "title": "Cox's Bazar Resort Project (\u09E8\u09E6 \u09AC\u09BF\u0998\u09BE \u0995\u0995\u09CD\u09B8\u09AC\u09BE\u099C\u09BE\u09B0 \u09B0\u09BF\u09B8\u09CB\u09B0\u09CD\u099F \u09AA\u09CD\u09B0\u0995\u09B2\u09CD\u09AA)",
+    "status": "proposed",
+    "address": "Cox's Bazar",
+    "gallery": [
+      "/project_images/coxs-bazar-resort-gallery-0.jpg",
+      "/project_images/coxs-bazar-resort-gallery-1.jpg",
+      "/project_images/coxs-bazar-resort-gallery-2.jpg",
+      "/project_images/coxs-bazar-resort-gallery-3.jpg",
+      "/project_images/coxs-bazar-resort-gallery-4.jpg",
+      "/project_images/coxs-bazar-resort-gallery-5.jpg",
+      "/project_images/coxs-bazar-resort-gallery-6.jpg"
     ],
-    description: "\u0995\u0995\u09CD\u09B8\u09AC\u09BE\u099C\u09BE\u09B0 \u09E8\u09E6 \u09AC\u09BF\u0998\u09BE \u09B0\u09BF\u09B8\u09CB\u09B0\u09CD\u099F \u09AA\u09CD\u09B0\u0995\u09B2\u09CD\u09AA - \u09AE\u09C7\u09B0\u09BF\u09A8 \u09A1\u09CD\u09B0\u09BE\u0987\u09AD \u09B0\u09CB\u09A1 \u09B8\u0982\u09B2\u0997\u09CD\u09A8 \u09E8\u09E6 \u09AC\u09BF\u0998\u09BE \u099C\u09AE\u09BF\u09B0 \u0993\u09AA\u09B0 \u09A8\u09BF\u09B0\u09CD\u09AE\u09BF\u09A4\u09AC\u09CD\u09AF \u09AB\u09BE\u0987\u09AD \u09B8\u09CD\u099F\u09BE\u09B0 \u09B0\u09BF\u09B8\u09CB\u09B0\u09CD\u099F \u0993 \u09B2\u09BE\u0995\u09CD\u09B8\u09BE\u09B0\u09BF \u0995\u099F\u09C7\u099C \u09AA\u09CD\u09B0\u099C\u09C7\u0995\u09CD\u099F\u0964",
-    features: [
+    "features": [
       "\u09AE\u09C7\u09B0\u09BF\u09A8 \u09A1\u09CD\u09B0\u09BE\u0987\u09AD \u09B0\u09CB\u09A1\u09C7 \u09E8\u09E6 \u09AC\u09BF\u0998\u09BE \u09AA\u09CD\u09B0\u09BE\u0987\u09AE \u0993\u09B6\u09BE\u09A8 \u09AB\u09CD\u09B0\u09A8\u09CD\u099F \u09AA\u09CD\u09B0\u09AA\u09BE\u09B0\u09CD\u099F\u09BF",
       "\u09B9\u09C7\u09B2\u09BF\u09AA\u09CD\u09AF\u09BE\u09A1, \u09AA\u09CD\u09B0\u09BE\u0987\u09AD\u09C7\u099F \u09B8\u09BF-\u09AD\u09BF\u0989 \u09AC\u09CD\u09AF\u09BE\u09B2\u0995\u09A8\u09BF \u0993 \u0986\u09A8\u09CD\u09A4\u09B0\u09CD\u099C\u09BE\u09A4\u09BF\u0995 \u09B6\u09C7\u09AB \u09B0\u09C7\u09B8\u09CD\u099F\u09C1\u09B0\u09C7\u09A8\u09CD\u099F",
       "\u09AC\u09CD\u09AF\u09BE\u0982\u0995\u09C1\u09DF\u09C7\u099F \u09B9\u09B2, \u09B8\u09C1\u0987\u09AE\u09BF\u0982 \u09AA\u09C1\u09B2 \u0993 \u09B8\u09CD\u09AA\u09BE \u09B8\u09C7\u09A8\u09CD\u099F\u09CD\u09B0\u09BE\u09B2"
     ],
-    amenities: [
-      { icon: "Waves", name: "Oceanfront Luxury Resort" },
-      { icon: "Crown", name: "5-Star Hospitality" }
-    ],
-    floorLayouts: [
+    "imageFit": "fill",
+    "imageUrl": "/project_images/coxs-bazar-resort.jpg",
+    "landArea": "20 Bigha",
+    "location": "Marine Drive, Cox's Bazar (\u0995\u0995\u09CD\u09B8\u09AC\u09BE\u099C\u09BE\u09B0)",
+    "amenities": [
       {
-        levelName: "Marine Drive Resort Masterplan - 20 Bigha",
-        sizeSqft: 12500,
-        imageUrl: "https://lh3.googleusercontent.com/d/1JG0sjCKULHmz4JpmfwfFs6tZc2Wl-Hjt",
-        rooms: [
-          { name: "Ocean View Suites", x: 5, y: 5, w: 50, h: 45, type: "living" },
-          { name: "Beachfront Boardwalk", x: 5, y: 55, w: 90, h: 35, type: "balcony" }
-        ]
+        "icon": "Waves",
+        "name": "Oceanfront Luxury Resort"
+      },
+      {
+        "icon": "Crown",
+        "name": "5-Star Hospitality"
       }
-    ]
+    ],
+    "sizeRange": "20 Bigha Oceanfront Luxury Resort",
+    "priceRange": "Upcoming Five-Star Destination",
+    "description": "\u0995\u0995\u09CD\u09B8\u09AC\u09BE\u099C\u09BE\u09B0 \u09E8\u09E6 \u09AC\u09BF\u0998\u09BE \u09B0\u09BF\u09B8\u09CB\u09B0\u09CD\u099F \u09AA\u09CD\u09B0\u0995\u09B2\u09CD\u09AA - \u09AE\u09C7\u09B0\u09BF\u09A8 \u09A1\u09CD\u09B0\u09BE\u0987\u09AD \u09B0\u09CB\u09A1 \u09B8\u0982\u09B2\u0997\u09CD\u09A8 \u09E8\u09E6 \u09AC\u09BF\u0998\u09BE \u099C\u09AE\u09BF\u09B0 \u0993\u09AA\u09B0 \u09A8\u09BF\u09B0\u09CD\u09AE\u09BF\u09A4\u09AC\u09CD\u09AF \u09AB\u09BE\u0987\u09AD \u09B8\u09CD\u099F\u09BE\u09B0 \u09B0\u09BF\u09B8\u09CB\u09B0\u09CD\u099F \u0993 \u09B2\u09BE\u0995\u09CD\u09B8\u09BE\u09B0\u09BF \u0995\u099F\u09C7\u099C \u09AA\u09CD\u09B0\u099C\u09C7\u0995\u09CD\u099F\u0964",
+    "floorsCount": 12,
+    "floorLayouts": []
   },
   {
-    id: "sunmoon-star-tower",
-    title: "Sunmoon Star Tower (\u09B8\u09BE\u09A8\u09AE\u09C1\u09A8 \u09B8\u09CD\u099F\u09BE\u09B0 \u099F\u09BE\u0993\u09DF\u09BE\u09B0, \u09E9\u09ED \u09A6\u09BF\u09B2\u0995\u09C1\u09B6\u09BE)",
-    type: "commercial",
-    status: "ongoing",
-    location: "37 Dilkusha, Motijheel, Dhaka (\u09E9\u09ED \u09A6\u09BF\u09B2\u0995\u09C1\u09B6\u09BE, \u09AE\u09A4\u09BF\u099D\u09BF\u09B2)",
-    area: "Motijheel C/A, Dhaka",
-    sizeRange: "3,500 - 12,000 Sft",
-    priceRange: "Price on Request",
-    floorsCount: 24,
-    imageUrl: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop"
+    "id": "sunmoon-star-tower",
+    "area": "37 Dilkusha, Motijheel, Dhaka (\u09E9\u09ED \u09A6\u09BF\u09B2\u0995\u09C1\u09B6\u09BE, \u09AE\u09A4\u09BF\u099D\u09BF\u09B2)",
+    "type": "commercial",
+    "title": "Sun moon Star Tower (\u09B8\u09BE\u09A8\u09AE\u09C1\u09A8 \u09B8\u09CD\u099F\u09BE\u09B0 \u099F\u09BE\u0993\u09DF\u09BE\u09B0, \u09E9\u09ED \u09A6\u09BF\u09B2\u0995\u09C1\u09B6\u09BE)",
+    "status": "completed",
+    "address": "37 Dilkusha, Motijheel, Dhaka (\u09E9\u09ED \u09A6\u09BF\u09B2\u0995\u09C1\u09B6\u09BE, \u09AE\u09A4\u09BF\u099D\u09BF\u09B2)",
+    "gallery": [
+      "/project_images/sunmoon-star-tower-gallery-0.jpg",
+      "/project_images/sunmoon-star-tower-gallery-1.jpg",
+      "/project_images/sunmoon-star-tower-gallery-2.jpg",
+      "/project_images/sunmoon-star-tower-gallery-3.jpg",
+      "/project_images/sunmoon-star-tower-gallery-4.jpg",
+      "/project_images/sunmoon-star-tower-gallery-5.jpg",
+      "/project_images/sunmoon-star-tower-gallery-6.jpg",
+      "/project_images/sunmoon-star-tower-gallery-7.jpg",
+      "/project_images/sunmoon-star-tower-gallery-8.jpg",
+      "/project_images/sunmoon-star-tower-gallery-9.jpg"
     ],
-    description: "\u09B8\u09BE\u09A8\u09AE\u09C1\u09A8 \u09B8\u09CD\u099F\u09BE\u09B0 \u099F\u09BE\u0993\u09DF\u09BE\u09B0, \u09E9\u09ED \u09A6\u09BF\u09B2\u0995\u09C1\u09B6\u09BE, \u09AE\u09A4\u09BF\u099D\u09BF\u09B2 \u09E8\u09EA \u09A4\u09B2\u09BE - \u09AE\u09A4\u09BF\u099D\u09BF\u09B2 \u09AC\u09BE\u09A3\u09BF\u099C\u09CD\u09AF\u09BF\u0995 \u098F\u09B2\u09BE\u0995\u09BE\u09B0 \u09AA\u09CD\u09B0\u09BE\u09A8\u0995\u09C7\u09A8\u09CD\u09A6\u09CD\u09B0\u09C7 \u09E9\u09ED \u09A6\u09BF\u09B2\u0995\u09C1\u09B6\u09BE\u09DF \u09E8\u09EA \u09A4\u09B2\u09BE \u0986\u0987\u0995\u09A8\u09BF\u0995 \u0995\u09B0\u09CD\u09AA\u09CB\u09B0\u09C7\u099F \u099F\u09BE\u0993\u09DF\u09BE\u09B0\u0964",
-    features: [
+    "features": [
       "\u09E8\u09EA \u09A4\u09B2\u09BE \u09AC\u09BF\u09B6\u09BF\u09B7\u09CD\u099F \u09B0\u09BE\u099C\u0995\u09C0\u09AF\u09BC \u09AE\u09A4\u09BF\u099D\u09BF\u09B2 \u09A6\u09BF\u09B2\u0995\u09C1\u09B6\u09BE \u0995\u09AE\u09BE\u09B0\u09CD\u09B6\u09BF\u09DF\u09BE\u09B2 \u099F\u09BE\u0993\u09DF\u09BE\u09B0",
       "\u09B9\u09BE\u0987-\u09B8\u09CD\u09AA\u09BF\u09A1 \u09AA\u09CD\u09AF\u09BE\u09B8\u09C7\u099E\u09CD\u099C\u09BE\u09B0 \u0993 \u0995\u09BE\u09B0\u09CD\u0997\u09CB \u0995\u09CD\u09AF\u09BE\u09AA\u09B8\u09C1\u09B2 \u09B2\u09BF\u09AB\u099F",
       "\u09AE\u09BE\u09B2\u09CD\u099F\u09BF-\u09B2\u09C7\u09AD\u09C7\u09B2 \u09AC\u09C7\u09B8\u09AE\u09C7\u09A8\u09CD\u099F \u09AA\u09BE\u09B0\u09CD\u0995\u09BF\u0982 \u0993 \u09B8\u09B0\u09CD\u09AC\u09CB\u099A\u09CD\u099A \u09B8\u09BF\u0995\u09BF\u0989\u09B0\u09BF\u099F\u09BF"
     ],
-    amenities: [
-      { icon: "Award", name: "24-Story Commercial Tower" },
-      { icon: "Cpu", name: "Smart Building Automation" },
-      { icon: "Zap", name: "Full Redundant Power" }
-    ],
-    floorLayouts: [
+    "imageUrl": "/project_images/sunmoon-star-tower.jpg",
+    "location": "37 Dilkusha, Motijheel, Dhaka (\u09E9\u09ED \u09A6\u09BF\u09B2\u0995\u09C1\u09B6\u09BE, \u09AE\u09A4\u09BF\u099D\u09BF\u09B2)",
+    "amenities": [
       {
-        levelName: "37 Dilkusha Corporate Floor Plan - 6,500 Sft",
-        sizeSqft: 6500,
-        imageUrl: "https://lh3.googleusercontent.com/d/1MzBr64Y8DJJNG2q_tKa1R-b3ol3rGdgD",
-        rooms: [
-          { name: "Executive Suite & Trading Floor", x: 5, y: 5, w: 60, h: 50, type: "living" },
-          { name: "Boardroom", x: 70, y: 5, w: 25, h: 30, type: "corridor" }
-        ]
+        "icon": "Award",
+        "name": "24-Story Commercial Tower"
+      },
+      {
+        "icon": "Cpu",
+        "name": "Smart Building Automation"
+      },
+      {
+        "icon": "Zap",
+        "name": "Full Redundant Power"
       }
-    ]
+    ],
+    "sizeRange": "",
+    "priceRange": "Price on Request",
+    "description": "\u09B8\u09BE\u09A8\u09AE\u09C1\u09A8 \u09B8\u09CD\u099F\u09BE\u09B0 \u099F\u09BE\u0993\u09DF\u09BE\u09B0, \u09E9\u09ED \u09A6\u09BF\u09B2\u0995\u09C1\u09B6\u09BE, \u09AE\u09A4\u09BF\u099D\u09BF\u09B2 \u09E8\u09EA \u09A4\u09B2\u09BE - \u09AE\u09A4\u09BF\u099D\u09BF\u09B2 \u09AC\u09BE\u09A3\u09BF\u099C\u09CD\u09AF\u09BF\u0995 \u098F\u09B2\u09BE\u0995\u09BE\u09B0 \u09AA\u09CD\u09B0\u09BE\u09A8\u0995\u09C7\u09A8\u09CD\u09A6\u09CD\u09B0\u09C7 \u09E9\u09ED \u09A6\u09BF\u09B2\u0995\u09C1\u09B6\u09BE\u09DF \u09E8\u09EA \u09A4\u09B2\u09BE \u0986\u0987\u0995\u09A8\u09BF\u0995 \u0995\u09B0\u09CD\u09AA\u09CB\u09B0\u09C7\u099F \u099F\u09BE\u0993\u09DF\u09BE\u09B0\u0964",
+    "floorsCount": 24,
+    "floorLayouts": []
+  },
+  {
+    "id": "PROP-107845",
+    "area": "TOWN HALL MOHAMMADPUR, DHAKA",
+    "beds": 3,
+    "type": "residential",
+    "baths": 4,
+    "title": "SUNMOON STAR TOWN HALL COMPLEX",
+    "status": "proposed",
+    "address": "TOWN HALL MOHAMMADPUR, DHAKA",
+    "gallery": [],
+    "features": [],
+    "imageFit": "fill",
+    "imageUrl": "/project_images/PROP-107845.jpg",
+    "landArea": "15",
+    "location": "TOWN HALL MOHAMMADPUR, DHAKA",
+    "amenities": [],
+    "sizeRange": "",
+    "priceRange": "",
+    "description": "\u09AE\u09CB\u09B9\u09BE\u09AE\u09CD\u09AE\u09A6\u09AA\u09C1\u09B0 \u099F\u09BE\u0989\u09A8 \u09B9\u09B2\u09C7 \u09E7\u09EB \u09AC\u09BF\u0998\u09BE\u09B0 \u09B8\u09C1\u09AC\u09BF\u09B6\u09BE\u09B2 \u099C\u09AE\u09BF\u09A4\u09C7 \u0997\u09DC\u09C7 \u0989\u09A0\u099B\u09C7 \u0986\u09A8\u09CD\u09A4\u09B0\u09CD\u099C\u09BE\u09A4\u09BF\u0995 \u09AE\u09BE\u09A8\u09C7\u09B0 '\u09B8\u09BE\u09A8\u09AE\u09C1\u09A8 \u09B8\u09CD\u099F\u09BE\u09B0 \u099F\u09BE\u0989\u09A8 \u09B9\u09B2 \u0995\u09AE\u09AA\u09CD\u09B2\u09C7\u0995\u09CD\u09B8'\u0964 \u09AC\u09CD\u09AF\u09AC\u09B8\u09BE, \u0995\u09C7\u09A8\u09BE\u0995\u09BE\u099F\u09BE \u098F\u09AC\u0982 \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u099C\u09C0\u09AC\u09A8\u09AF\u09BE\u09A4\u09CD\u09B0\u09BE\u09B0 \u098F\u0995 \u0985\u09AD\u09C2\u09A4\u09AA\u09C2\u09B0\u09CD\u09AC \u09B8\u09AE\u09A8\u09CD\u09AC\u09AF\u09BC\u0964",
+    "floorsCount": 15,
+    "floorLayouts": []
+  },
+  {
+    "id": "PROP-234531",
+    "area": "Rayer Bazaar ,dhaka",
+    "beds": 3,
+    "type": "residential",
+    "baths": 4,
+    "title": "Sunmoon Star Tower | Rayer Bazar Hall Complex",
+    "status": "proposed",
+    "address": "Rayer Bazaar \u09AE\u09C2\u09B2 \u09B8\u09DC\u0995 \u09B8\u0982\u09B2\u0997\u09CD\u09A8, \u09A2\u09BE\u0995\u09BE\u0964",
+    "gallery": [],
+    "features": [],
+    "imageFit": "fill",
+    "imageUrl": "/project_images/PROP-234531.jpg",
+    "location": "Rayer Bazaar, Dhaka",
+    "amenities": [],
+    "sizeRange": "",
+    "priceRange": "",
+    "description": "\u0986\u09A8\u09CD\u09A4\u09B0\u09CD\u099C\u09BE\u09A4\u09BF\u0995 \u09AE\u09BE\u09A8\u09C7\u09B0 \u09B8\u09CD\u09A5\u09BE\u09AA\u09A4\u09CD\u09AF\u09B6\u09C8\u09B2\u09C0\u09A4\u09C7 \u09A4\u09C8\u09B0\u09BF '\u09B8\u09BE\u09A8\u09AE\u09C1\u09A8 \u09B8\u09CD\u099F\u09BE\u09B0 \u099F\u09BE\u0993\u09AF\u09BC\u09BE\u09B0 | \u09B0\u09BE\u09AF\u09BC\u09C7\u09B0 \u09AC\u09BE\u099C\u09BE\u09B0 \u09B9\u09B2 \u0995\u09AE\u09AA\u09CD\u09B2\u09C7\u0995\u09CD\u09B8'\u0964 \u09AC\u09CD\u09AF\u09AC\u09B8\u09BE, \u0995\u09A8\u09AB\u09BE\u09B0\u09C7\u09A8\u09CD\u09B8 \u0993 \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u09AC\u09BF\u09A8\u09CB\u09A6\u09A8\u09C7\u09B0 \u09B8\u09AC \u09B8\u09C1\u09AC\u09BF\u09A7\u09BE \u098F\u0996\u09A8 \u098F\u0995\u0987 \u099B\u09BE\u09A6\u09C7\u09B0 \u09A8\u09BF\u099A\u09C7\u0964",
+    "floorsCount": 15,
+    "floorLayouts": []
+  },
+  {
+    "id": "PROP-403611",
+    "area": "Savar DOHS",
+    "beds": 3,
+    "type": "residential",
+    "baths": 4,
+    "title": "Josna Neer | Savar DOHS",
+    "status": "completed",
+    "address": "Savar DOHS",
+    "gallery": [],
+    "features": [],
+    "imageUrl": "/project_images/PROP-403611.jpg",
+    "location": "Savar DOHS",
+    "amenities": [],
+    "sizeRange": "",
+    "priceRange": "",
+    "description": "\u0985\u09AD\u09BF\u099C\u09BE\u09A4 \u0993 \u09B8\u09AE\u09CD\u09AA\u09C2\u09B0\u09CD\u09A3 \u09A8\u09BF\u09B0\u09BE\u09AA\u09A6 \u09AA\u09B0\u09BF\u09AC\u09C7\u09B6\u09C7 \u09A8\u09BF\u09B0\u09CD\u09AE\u09BF\u09A4 '\u099C\u09CB\u099B\u09A8\u09BE \u09A8\u09C0\u09DC' (Josna Neer)\u0964 \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u09B8\u09CD\u09A5\u09BE\u09AA\u09A4\u09CD\u09AF\u09B6\u09C8\u09B2\u09C0, \u09AA\u09B0\u09CD\u09AF\u09BE\u09AA\u09CD\u09A4 \u0986\u09B2\u09CB-\u09AC\u09BE\u09A4\u09BE\u09B8 \u098F\u09AC\u0982 \u09A8\u09BE\u09A8\u09CD\u09A6\u09A8\u09BF\u0995 \u09A1\u09BF\u099C\u09BE\u0987\u09A8\u09C7\u09B0 \u098F\u0995 \u0985\u09A8\u09A8\u09CD\u09AF \u0986\u09AC\u09BE\u09B8\u09BF\u0995 \u09AA\u09CD\u09B0\u0995\u09B2\u09CD\u09AA\u0964",
+    "floorsCount": 7,
+    "floorLayouts": []
+  },
+  {
+    "id": "PROP-608588",
+    "area": "savar dohs",
+    "beds": 3,
+    "type": "residential",
+    "baths": 4,
+    "title": "\u0985\u09AD\u09BF\u09A8\u09A8\u09CD\u09A6\u09A8 | \u09B8\u09BE\u09AD\u09BE\u09B0 \u09A1\u09BF\u0993\u098F\u0987\u099A\u098F\u09B8",
+    "status": "completed",
+    "address": "savar dohs",
+    "gallery": [],
+    "features": [],
+    "imageFit": "fill",
+    "imageUrl": "/project_images/PROP-608588.jpg",
+    "location": "savar dohs",
+    "amenities": [],
+    "sizeRange": "",
+    "priceRange": "",
+    "description": "\u0985\u09AD\u09BF\u099C\u09BE\u09A4, \u09B6\u09BE\u09A8\u09CD\u09A4 \u0993 \u09A8\u09BF\u099D\u09C1\u09AE \u09AA\u09B0\u09BF\u09AC\u09C7\u09B6\u09C7 \u0986\u09AA\u09A8\u09BE\u09B0 \u09B8\u09CD\u09AC\u09AA\u09CD\u09A8\u09C7\u09B0 \u0986\u09AC\u09BE\u09B8\u09A8 \u09A8\u09BF\u09B6\u09CD\u099A\u09BF\u09A4 \u0995\u09B0\u09A4\u09C7 \u09A8\u09BF\u09DF\u09C7 \u098F\u09B2\u09BE\u09AE '\u0985\u09AD\u09BF\u0993\u09A8\u09CD\u09A6\u09A8' (ovinandan)\u0964 \u09B8\u09B0\u09CD\u09AC\u09BE\u09A7\u09C1\u09A8\u09BF\u0995 \u09B8\u09CD\u09A5\u09BE\u09AA\u09A4\u09CD\u09AF \u09A8\u0995\u09B6\u09BE\u09DF \u09A8\u09BF\u09B0\u09CD\u09AE\u09BF\u09A4 \u098F\u0987 \u09B0\u09C7\u09B8\u09BF\u09A1\u09C7\u09A8\u09CD\u09B8\u09BF\u09DF\u09BE\u09B2 \u09AD\u09AC\u09A8\u099F\u09BF\u09A4\u09C7 \u09A5\u09BE\u0995\u099B\u09C7 \u09A8\u09BE\u09A8\u09CD\u09A6\u09A8\u09BF\u0995 \u099C\u09C0\u09AC\u09A8\u09AF\u09BE\u09A4\u09CD\u09B0\u09BE\u09B0 \u09B8\u09AC \u0989\u09AA\u09BE\u09A6\u09BE\u09A8\u0964",
+    "floorsCount": 7,
+    "floorLayouts": []
+  },
+  {
+    "id": "PROP-138205",
+    "area": "\u09AA\u09CD\u09B2\u099F \u09A8\u0982-\u09EB\u09EA, \u09AC\u09CD\u09B2\u0995-\u098F\u09AB, \u09B8\u09C7\u0995\u09CD\u099F\u09B0-\u09E6\u09E8, \u09B0\u09CB\u09A1-\u09E6\u09E7, \u0987\u09B8\u09CD\u099F\u09B0\u09CD\u09A8 \u09B9\u09BE\u0989\u099C\u09BF\u0982 \u09B2\u09BF\u0983, \u0986\u09AB\u09A4\u09BE\u09AC\u09A8\u0997\u09B0, \u09A2\u09BE\u0995\u09BE",
+    "beds": 3,
+    "type": "residential",
+    "baths": 4,
+    "title": "MOON TASH ICON",
+    "status": "completed",
+    "address": "\u09AA\u09CD\u09B2\u099F \u09A8\u0982-\u09EB\u09EA, \u09AC\u09CD\u09B2\u0995-\u098F\u09AB, \u09B8\u09C7\u0995\u09CD\u099F\u09B0-\u09E6\u09E8, \u09B0\u09CB\u09A1-\u09E6\u09E7, \u0987\u09B8\u09CD\u099F\u09B0\u09CD\u09A8 \u09B9\u09BE\u0989\u099C\u09BF\u0982 \u09B2\u09BF\u0983, \u0986\u09AB\u09A4\u09BE\u09AC\u09A8\u0997\u09B0, \u09A2\u09BE\u0995\u09BE",
+    "gallery": [
+      "/project_images/PROP-138205-gallery-0.jpg",
+      "/project_images/PROP-138205-gallery-1.jpg",
+      "/project_images/PROP-138205-gallery-2.jpg",
+      "/project_images/PROP-138205-gallery-3.jpg"
+    ],
+    "features": [
+      "\u0997\u09CD\u09B0\u09BE\u0989\u09A8\u09CD\u09A1 \u09AB\u09CD\u09B2\u09CB\u09B0 (Ground Floor):  \u09AA\u09BE\u09B0\u09CD\u0995\u09BF\u0982 \u09B8\u09CD\u09AA\u09C7\u09B8 (Car Parking Area)  \u0997\u09BE\u09B0\u09CD\u09A1 \u09B0\u09C1\u09AE (Guard Room), \u0997\u09BE\u09B0\u09CD\u09A1 \u09AA\u09CB\u09B8\u09CD\u099F (Guard Post), \u099C\u09C7\u09A8\u09BE\u09B0\u09C7\u099F\u09B0 \u09B0\u09C1\u09AE (Generator Room), \u099F\u09DF\u09B2\u09C7\u099F \u0993 \u0995\u09BF\u099F\u0964",
+      "\u09E7\u09AE \u09A4\u09B2\u09BE (1st Floor Plan):  \u09E8\u099F\u09BF \u09B8\u09CD\u09AE\u09B2 \u0987\u0989\u09A8\u09BF\u099F (Two Small Units)  \u0987\u0989\u09A8\u09BF\u099F A: \u09EE\u09EE\u09EB \u09AC\u09B0\u09CD\u0997\u09AB\u09C1\u099F (885 Sft)  \u0987\u0989\u09A8\u09BF\u099F B: \u09E7\u09E6\u09E7\u09EB \u09AC\u09B0\u09CD\u0997\u09AB\u09C1\u099F (1015 Sft)",
+      "\u09E8\u09DF \u09A5\u09C7\u0995\u09C7 \u09ED\u09AE \u09A4\u09B2\u09BE (2nd to 7th Floor Plan):  \u09B8\u09BF\u0999\u09CD\u0997\u09C7\u09B2 \u0987\u0989\u09A8\u09BF\u099F (Single Unit)  \u09B8\u09BE\u0987\u099C: \u09E7\u09EF\u09E6\u09E6 \u09AC\u09B0\u09CD\u0997\u09AB\u09C1\u099F (1900 Sft)",
+      "\u099B\u09BE\u09A6 (Roof Top):  \u0995\u09AE\u09BF\u0989\u09A8\u09BF\u099F\u09BF \u09B0\u09C1\u09AE (Community Room)  \u099C\u09BF\u09AE \u09B0\u09C1\u09AE (Gym Room)  \u099F\u09DF\u09B2\u09C7\u099F \u098F\u09AC\u0982 \u0993\u09AA\u09C7\u09A8 \u09B8\u09CD\u09AA\u09C7\u09B8 (Open to Sky)",
+      "\u09B2\u09CB\u0995\u09C7\u09B6\u09A8 \u09AC\u09BE \u09A0\u09BF\u0995\u09BE\u09A8\u09BE (Project Location)\u09AA\u09CD\u09B0\u099C\u09C7\u0995\u09CD\u099F\u09C7\u09B0 \u09AE\u09C2\u09B2 \u09A0\u09BF\u0995\u09BE\u09A8\u09BE: \u09AA\u09CD\u09B2\u099F \u09A8\u0982-\u09EB\u09EA, \u09AC\u09CD\u09B2\u0995-\u098F\u09AB, \u09B8\u09C7\u0995\u09CD\u099F\u09B0-\u09E6\u09E8, \u09B0\u09CB\u09A1-\u09E6\u09E7, \u0987\u09B8\u09CD\u099F\u09B0\u09CD\u09A8 \u09B9\u09BE\u0989\u099C\u09BF\u0982 \u09B2\u09BF\u0983, \u0986\u09AB\u09A4\u09BE\u09AC\u09A8\u0997\u09B0, \u09A2\u09BE\u0995\u09BE\u0964  \u09B9\u09C7\u09A1 \u0985\u09AB\u09BF\u09B8: \u09B8\u09BE\u09A8 \u09AE\u09C1\u09A8 \u09B8\u09CD\u099F\u09BE\u09B0 \u099F\u09BE\u0993\u09AF\u09BC\u09BE\u09B0 (\u09E7\u09ED \u09A4\u09B2\u09BE), \u09E9\u09ED, \u09A6\u09BF\u09B2\u0995\u09C1\u09B6\u09BE, \u09B8\u09BF/\u098F, \u09A2\u09BE\u0995\u09BE-\u09E7\u09E6\u09E6\u09E6\u0964  \u0995\u09B0\u09AA\u09CB\u09B0\u09C7\u099F \u0985\u09AB\u09BF\u09B8: \u09E7/\u09EB \u0995\u09B2\u09CD\u09AF\u09BE\u09A3\u09AA\u09C1\u09B0, \u09AE\u09BF\u09B0\u09AA\u09C1\u09B0 \u09B0\u09CB\u09A1, \u09AE\u09BF\u099C\u09BE\u09A8 \u099F\u09BE\u0993\u09AF\u09BC\u09BE\u09B0 (\u09E9\u09AF\u09BC \u09A4\u09B2\u09BE), \u09A2\u09BE\u0995\u09BE-\u09E7\u09E8\u09E6\u09ED\u0964"
+    ],
+    "imageFit": "fill",
+    "imageUrl": "/project_images/PROP-138205.jpg",
+    "location": "\u09AA\u09CD\u09B2\u099F \u09A8\u0982-\u09EB\u09EA, \u09AC\u09CD\u09B2\u0995-\u098F\u09AB, \u09B8\u09C7\u0995\u09CD\u099F\u09B0-\u09E6\u09E8, \u09B0\u09CB\u09A1-\u09E6\u09E7, \u0987\u09B8\u09CD\u099F\u09B0\u09CD\u09A8 \u09B9\u09BE\u0989\u099C\u09BF\u0982 \u09B2\u09BF\u0983, \u0986\u09AB\u09A4\u09BE\u09AC\u09A8\u0997\u09B0, \u09A2\u09BE\u0995\u09BE",
+    "amenities": [],
+    "sizeRange": "\u09E7\u09AE \u09A4\u09B2\u09BE (\u09EE\u09EE\u09EB \u0993 \u09E7\u09E6\u09E7\u09EB \u09AC\u09B0\u09CD\u0997\u09AB\u09C1\u099F), \u09E8\u09AF\u09BC \u09A5\u09C7\u0995\u09C7 \u09ED\u09AE \u09A4\u09B2\u09BE (\u09E7\u09EF\u09E6\u09E6 \u09AC\u09B0\u09CD\u0997\u09AB\u09C1\u099F)",
+    "priceRange": "",
+    "description": "\u09A2\u09BE\u0995\u09BE \u09B6\u09B9\u09B0\u09C7\u09B0 \u0985\u09A8\u09CD\u09AF\u09A4\u09AE \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u0993 \u09AA\u09B0\u09BF\u0995\u09B2\u09CD\u09AA\u09BF\u09A4 \u0986\u09AC\u09BE\u09B8\u09BF\u0995 \u098F\u09B2\u09BE\u0995\u09BE \u0986\u09AB\u09A4\u09BE\u09AC\u09A8\u0997\u09B0\u09C7 \u098F\u0995 \u09B8\u09C1\u09AC\u09BF\u09B6\u09BE\u09B2 \u0995\u09CD\u09AF\u09BE\u09A8\u09AD\u09BE\u09B8\u09C7 \u0986\u09AE\u09B0\u09BE \u09A8\u09BF\u09AF\u09BC\u09C7 \u098F\u09B8\u09C7\u099B\u09BF \u098F\u0995 \u0986\u09AD\u09BF\u099C\u09BE\u09A4\u09CD\u09AF\u09C7\u09B0 \u09AE\u09C7\u0997\u09BE \u09AA\u09CD\u09B0\u099C\u09C7\u0995\u09CD\u099F\u0964 MOON TASH ICON \u0995\u09C7\u09AC\u09B2 \u098F\u0995\u099F\u09BF \u09AD\u09AC\u09A8 \u09A8\u09AF\u09BC, \u098F\u099F\u09BF \u0986\u09AA\u09A8\u09BE\u09B0 \u0993 \u0986\u09AA\u09A8\u09BE\u09B0 \u09AA\u09B0\u09BF\u09AC\u09BE\u09B0\u09C7\u09B0 \u099C\u09A8\u09CD\u09AF \u098F\u0995 \u0986\u09A7\u09C1\u09A8\u09BF\u0995 \u098F\u09AC\u0982 \u09A8\u09BF\u09B0\u09BE\u09AA\u09A6 \u09AE\u09C7\u0997\u09BE\u09B8\u09BF\u099F\u09BF\u09B0 \u09AA\u09B0\u09BF\u09AA\u09C2\u09B0\u09CD\u09A3 \u09AA\u09CD\u09B0\u09A4\u09BF\u099A\u09CD\u099B\u09AC\u09BF\u0964\n\n",
+    "floorsCount": 10,
+    "floorLayouts": []
   }
 ];
 
